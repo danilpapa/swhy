@@ -1,0 +1,31 @@
+{
+  "head_sha": "dddd6b6d842648a760576ec26c55b8cbc1790d46",
+  "worktree_dirty": false,
+  "command": "eval/e0.sh",
+  "params": {
+    "builds": 2,
+    "fixtures": [
+      "fx-rename",
+      "fx-smoke"
+    ]
+  },
+  "metrics": {
+    "fixtures_total": 2,
+    "fixtures_identical": 2,
+    "all_identical": true,
+    "fixtures": {
+      "fx-rename": {
+        "identical": true,
+        "head": "917c1cb2dda0bdab223ff8077f935b2b56fb65cf",
+        "commits": 7,
+        "distinct_heads": 1
+      },
+      "fx-smoke": {
+        "identical": true,
+        "head": "bad3f5edc9c7d08b03097303aa1f0b0e1fd39712",
+        "commits": 6,
+        "distinct_heads": 1
+      }
+    }
+  }
+}
