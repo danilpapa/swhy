@@ -1,1 +1,12 @@
 *.DS_STORE
+.DS_Store
+
+# Rust
+/target/
+
+# Dataset repositories (E1): cloned locally, never committed
+/data/repos/
+
+# UI build artefacts (E15)
+node_modules/
+/app/ui/dist/
