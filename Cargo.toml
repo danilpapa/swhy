@@ -6,6 +6,7 @@ members = [
     "crates/swhy-mcp",
     "crates/swhy-eval",
     "fixtures",
+    "app/src-tauri",
 ]
 
 [workspace.package]
