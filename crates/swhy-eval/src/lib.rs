@@ -19,6 +19,7 @@ pub struct EvalResult<P, M> {
     /// `HEAD` of the swhy repository the metric was computed on.
     pub head_sha: String,
     /// Whether the working tree had uncommitted changes at that moment.
+    /// Result files in `eval/results/` do not count.
     pub worktree_dirty: bool,
     /// The one command that reproduces the file.
     pub command: String,
@@ -40,7 +41,11 @@ pub fn result_for_workspace<P, M>(command: &str, params: P, metrics: M) -> EvalR
     let root = workspace_root();
     EvalResult {
         head_sha: fixtures::head_sha(&root),
-        worktree_dirty: !fixtures::git(&root, &["status", "--porcelain"]).is_empty(),
+        worktree_dirty: !fixtures::git(
+            &root,
+            &["status", "--porcelain", "--", ".", ":(exclude)eval/results"],
+        )
+        .is_empty(),
         command: command.to_string(),
         params,
         metrics,
