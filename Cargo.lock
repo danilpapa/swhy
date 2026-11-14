@@ -733,6 +733,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "swhy-eval"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "serde",
+ "serde_json",
+ "swhy-fixtures",
+]
+
+[[package]]
 name = "swhy-fixtures"
 version = "0.1.0"
 

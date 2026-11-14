@@ -4,6 +4,7 @@ members = [
     "crates/swhy-core",
     "crates/swhy-cli",
     "crates/swhy-mcp",
+    "crates/swhy-eval",
     "fixtures",
 ]
 
