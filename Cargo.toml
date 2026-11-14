@@ -2,6 +2,8 @@
 resolver = "3"
 members = [
     "crates/swhy-core",
+    "crates/swhy-cli",
+    "crates/swhy-mcp",
     "fixtures",
 ]
 
