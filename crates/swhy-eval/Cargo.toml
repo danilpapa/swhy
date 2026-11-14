@@ -1,0 +1,18 @@
+[package]
+name = "swhy-eval"
+description = "Benchmark and metric tools of swhy; run through the scripts in eval/"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+clap.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+swhy-fixtures.workspace = true
+
+[lints]
+workspace = true

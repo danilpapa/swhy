@@ -1,0 +1,22 @@
+[package]
+name = "swhy-fixtures"
+description = "Deterministic fixture git repositories for swhy tests: fixtures/lib.sh, fx-*.sh and the Rust helper fixtures::build"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+# The library is named `fixtures`, so tests call `fixtures::build("fx-rename")`
+# exactly as written in docs/TZ.md (E0, step 3).
+[lib]
+name = "fixtures"
+path = "src/lib.rs"
+
+[[bin]]
+name = "swhy-fixtures"
+path = "src/main.rs"
+
+[lints]
+workspace = true

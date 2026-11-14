@@ -1,0 +1,15 @@
+[package]
+name = "swhy-app"
+description = "Desktop application of swhy (Tauri). Skeleton; the application is built at E15"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+swhy-core.workspace = true
+
+[lints]
+workspace = true

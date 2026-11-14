@@ -1,0 +1,18 @@
+[package]
+name = "swhy-core"
+description = "Core of swhy: refactoring-aware history of Swift and Objective-C code"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
+serde.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true
+
+[lints]
+workspace = true
