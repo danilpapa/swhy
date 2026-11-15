@@ -610,7 +610,7 @@ pub fn check(first: &[OracleMethod], second: &[OracleMethod]) -> Result<CheckMet
 }
 
 /// A method of the selection pool.
-#[derive(Debug, Clone, PartialEq, Eq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct PoolEntry {
     pub path: String,
     pub key: String,
@@ -682,6 +682,172 @@ pub fn pool(git: &Git, rev: &str, size: usize, seed: u64) -> Result<Vec<PoolEntr
             })
         })
         .collect())
+}
+
+/// Selection quotas and limits (docs/oracle-guide.md, «Отбор методов»).
+pub const QUOTA_OBJC: usize = 12;
+pub const QUOTA_MODULE: usize = 12;
+pub const QUOTA_GENERAL: usize = 26;
+/// Longest method, in lines, that is reviewed by hand.
+pub const MAX_METHOD_LINES: u32 = 80;
+/// Most changing commits, besides the introduction, reviewed by hand.
+pub const MAX_CHANGING_COMMITS: usize = 12;
+
+/// The stratum a method is selected for.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Serialize)]
+#[serde(rename_all = "snake_case")]
+pub enum Stratum {
+    ObjcOrigin,
+    ModuleMove,
+    General,
+}
+
+/// A pool method with its trace.
+#[derive(Debug, Clone, PartialEq, Serialize)]
+pub struct Screened {
+    pub stratum: Stratum,
+    pub entry: PoolEntry,
+    /// Steps of the trace besides the introduction.
+    pub changing_steps: usize,
+    pub objc_origin: bool,
+    pub module_move: bool,
+    /// Why the method is not eligible; `None` when it is.
+    pub rejected: Option<String>,
+    #[serde(skip)]
+    pub trace: Option<Trace>,
+}
+
+/// Traces the first pool methods of every stratum and marks the eligible.
+pub fn screen(git: &Git, rev: &str, pool: &[PoolEntry]) -> Vec<Screened> {
+    let fits = |entry: &&PoolEntry| entry.lines <= MAX_METHOD_LINES;
+    let objc = pool.iter().filter(fits).filter(|e| e.objc_break).take(40);
+    let module = pool
+        .iter()
+        .filter(fits)
+        .filter(|e| e.module_change && !e.objc_break && (2..=15).contains(&e.log_commits))
+        .take(40);
+    let general = pool
+        .iter()
+        .filter(fits)
+        .filter(|e| !e.module_change && !e.objc_break && (4..=15).contains(&e.log_commits))
+        .take(80);
+    let candidates: Vec<(Stratum, &PoolEntry)> = objc
+        .map(|e| (Stratum::ObjcOrigin, e))
+        .chain(module.map(|e| (Stratum::ModuleMove, e)))
+        .chain(general.map(|e| (Stratum::General, e)))
+        .collect();
+    crate::gitx::par_map(&candidates, |&(stratum, entry)| {
+        let block = LabelBlock {
+            id: String::new(),
+            split: "train".to_string(),
+            path: entry.path.clone(),
+            key: entry.key.clone(),
+            labels: Vec::new(),
+            cuts: Vec::new(),
+        };
+        let duplicate_key = git.blob_text(rev, &entry.path).is_some_and(|source| {
+            scan::methods(SourceLang::Swift, &source)
+                .iter()
+                .filter(|m| m.key() == entry.key)
+                .count()
+                > 1
+        });
+        let trace = trace_block(git, rev, &block);
+        let (mut steps, mut objc_origin, mut module_move) = (0, false, false);
+        let mut rejected = None;
+        match &trace {
+            Err(error) => rejected = Some(error.clone()),
+            Ok(trace) => {
+                steps = trace
+                    .steps
+                    .iter()
+                    .filter(|s| s.kind != StepKind::Introduced)
+                    .count();
+                objc_origin = trace
+                    .steps
+                    .iter()
+                    .any(|s| s.kind == StepKind::CrossLanguage);
+                module_move = trace.steps.iter().any(|s| {
+                    s.before
+                        .as_ref()
+                        .is_some_and(|b| module_of(&b.path) != module_of(&s.after.path))
+                });
+                let introduced = trace
+                    .steps
+                    .iter()
+                    .filter(|s| s.kind == StepKind::Introduced)
+                    .count();
+                if duplicate_key {
+                    rejected = Some("two methods with this key in the file".to_string());
+                } else if introduced != 1 {
+                    rejected = Some(format!("{introduced} introductions in the trace"));
+                } else if !(MIN_CHANGING_COMMITS..=MAX_CHANGING_COMMITS).contains(&steps) {
+                    rejected = Some(format!("{steps} changing steps"));
+                } else if stratum == Stratum::ObjcOrigin && !objc_origin {
+                    rejected = Some("the trace has no ObjC step".to_string());
+                } else if stratum == Stratum::ModuleMove && !module_move {
+                    rejected = Some("the trace has no module move".to_string());
+                }
+            }
+        }
+        Screened {
+            stratum,
+            entry: entry.clone(),
+            changing_steps: steps,
+            objc_origin,
+            module_move,
+            rejected,
+            trace: trace.ok(),
+        }
+    })
+}
+
+/// The first eligible methods of every stratum, in the order of the draw:
+/// (id, split, method). `skip` lists `path\tkey` of methods rejected by the
+/// annotator. Splits alternate inside a stratum.
+pub fn select<'a>(
+    slug: &str,
+    screened: &'a [Screened],
+    skip: &BTreeSet<String>,
+) -> Vec<(String, &'static str, &'a Screened)> {
+    let mut selected = Vec::new();
+    for (stratum, quota) in [
+        (Stratum::ObjcOrigin, QUOTA_OBJC),
+        (Stratum::ModuleMove, QUOTA_MODULE),
+        (Stratum::General, QUOTA_GENERAL),
+    ] {
+        let eligible = screened
+            .iter()
+            .filter(|s| s.stratum == stratum && s.rejected.is_none())
+            .filter(|s| !skip.contains(&format!("{}\t{}", s.entry.path, s.entry.key)))
+            .take(quota);
+        for (index, method) in eligible.enumerate() {
+            let id = format!("{slug}-{:02}", selected.len() + 1);
+            selected.push((id, if index % 2 == 0 { "train" } else { "test" }, method));
+        }
+    }
+    selected
+}
+
+/// A labels file for the selected methods with the mechanical classes
+/// filled in and `?` everywhere a decision is needed.
+pub fn skeleton(selected: &[(String, &'static str, &Screened)]) -> String {
+    let mut out = String::new();
+    for (id, split, method) in selected {
+        out.push_str(&format!(
+            "M\t{id}\t{split}\t{}\t{}\n",
+            method.entry.path, method.entry.key
+        ));
+        for step in method.trace.iter().flat_map(|trace| &trace.steps) {
+            let class = match (step.kind, step.hint) {
+                (StepKind::Introduced, _) => "I",
+                (StepKind::FileRenamed, crate::trace::Hint::Identical) => "M",
+                _ => "?",
+            };
+            out.push_str(&format!("C\t{}\t{class}\n", &step.commit[..10]));
+        }
+    }
+    out
 }
 
 #[cfg(test)]
@@ -776,6 +942,72 @@ mod tests {
         assert!(parse_labels("C\tabc\tS\n").is_err());
         assert!(parse_labels("M\tx\tdev\tp\tk\n").is_err());
         assert!(parse_labels("M\tx\ttrain\tp\tk\nC\tabc\tWeird\n").is_err());
+    }
+
+    fn screened(stratum: Stratum, name: &str, rejected: Option<&str>) -> Screened {
+        Screened {
+            stratum,
+            entry: PoolEntry {
+                path: format!("{name}.swift"),
+                key: format!("swift:T.{name}()"),
+                lines: 10,
+                log_commits: 5,
+                objc_break: stratum == Stratum::ObjcOrigin,
+                module_change: stratum == Stratum::ModuleMove,
+            },
+            changing_steps: 4,
+            objc_origin: stratum == Stratum::ObjcOrigin,
+            module_move: stratum == Stratum::ModuleMove,
+            rejected: rejected.map(str::to_string),
+            trace: None,
+        }
+    }
+
+    #[test]
+    fn selection_takes_the_first_eligible_of_each_stratum_and_alternates_splits() {
+        let pool = [
+            screened(Stratum::General, "g1", None),
+            screened(Stratum::ObjcOrigin, "o1", None),
+            screened(Stratum::ObjcOrigin, "o2", Some("2 changing steps")),
+            screened(Stratum::ObjcOrigin, "o3", None),
+            screened(Stratum::ModuleMove, "m1", None),
+            screened(Stratum::General, "g2", None),
+            screened(Stratum::General, "g3", None),
+        ];
+        let ids = |skip: &[&str]| -> Vec<(String, &str, String)> {
+            let skip = skip.iter().map(ToString::to_string).collect();
+            select("x", &pool, &skip)
+                .into_iter()
+                .map(|(id, split, method)| (id, split, method.entry.path.clone()))
+                .collect()
+        };
+        let row =
+            |id: &str, split: &'static str, path: &str| (id.to_string(), split, path.to_string());
+        assert_eq!(
+            ids(&[]),
+            [
+                row("x-01", "train", "o1.swift"),
+                row("x-02", "test", "o3.swift"),
+                row("x-03", "train", "m1.swift"),
+                row("x-04", "train", "g1.swift"),
+                row("x-05", "test", "g2.swift"),
+                row("x-06", "train", "g3.swift"),
+            ]
+        );
+        // A method rejected by the annotator is replaced by the next one.
+        assert_eq!(
+            ids(&["g1.swift\tswift:T.g1()"])[3..],
+            [
+                row("x-04", "train", "g2.swift"),
+                row("x-05", "test", "g3.swift")
+            ]
+        );
+        let all = BTreeSet::new();
+        assert_eq!(
+            skeleton(&select("x", &pool, &all)[..2]),
+            "M\tx-01\ttrain\to1.swift\tswift:T.o1()\nM\tx-02\ttest\to3.swift\tswift:T.o3()\n"
+        );
+        assert_eq!((QUOTA_OBJC, QUOTA_MODULE, QUOTA_GENERAL), (12, 12, 26));
     }
 
     #[test]

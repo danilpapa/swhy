@@ -56,6 +56,22 @@ enum Command {
         #[arg(long)]
         out: PathBuf,
     },
+    /// E1 oracle: trace pool methods, select 50 and write a labels skeleton
+    /// with review sheets
+    OracleSelect {
+        #[arg(long)]
+        repo: String,
+        #[arg(long)]
+        pool: PathBuf,
+        /// File with `path<TAB>key` lines of methods rejected by the annotator
+        #[arg(long)]
+        skip: Option<PathBuf>,
+        /// Directory for screen.json, skeleton.tsv and sheets/<id>.txt
+        #[arg(long)]
+        out_dir: PathBuf,
+        #[arg(long, default_value_t = 1000)]
+        max_lines: usize,
+    },
     /// E1 oracle: print the review sheet of one method (candidate commits
     /// with the diff of the method)
     OracleSheet {
@@ -248,6 +264,55 @@ fn oracle(command: Command) -> Result<ExitCode, String> {
                 "swhy-eval: {} pool methods -> {}",
                 entries.len(),
                 out.display()
+            );
+        }
+        Command::OracleSelect {
+            repo,
+            pool,
+            skip,
+            out_dir,
+            max_lines,
+        } => {
+            let repo = Repo::find(&repo)?;
+            let git = repo.open()?;
+            let read = |path: &PathBuf| {
+                std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))
+            };
+            let pool: Vec<o::PoolEntry> =
+                serde_json::from_str(&read(&pool)?).map_err(|e| e.to_string())?;
+            let skip: std::collections::BTreeSet<String> = match &skip {
+                Some(path) => read(path)?
+                    .lines()
+                    .filter(|line| !line.starts_with('#'))
+                    .filter_map(|line| {
+                        let mut fields = line.split('\t');
+                        Some(format!("{}\t{}", fields.next()?, fields.next()?))
+                    })
+                    .collect(),
+                None => Default::default(),
+            };
+            let screened = o::screen(&git, &repo.sha, &pool);
+            let selected = o::select(&repo.slug(), &screened, &skip);
+            let sheets = out_dir.join("sheets");
+            std::fs::create_dir_all(&sheets).map_err(|e| e.to_string())?;
+            let write = |path: PathBuf, text: String| {
+                std::fs::write(&path, text).map_err(|e| format!("{}: {e}", path.display()))
+            };
+            write(out_dir.join("screen.json"), o::to_json(&screened))?;
+            write(out_dir.join("skeleton.tsv"), o::skeleton(&selected))?;
+            for (id, _, method) in &selected {
+                if let Some(found) = &method.trace {
+                    write(
+                        sheets.join(format!("{id}.txt")),
+                        trace::sheet(id, found, max_lines),
+                    )?;
+                }
+            }
+            eprintln!(
+                "swhy-eval: screened {}, selected {} -> {}",
+                screened.len(),
+                selected.len(),
+                out_dir.display()
             );
         }
         Command::OracleSheet {
