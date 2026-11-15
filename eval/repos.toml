@@ -1,0 +1,13 @@
+# Dataset repositories (docs/TZ.md, E1). Clones live in data/repos/ and are
+# never committed. Every measurement and every oracle file refers to the
+# pinned `sha`, not to whatever the clone has checked out.
+#
+# E1 runs on one repository (decision of 2026-11-14 in docs/TZ.md):
+# Signal-iOS, cloned by the user.
+
+[[repo]]
+name = "Signal-iOS"
+url = "https://github.com/signalapp/Signal-iOS"
+path = "data/repos/Signal-iOS"
+branch = "main"
+sha = "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45"

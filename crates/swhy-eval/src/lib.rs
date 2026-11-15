@@ -4,6 +4,12 @@
 //! the `swhy-eval` binary and writes `eval/results/<stage>-<date>.json` with
 //! the fields `head_sha`, `command`, `params`, `metrics`.
 
+pub mod gitx;
+pub mod measure;
+pub mod repos;
+pub mod rng;
+pub mod scan;
+
 use std::{
     collections::BTreeMap,
     fs, io,
@@ -11,6 +17,9 @@ use std::{
 };
 
 use serde::Serialize;
+
+/// Seed of the random samples of E1 (lines, methods, oracle selection).
+pub const E1_SEED: u64 = 20_261_115;
 
 /// Content of one file in `eval/results/`. Holds no generation time: the same
 /// input gives the same bytes.
