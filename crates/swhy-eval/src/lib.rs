@@ -6,9 +6,11 @@
 
 pub mod gitx;
 pub mod measure;
+pub mod oracle;
 pub mod repos;
 pub mod rng;
 pub mod scan;
+pub mod trace;
 
 use std::{
     collections::BTreeMap,

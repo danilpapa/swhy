@@ -90,6 +90,15 @@ pub fn methods(lang: SourceLang, source: &str) -> Vec<Method> {
 /// `source` with comments and the contents of string literals replaced by
 /// spaces. Newlines stay, so offsets and line numbers do not change.
 pub fn mask(lang: SourceLang, source: &str) -> Vec<u8> {
+    mask_impl(lang, source, true)
+}
+
+/// `source` with comments replaced by spaces; string literals are kept.
+pub fn mask_comments(lang: SourceLang, source: &str) -> Vec<u8> {
+    mask_impl(lang, source, false)
+}
+
+fn mask_impl(lang: SourceLang, source: &str, blank_strings: bool) -> Vec<u8> {
     let src = source.as_bytes();
     let mut out = src.to_vec();
     let mut i = 0;
@@ -113,9 +122,12 @@ pub fn mask(lang: SourceLang, source: &str) -> Vec<u8> {
                 continue;
             }
         };
-        for byte in &mut out[i..end] {
-            if *byte != b'\n' {
-                *byte = b' ';
+        let is_comment = src[i] == b'/';
+        if blank_strings || is_comment {
+            for byte in &mut out[i..end] {
+                if *byte != b'\n' {
+                    *byte = b' ';
+                }
             }
         }
         i = end;
