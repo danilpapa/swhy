@@ -1,0 +1,126 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-18",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Messages/MessageRequestPendingReceipts.swift",
+    "key": "swift:PendingReceiptFinder.delete(pendingReadReceipts:transaction:)"
+  },
+  "lines": [
+    241,
+    245
+  ],
+  "candidates": {
+    "follow": 35,
+    "log_l": 4,
+    "merges": 37,
+    "union": 72,
+    "tool": 0
+  },
+  "introduced": "2bed5d0cc3500876c1a03217c362841738949461",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "2bed5d0cc3500876c1a03217c362841738949461",
+      "date": "2020-02-16",
+      "parent": "3bb38ddb996e8f0972fc99de506543400b86f667",
+      "path": "SignalMessaging/environment/MessageRequestReadReceipts.swift",
+      "key": "swift:PendingReadReceiptFinder.delete(pendingReceipts:transaction:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a365b45522585f3e3f4286aa993057f4c8c9b06d",
+      "date": "2021-04-29",
+      "parent": "f6f9ced5249280d083ccd86377c4890cdfb6479e",
+      "path": "SignalMessaging/environment/MessageRequestPendingReceipts.swift",
+      "key": "swift:PendingReceiptFinder.delete(pendingReadReceipts:transaction:)",
+      "from": {
+        "path": "SignalMessaging/environment/MessageRequestReadReceipts.swift",
+        "key": "swift:PendingReadReceiptFinder.delete(pendingReceipts:transaction:)"
+      },
+      "class": "RenameOnly",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e85c7c4f4081286c2dfec305811a916f69066a74",
+      "date": "2024-03-07",
+      "parent": "53460a5bc9a4ebb1e81b02f427d09b5f29339ee1",
+      "path": "SignalServiceKit/Environment/MessageRequestPendingReceipts.swift",
+      "key": "swift:PendingReceiptFinder.delete(pendingReadReceipts:transaction:)",
+      "from": {
+        "path": "SignalMessaging/environment/MessageRequestPendingReceipts.swift",
+        "key": "swift:PendingReceiptFinder.delete(pendingReadReceipts:transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb048e8b59618bd7aa54b84e6afa64675a0b9eb1",
+      "date": "2025-03-13",
+      "parent": "e5eabf11104e7a4bb0d7888bd3eb067038e569f5",
+      "path": "SignalServiceKit/Environment/MessageRequestPendingReceipts.swift",
+      "key": "swift:PendingReceiptFinder.delete(pendingReadReceipts:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a689aa21d68f7945de3cdc332b5a4140783eee5b",
+      "date": "2025-09-15",
+      "parent": "5d2065605ae242e58ffcbbacdecbd44fbcf988d8",
+      "path": "SignalServiceKit/Messages/MessageRequestPendingReceipts.swift",
+      "key": "swift:PendingReceiptFinder.delete(pendingReadReceipts:transaction:)",
+      "from": {
+        "path": "SignalServiceKit/Environment/MessageRequestPendingReceipts.swift",
+        "key": "swift:PendingReceiptFinder.delete(pendingReadReceipts:transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a23a721e583d70da33c8b027471e78fb7c730be7",
+      "date": "2026-02-20",
+      "parent": "650bca81bd6ce476a0dbe102107c5986f3f33768",
+      "path": "SignalServiceKit/Messages/MessageRequestPendingReceipts.swift",
+      "key": "swift:PendingReceiptFinder.delete(pendingReadReceipts:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

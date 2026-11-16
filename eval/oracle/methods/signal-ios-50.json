@@ -1,0 +1,134 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-50",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/ConversationView/Components/CVComponentContactShare.swift",
+    "key": "swift:CVComponentContactShare.measure(maxWidth:measurementBuilder:)"
+  },
+  "lines": [
+    47,
+    55
+  ],
+  "candidates": {
+    "follow": 27,
+    "log_l": 4,
+    "merges": 36,
+    "union": 63,
+    "tool": 0
+  },
+  "introduced": "111338b59dea9d9604441b45f1ec9236cfe6f27b",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "111338b59dea9d9604441b45f1ec9236cfe6f27b",
+      "date": "2020-12-10",
+      "parent": "2d1b5dc28b01a4c852116bd72aaba5a9c3660482",
+      "path": "Signal/src/ViewControllers/ConversationView/CV/CVComponents/CVComponentContactShare.swift",
+      "key": "swift:CVComponentContactShare.measure(maxWidth:measurementBuilder:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "06518f578aa77deeabf50ee2ad18138cc2937bed",
+      "date": "2021-04-22",
+      "parent": "48068b1398e1c63749f1b0baad61903042495e06",
+      "path": "Signal/src/ViewControllers/ConversationView/CV/CVComponents/CVComponentContactShare.swift",
+      "key": "swift:CVComponentContactShare.measure(maxWidth:measurementBuilder:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "40fa336cd201790b511fb578a702489bde5a0d14",
+      "date": "2021-05-04",
+      "parent": "112ebbcd7163eee65079d8e420b799c87b81455c",
+      "path": "Signal/src/ViewControllers/ConversationView/CV/CVComponents/CVComponentContactShare.swift",
+      "key": "swift:CVComponentContactShare.measure(maxWidth:measurementBuilder:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e4fec6082bf5dd57179a740ac0607eee29a3a75c",
+      "date": "2021-05-04",
+      "parent": "40fa336cd201790b511fb578a702489bde5a0d14",
+      "path": "Signal/src/ViewControllers/ConversationView/CV/CVComponents/CVComponentContactShare.swift",
+      "key": "swift:CVComponentContactShare.measure(maxWidth:measurementBuilder:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "2e91c8d92c0c5f8a18f7a1d3a8a5ec6769b833ff",
+      "date": "2024-03-25",
+      "parent": "2cca071925d466950d6c51888a2b6a18bc98a054",
+      "path": "Signal/ConversationView/Components/CVComponentContactShare.swift",
+      "key": "swift:CVComponentContactShare.measure(maxWidth:measurementBuilder:)",
+      "from": {
+        "path": "Signal/src/ViewControllers/ConversationView/CV/CVComponents/CVComponentContactShare.swift",
+        "key": "swift:CVComponentContactShare.measure(maxWidth:measurementBuilder:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/ConversationView/Components/CVComponentContactShare.swift",
+      "key": "swift:CVComponentContactShare.measure(maxWidth:measurementBuilder:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    },
+    {
+      "commit": "4eec4232b20c3c07ea40e49567c548fe4057c88c",
+      "date": "2026-10-22",
+      "parent": "0c20fc24ea27ffb314f2b25ee0147d93a54266d3",
+      "path": "Signal/ConversationView/Components/CVComponentContactShare.swift",
+      "key": "swift:CVComponentContactShare.measure(maxWidth:measurementBuilder:)",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

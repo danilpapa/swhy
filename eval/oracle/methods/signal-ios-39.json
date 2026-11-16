@@ -1,0 +1,152 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-39",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/Calls/CallKitIdStore.swift",
+    "key": "swift:CallKitIdStore.setGroupId(_:forCallKitId:)"
+  },
+  "lines": [
+    18,
+    28
+  ],
+  "candidates": {
+    "follow": 12,
+    "log_l": 9,
+    "merges": 0,
+    "union": 12,
+    "tool": 0
+  },
+  "introduced": "8a9d5f64918c4cc8e2ee6813b95b5956ca4bc496",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "8a9d5f64918c4cc8e2ee6813b95b5956ca4bc496",
+      "date": "2024-06-13",
+      "parent": "29520ca69b2415147256a8feaaa1939a4cc1b8d5",
+      "path": "Signal/Calls/CallKitIdStore.swift",
+      "key": "swift:CallKitIdStore.setGroupThread(_:forCallKitId:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "de32c7799d8191c592de262b9cea3639acac9c17",
+      "date": "2024-10-11",
+      "parent": "289ad6e3a4ffe030fad8818e0622541f961d97ef",
+      "path": "Signal/Calls/CallKitIdStore.swift",
+      "key": "swift:CallKitIdStore.setGroupThread(_:forCallKitId:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "dadca9e0325b73f49326cb55bf6ee1827e53cf82",
+      "date": "2024-11-15",
+      "parent": "a6a6c608d607196cbf47d9d0270461960f7f0a61",
+      "path": "Signal/Calls/CallKitIdStore.swift",
+      "key": "swift:CallKitIdStore.setGroupThread(_:forCallKitId:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "60dc4a8dc0c06ddd884d0dcc248733056153fdac",
+      "date": "2025-01-07",
+      "parent": "19064ca09648dfddc0cb21afeef80e37d7abc3e7",
+      "path": "Signal/Calls/CallKitIdStore.swift",
+      "key": "swift:CallKitIdStore.setGroupId(_:forCallKitId:)",
+      "from": {
+        "path": "Signal/Calls/CallKitIdStore.swift",
+        "key": "swift:CallKitIdStore.setGroupThread(_:forCallKitId:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb048e8b59618bd7aa54b84e6afa64675a0b9eb1",
+      "date": "2025-03-13",
+      "parent": "e5eabf11104e7a4bb0d7888bd3eb067038e569f5",
+      "path": "Signal/Calls/CallKitIdStore.swift",
+      "key": "swift:CallKitIdStore.setGroupId(_:forCallKitId:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb2d89e55a84cc83c19237588b7d25d72bf3ab22",
+      "date": "2025-06-17",
+      "parent": "f58cd2c22c7a3f105e5d2f7a724166f1f426aa91",
+      "path": "Signal/Calls/CallKitIdStore.swift",
+      "key": "swift:CallKitIdStore.setGroupId(_:forCallKitId:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "54ef8a50f3ecec17fadb0479fbe47498948bfe30",
+      "date": "2026-07-13",
+      "parent": "7ce59e6959eb709dc7ebd66b1280b0b8c26d59ff",
+      "path": "Signal/Calls/CallKitIdStore.swift",
+      "key": "swift:CallKitIdStore.setGroupId(_:forCallKitId:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "2b7713b0a48da664041c79fd4c8862d55b29e301",
+      "date": "2026-09-08",
+      "parent": "e416b33915885163aa0d3f4dc2bffa10a9512bd6",
+      "path": "Signal/Calls/CallKitIdStore.swift",
+      "key": "swift:CallKitIdStore.setGroupId(_:forCallKitId:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

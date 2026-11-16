@@ -1,0 +1,156 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-23",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Groups/GroupV2Params.swift",
+    "key": "swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)"
+  },
+  "lines": [
+    177,
+    193
+  ],
+  "candidates": {
+    "follow": 48,
+    "log_l": 6,
+    "merges": 63,
+    "union": 111,
+    "tool": 0
+  },
+  "introduced": "752bcdd6f973d795d5b07cb9f9f4594879af950d",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "752bcdd6f973d795d5b07cb9f9f4594879af950d",
+      "date": "2020-04-27",
+      "parent": "b631410236dfe25aceeef1e749fbc2be2479ef7f",
+      "path": "SignalMessaging/groups/GroupV2Params.swift",
+      "key": "swift:GroupV2Params.encryptDisappearingMessagesTimerBlob(_:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d3639be38392e83fbb3f4dab1279351cb29982ad",
+      "date": "2020-04-27",
+      "parent": "752bcdd6f973d795d5b07cb9f9f4594879af950d",
+      "path": "SignalMessaging/groups/GroupV2Params.swift",
+      "key": "swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)",
+      "from": {
+        "path": "SignalMessaging/groups/GroupV2Params.swift",
+        "key": "swift:GroupV2Params.encryptDisappearingMessagesTimerBlob(_:)"
+      },
+      "class": "RenameOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "87c635522233ee49f5eeb187564c857ac2143afa",
+      "date": "2020-11-17",
+      "parent": "98884f9cba4edd7fc880f0d659107e2507d5e0d4",
+      "path": "SignalMessaging/groups/GroupV2Params.swift",
+      "key": "swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d60ca9f7f4169e1334142b8ea4ff55ba2ec6bda4",
+      "date": "2021-03-19",
+      "parent": "4a6d6db8e9cecd5374bd92ff2232000cdd14515e",
+      "path": "SignalMessaging/groups/GroupV2Params.swift",
+      "key": "swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c649e8be19a0d9e17ac228e282df1f3578efb577",
+      "date": "2024-03-06",
+      "parent": "4028947de611b749458284c3c49b87e1e961b9c6",
+      "path": "SignalServiceKit/src/groups/GroupV2Params.swift",
+      "key": "swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)",
+      "from": {
+        "path": "SignalMessaging/groups/GroupV2Params.swift",
+        "key": "swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Groups/GroupV2Params.swift",
+      "key": "swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)",
+      "from": {
+        "path": "SignalServiceKit/src/groups/GroupV2Params.swift",
+        "key": "swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Groups/GroupV2Params.swift",
+      "key": "swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "7f0e73ab16d6a5ba271a7a22710fcae5dc0ee7d3",
+      "date": "2026-01-28",
+      "parent": "7d25c4ec12c906e1f38108888e09ef25a75c967c",
+      "path": "SignalServiceKit/Groups/GroupV2Params.swift",
+      "key": "swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    }
+  ],
+  "not_changing": []
+}

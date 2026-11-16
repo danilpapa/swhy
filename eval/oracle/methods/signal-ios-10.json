@@ -1,0 +1,94 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-10",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/ConversationView/ConversationInputToolbar.swift",
+    "key": "swift:ConversationInputToolbar.acceptAutocorrectSuggestion()"
+  },
+  "lines": [
+    1723,
+    1725
+  ],
+  "candidates": {
+    "follow": 412,
+    "log_l": 4,
+    "merges": 349,
+    "union": 761,
+    "tool": 0
+  },
+  "introduced": "135d0517615e6ac32787f7dcb3e834fd9db05fb6",
+  "objc_origin": true,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "135d0517615e6ac32787f7dcb3e834fd9db05fb6",
+      "date": "2019-06-11",
+      "parent": "b9c85931f732940a5010c2a7ac7241864ef63a96",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+      "key": "objc:ConversationInputToolbar.-acceptAutocorrectSuggestion",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "13a80ef8aa4466508ae468335c7d672b83f031cf",
+      "date": "2019-06-13",
+      "parent": "68e69f0bc414f0db3bb0cff53726804e0a7562cd",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+      "key": "objc:ConversationInputToolbar.-acceptAutocorrectSuggestion",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d8fc50cb424b96486e53453222f012f463faaeea",
+      "date": "2022-11-07",
+      "parent": "06f5a09a2261382ed3febcfb2c6aee0ae9c022f7",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.swift",
+      "key": "swift:ConversationInputToolbar.acceptAutocorrectSuggestion()",
+      "from": {
+        "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+        "key": "objc:ConversationInputToolbar.-acceptAutocorrectSuggestion"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "2e91c8d92c0c5f8a18f7a1d3a8a5ec6769b833ff",
+      "date": "2024-03-25",
+      "parent": "2cca071925d466950d6c51888a2b6a18bc98a054",
+      "path": "Signal/ConversationView/ConversationInputToolbar.swift",
+      "key": "swift:ConversationInputToolbar.acceptAutocorrectSuggestion()",
+      "from": {
+        "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.swift",
+        "key": "swift:ConversationInputToolbar.acceptAutocorrectSuggestion()"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

@@ -1,0 +1,169 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-02",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalUI/ViewControllers/OWSNavigationController.swift",
+    "key": "swift:OWSNavigationController.gestureRecognizerShouldBegin(_:)"
+  },
+  "lines": [
+    227,
+    243
+  ],
+  "candidates": {
+    "follow": 83,
+    "log_l": 11,
+    "merges": 139,
+    "union": 222,
+    "tool": 0
+  },
+  "introduced": "7ad5f154483640c0cab9da30d153ce1f7c8299fd",
+  "objc_origin": true,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "7ad5f154483640c0cab9da30d153ce1f7c8299fd",
+      "date": "2018-05-24",
+      "parent": "49c652ad1463acb49d8806be8199df4652350a42",
+      "path": "SignalMessaging/ViewControllers/OWSNavigationController.m",
+      "key": "objc:OWSNavigationController.-gestureRecognizerShouldBegin:",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "72e4de0950a6f5ae53f555ebeabb7557b97c2c42",
+      "date": "2018-06-12",
+      "parent": "0eb653897ee5a1d28a7cafaac376e1eb4f0bb30e",
+      "path": "SignalMessaging/ViewControllers/OWSNavigationController.m",
+      "key": "objc:OWSNavigationController.-gestureRecognizerShouldBegin:",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c7662b5a86d3b8003cc859fd2833f9c29bb9f524",
+      "date": "2018-09-07",
+      "parent": "a54ed8b201c9fb3092aa8b9c8397cbc25f8b3e7d",
+      "path": "SignalMessaging/ViewControllers/OWSNavigationController.m",
+      "key": "objc:OWSNavigationController.-gestureRecognizerShouldBegin:",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "c416609108047fa393775cdd1f3085487d4ad0d0",
+      "date": "2021-10-19",
+      "parent": "b9b66646ff6be2f66789aea8ce19d4ecc5a37450",
+      "path": "SignalUI/ViewControllers/OWSNavigationController.m",
+      "key": "objc:OWSNavigationController.-gestureRecognizerShouldBegin:",
+      "from": {
+        "path": "SignalMessaging/ViewControllers/OWSNavigationController.m",
+        "key": "objc:OWSNavigationController.-gestureRecognizerShouldBegin:"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d06babf59f8ddc22c2df4680b762b2067fe9bbf5",
+      "date": "2022-11-03",
+      "parent": "c745f9a6aee4aa19da0dc961fb0414065a039e09",
+      "path": "SignalUI/ViewControllers/OWSNavigationController.swift",
+      "key": "swift:OWSNavigationController.gestureRecognizerShouldBegin(_:)",
+      "from": {
+        "path": "SignalUI/ViewControllers/OWSNavigationController.m",
+        "key": "objc:OWSNavigationController.-gestureRecognizerShouldBegin:"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "520faa95dfd17d5203bd446d92e1720d607c0e49",
+      "date": "2022-11-03",
+      "parent": "d06babf59f8ddc22c2df4680b762b2067fe9bbf5",
+      "path": "SignalUI/ViewControllers/OWSNavigationController.swift",
+      "key": "swift:OWSNavigationController.gestureRecognizerShouldBegin(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "190c56b68bcf27c0b5947bb86dcd407f0a1c8a91",
+      "date": "2022-11-09",
+      "parent": "513ba3863dd4b81dd4ee7988af35bf875712bce8",
+      "path": "SignalUI/ViewControllers/OWSNavigationController.swift",
+      "key": "swift:OWSNavigationController.gestureRecognizerShouldBegin(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "aebf620ef9a6f2311963849d91ffa7b5f964d094",
+      "date": "2025-08-19",
+      "parent": "700f1c3424b8f3618106552198ad6a81afbac551",
+      "path": "SignalUI/ViewControllers/OWSNavigationController.swift",
+      "key": "swift:OWSNavigationController.gestureRecognizerShouldBegin(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "fdcb84d5e33e8f40e40bd5b077df0c8a687b86fb",
+      "date": "2026-01-08",
+      "parent": "3c0d3b2e42e928501cbfc5f8a838e99a1f46755e",
+      "path": "SignalUI/ViewControllers/OWSNavigationController.swift",
+      "key": "swift:OWSNavigationController.gestureRecognizerShouldBegin(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

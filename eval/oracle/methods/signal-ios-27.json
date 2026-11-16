@@ -1,0 +1,136 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-27",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/src/ViewControllers/HomeView/Stories/HiddenStoryHeaderCell.swift",
+    "key": "swift:HiddenStoryHeaderCell.configure(isCollapsed:animated:)"
+  },
+  "lines": [
+    45,
+    63
+  ],
+  "candidates": {
+    "follow": 12,
+    "log_l": 6,
+    "merges": 0,
+    "union": 12,
+    "tool": 0
+  },
+  "introduced": "9a585ac4c3889aff9ee7148c94a3280358e97869",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "9a585ac4c3889aff9ee7148c94a3280358e97869",
+      "date": "2022-09-06",
+      "parent": "222bec2fb48db0dfb00da2e07f85a37680ef2a0e",
+      "path": "Signal/src/ViewControllers/HomeView/Stories/HiddenStoryHeaderView.swift",
+      "key": "swift:HiddenStoryHeaderView.configure(isCollapsed:animated:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "9fe09ce980beffc4c39e9e916f3bd1374c641b65",
+      "date": "2022-09-07",
+      "parent": "3d312796e634a2e67ca34d61c609630989810750",
+      "path": "Signal/src/ViewControllers/HomeView/Stories/HiddenStoryHeaderCell.swift",
+      "key": "swift:HiddenStoryHeaderCell.configure(isCollapsed:animated:)",
+      "from": {
+        "path": "Signal/src/ViewControllers/HomeView/Stories/HiddenStoryHeaderView.swift",
+        "key": "swift:HiddenStoryHeaderView.configure(isCollapsed:animated:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c544e46ee1373729ff7ac83d97d7c81a05f347d9",
+      "date": "2022-09-26",
+      "parent": "ecf98414baaafcf182cb408f1723072552ee707c",
+      "path": "Signal/src/ViewControllers/HomeView/Stories/HiddenStoryHeaderCell.swift",
+      "key": "swift:HiddenStoryHeaderCell.configure(isCollapsed:animated:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "b5eab48d906e249b950abdbc9c952d48fa724eeb",
+      "date": "2022-10-20",
+      "parent": "4d768aa35398587b2da9d4e7aa6ee57bfd580a7e",
+      "path": "Signal/src/ViewControllers/HomeView/Stories/HiddenStoryHeaderCell.swift",
+      "key": "swift:HiddenStoryHeaderCell.configure(isCollapsed:animated:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "52f0015dfe74e670d827d49e443261d14e0b6186",
+      "date": "2023-06-22",
+      "parent": "d7dd813a68fa3e30d63358895c384f1578da5133",
+      "path": "Signal/src/ViewControllers/HomeView/Stories/HiddenStoryHeaderCell.swift",
+      "key": "swift:HiddenStoryHeaderCell.configure(isCollapsed:animated:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "77fd1345f84e5e15a9f6b7821c691deb4f92090b",
+      "date": "2025-10-24",
+      "parent": "6962ec5612b036431e91748f5ffa33d92195fee1",
+      "path": "Signal/src/ViewControllers/HomeView/Stories/HiddenStoryHeaderCell.swift",
+      "key": "swift:HiddenStoryHeaderCell.configure(isCollapsed:animated:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/src/ViewControllers/HomeView/Stories/HiddenStoryHeaderCell.swift",
+      "key": "swift:HiddenStoryHeaderCell.configure(isCollapsed:animated:)",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "swiftformat: T.init( to T(, && to comma in guard, spacing"
+    }
+  ],
+  "not_changing": []
+}

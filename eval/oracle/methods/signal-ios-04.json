@@ -1,0 +1,109 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-04",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/ConversationView/ConversationInputToolbar.swift",
+    "key": "swift:ConversationInputToolbar.viewDidAppear()"
+  },
+  "lines": [
+    3276,
+    3278
+  ],
+  "candidates": {
+    "follow": 412,
+    "log_l": 4,
+    "merges": 349,
+    "union": 761,
+    "tool": 0
+  },
+  "introduced": "720f27074ecb5fa3e54e1b24fdb5cfc9bdc1b5c0",
+  "objc_origin": true,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "720f27074ecb5fa3e54e1b24fdb5cfc9bdc1b5c0",
+      "date": "2019-05-20",
+      "parent": "cbba0f17a00dc503730a74969c2a292369de4800",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+      "key": "objc:ConversationInputToolbar.-viewDidAppear",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "868e49f1ff96d512353b2a430db858c5cb156916",
+      "date": "2019-08-06",
+      "parent": "2865863495ada22da545f7c2035f4895b5639cf0",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+      "key": "objc:ConversationInputToolbar.-viewDidAppear",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d8fc50cb424b96486e53453222f012f463faaeea",
+      "date": "2022-11-07",
+      "parent": "06f5a09a2261382ed3febcfb2c6aee0ae9c022f7",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.swift",
+      "key": "swift:ConversationInputToolbar.viewDidAppear()",
+      "from": {
+        "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+        "key": "objc:ConversationInputToolbar.-viewDidAppear"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "2e91c8d92c0c5f8a18f7a1d3a8a5ec6769b833ff",
+      "date": "2024-03-25",
+      "parent": "2cca071925d466950d6c51888a2b6a18bc98a054",
+      "path": "Signal/ConversationView/ConversationInputToolbar.swift",
+      "key": "swift:ConversationInputToolbar.viewDidAppear()",
+      "from": {
+        "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.swift",
+        "key": "swift:ConversationInputToolbar.viewDidAppear()"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "cccae56dc304ea1aaa5ea4e71d39cdccc87399ce",
+      "date": "2025-09-24",
+      "parent": "f7d951de93ddb85fe7136b6aa46cdc3423431f76",
+      "path": "Signal/ConversationView/ConversationInputToolbar.swift",
+      "key": "swift:ConversationInputToolbar.viewDidAppear()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

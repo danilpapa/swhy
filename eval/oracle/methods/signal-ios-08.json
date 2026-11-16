@@ -1,0 +1,196 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-08",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/AppLaunch/WindowManager.swift",
+    "key": "swift:WindowManager.ensureCallViewWindowHidden(_:)"
+  },
+  "lines": [
+    375,
+    382
+  ],
+  "candidates": {
+    "follow": 108,
+    "log_l": 6,
+    "merges": 140,
+    "union": 248,
+    "tool": 0
+  },
+  "introduced": "7345ab2e4ea8f371a50dba3adf855474654d747c",
+  "objc_origin": true,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "7345ab2e4ea8f371a50dba3adf855474654d747c",
+      "date": "2018-04-25",
+      "parent": "9364af9b85f0a8d56b47548afb19404bc9cba3df",
+      "path": "Signal/src/util/OWSWindowManager.m",
+      "key": "objc:OWSWindowManager.-hideCallViewWindowIfNecessary",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d7ae6fbbf43d2705957491c3622f7d9780805327",
+      "date": "2018-04-25",
+      "parent": "1d94c2da75ec319f784594bbb382fbad3c388fd8",
+      "path": "Signal/src/util/OWSWindowManager.m",
+      "key": "objc:OWSWindowManager.-ensureCallViewWindowHidden",
+      "from": {
+        "path": "Signal/src/util/OWSWindowManager.m",
+        "key": "objc:OWSWindowManager.-hideCallViewWindowIfNecessary"
+      },
+      "class": "RenameOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "29d08545e21f5a6caefb836151f7649e9eecd525",
+      "date": "2018-05-24",
+      "parent": "33eb4c38cd7ef629001bef15024c3c7c9ad02185",
+      "path": "SignalMessaging/utils/OWSWindowManager.m",
+      "key": "objc:OWSWindowManager.-ensureCallViewWindowHidden",
+      "from": {
+        "path": "Signal/src/util/OWSWindowManager.m",
+        "key": "objc:OWSWindowManager.-ensureCallViewWindowHidden"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "3a50377902ee332abbfc779a363b82bdd98f6812",
+      "date": "2018-08-27",
+      "parent": "d81dea1d84eff5d78683e04843b2b7b3a8d20f25",
+      "path": "SignalMessaging/utils/OWSWindowManager.m",
+      "key": "objc:OWSWindowManager.-ensureCallViewWindowHidden",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "cc5a480baa0b802edcf6db932b072adea4d4f0cd",
+      "date": "2018-08-27",
+      "parent": "03829779ccc9da41138ee45e313ece8a8a1be02b",
+      "path": "SignalMessaging/utils/OWSWindowManager.m",
+      "key": "objc:OWSWindowManager.-ensureCallViewWindowHidden",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "93ba483ec5245c2f0cffe6e1ad80e29e8b12ca36",
+      "date": "2021-10-19",
+      "parent": "b5ed609b4258f413c44222271281d45df0014f5a",
+      "path": "SignalUI/UI/OWSWindowManager.m",
+      "key": "objc:OWSWindowManager.-ensureCallViewWindowHidden",
+      "from": {
+        "path": "SignalMessaging/utils/OWSWindowManager.m",
+        "key": "objc:OWSWindowManager.-ensureCallViewWindowHidden"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "7d0485661ddd615377e43f305c01738939f4ca17",
+      "date": "2021-10-19",
+      "parent": "45710e8d5706a2237f91ed31fa29a19eab24f705",
+      "path": "Signal/src/UserInterface/OWSWindowManager.m",
+      "key": "objc:OWSWindowManager.-ensureCallViewWindowHidden",
+      "from": {
+        "path": "SignalUI/UI/OWSWindowManager.m",
+        "key": "objc:OWSWindowManager.-ensureCallViewWindowHidden"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "2f71d6a2c63785505a7f58d26bbd5c2d50bf3960",
+      "date": "2023-06-01",
+      "parent": "c7b7031f4e1ca24b6d4f0caaa431f6e02148bd5e",
+      "path": "Signal/src/WindowManager.swift",
+      "key": "swift:WindowManager.ensureCallViewWindowHidden()",
+      "from": {
+        "path": "Signal/src/UserInterface/OWSWindowManager.m",
+        "key": "objc:OWSWindowManager.-ensureCallViewWindowHidden"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "11de255279572704141167a25df6771ed3fde97f",
+      "date": "2026-04-16",
+      "parent": "be40be9c335154a505e6b0ccb94224b0e5c9b031",
+      "path": "Signal/AppLaunch/WindowManager.swift",
+      "key": "swift:WindowManager.ensureCallViewWindowHidden()",
+      "from": {
+        "path": "Signal/src/WindowManager.swift",
+        "key": "swift:WindowManager.ensureCallViewWindowHidden()"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "6be38ecd5d4fe675a31959744fef872d8e110710",
+      "date": "2026-09-16",
+      "parent": "01121068f55f224abcfcaa51f1b4571facee7823",
+      "path": "Signal/AppLaunch/WindowManager.swift",
+      "key": "swift:WindowManager.ensureCallViewWindowHidden(_:)",
+      "from": {
+        "path": "Signal/AppLaunch/WindowManager.swift",
+        "key": "swift:WindowManager.ensureCallViewWindowHidden()"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

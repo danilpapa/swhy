@@ -1,0 +1,224 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-40",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+    "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)"
+  },
+  "lines": [
+    699,
+    767
+  ],
+  "candidates": {
+    "follow": 137,
+    "log_l": 13,
+    "merges": 0,
+    "union": 137,
+    "tool": 0
+  },
+  "introduced": "9f29ee802207215c1acb63d860e06d5bef650b24",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "9f29ee802207215c1acb63d860e06d5bef650b24",
+      "date": "2025-07-30",
+      "parent": "9822fef1e8586d2f28389b906791de305cb27c87",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "date": "2025-12-30",
+      "parent": "b12335de094b2a237e030de553118a6a754420b0",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    },
+    {
+      "commit": "0762b710982a6cf76ee97e4cd39ecabc6d4f8b83",
+      "date": "2026-01-09",
+      "parent": "9a912dd55502d0dbc20e3930d56565e32493fe92",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "e5529f2d896873afa48356f7286b005ff7a62a66",
+      "date": "2026-01-28",
+      "parent": "a6cc4c5b20b8e60ce81a60e78a441dbbc9c5619b",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "ec972806cbcd640827ef09ce760bbea001ae53c3",
+      "date": "2026-03-30",
+      "parent": "0aa54ee558147f7a72cf9f97d14be2212eea3d64",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "c23eaa6bfc2f72cefebd098a12535821841db8db",
+      "date": "2026-04-30",
+      "parent": "a859dcb0038781f06f94e29130628a8c21f1ee11",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "b4c777db160eed01ab4dac29bb5c8cb6af048e6b",
+      "date": "2026-05-08",
+      "parent": "b7269c4d5cd731e4734b094c76c119df3a392514",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "185035784c973642430da46cbb22a6385396d6d8",
+      "date": "2026-06-01",
+      "parent": "dcf02125a01d6849fd1e1c75e8d089bf5fd951f8",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "221043a99851acc29c5e295c7b908b38f6468553",
+      "date": "2026-06-10",
+      "parent": "3914c811be047d6ada01bd502a3b96ed2896f542",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "6905ea8e4118421f486e772871f2b6d68716ca04",
+      "date": "2026-09-24",
+      "parent": "f5c7d7697d15b85b8c845009fa4a107bb89e3c51",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "6e7d048e9f6610e2b7bca113a53caf054f8c67fa",
+      "date": "2026-09-24",
+      "parent": "e05b4e6416f8b4fcfdc2b9fd80caf43af8f407e9",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "05e57bfa7d432d79cca952c631a278feacacb53f",
+      "date": "2026-10-21",
+      "parent": "984617ecf23a9a35fe22899d711a7e067ce06153",
+      "path": "SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift",
+      "key": "swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

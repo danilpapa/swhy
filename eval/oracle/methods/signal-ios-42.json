@@ -1,0 +1,125 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-42",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Network/API/Requests/OWSRequestFactory+Backups.swift",
+    "key": "swift:OWSRequestFactory.backupRefreshInfoRequest(auth:logger:)"
+  },
+  "lines": [
+    43,
+    55
+  ],
+  "candidates": {
+    "follow": 21,
+    "log_l": 6,
+    "merges": 0,
+    "union": 21,
+    "tool": 0
+  },
+  "introduced": "5bc53062c6f92fc1ffb17bc5a60ef1eefc2ce7e4",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "5bc53062c6f92fc1ffb17bc5a60ef1eefc2ce7e4",
+      "date": "2024-04-26",
+      "parent": "c0e959a59fca9caa0f736228752c180bce4432d9",
+      "path": "SignalServiceKit/Network/API/Requests/OWSRequestFactory+MessageBackup.swift",
+      "key": "swift:OWSRequestFactory.backupRefreshInfoRequest(auth:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "95c18efb2daf75cf97c10df2c865b00195acc977",
+      "date": "2025-03-13",
+      "parent": "5af568c10b5026d9fe0723c1c50b991199b81cda",
+      "path": "SignalServiceKit/Network/API/Requests/OWSRequestFactory+MessageBackup.swift",
+      "key": "swift:OWSRequestFactory.backupRefreshInfoRequest(auth:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a819bb4daca3483a7563a4b266c92cb1e4a01e68",
+      "date": "2025-04-10",
+      "parent": "660103274e9c7fd7fd4a3e16b223aab65a04489d",
+      "path": "SignalServiceKit/Network/API/Requests/OWSRequestFactory+MessageBackup.swift",
+      "key": "swift:OWSRequestFactory.backupRefreshInfoRequest(auth:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "7d6edb64124ae0604517c18cb47b27082ccb6cab",
+      "date": "2025-05-13",
+      "parent": "2828d342a31fbed183a448b10785d8b0010d3cfe",
+      "path": "SignalServiceKit/Network/API/Requests/OWSRequestFactory+Backups.swift",
+      "key": "swift:OWSRequestFactory.backupRefreshInfoRequest(auth:)",
+      "from": {
+        "path": "SignalServiceKit/Network/API/Requests/OWSRequestFactory+MessageBackup.swift",
+        "key": "swift:OWSRequestFactory.backupRefreshInfoRequest(auth:)"
+      },
+      "class": "Semantic",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Network/API/Requests/OWSRequestFactory+Backups.swift",
+      "key": "swift:OWSRequestFactory.backupRefreshInfoRequest(auth:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    },
+    {
+      "commit": "f4f4696650bd4ecfca50d05c870bf5ed8bee15c3",
+      "date": "2026-03-13",
+      "parent": "ddec512bb029f2e8f372fe07b4dc18ac71ef4c4e",
+      "path": "SignalServiceKit/Network/API/Requests/OWSRequestFactory+Backups.swift",
+      "key": "swift:OWSRequestFactory.backupRefreshInfoRequest(auth:logger:)",
+      "from": {
+        "path": "SignalServiceKit/Network/API/Requests/OWSRequestFactory+Backups.swift",
+        "key": "swift:OWSRequestFactory.backupRefreshInfoRequest(auth:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

@@ -1,0 +1,188 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-34",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+    "key": "swift:GroupLinkViewUtils.shareLinkViaSignal(groupInviteLinkUrl:fromViewController:sendMessageController:)"
+  },
+  "lines": [
+    361,
+    382
+  ],
+  "candidates": {
+    "follow": 59,
+    "log_l": 11,
+    "merges": 45,
+    "union": 104,
+    "tool": 0
+  },
+  "introduced": "c623b435d8744b3d3a28b1412978771f5833769b",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "c623b435d8744b3d3a28b1412978771f5833769b",
+      "date": "2020-09-01",
+      "parent": "b813a0e264295a4c55fa08efbad1b7ae989875ea",
+      "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+      "key": "swift:GroupLinkViewController.shareLinkViaSignal()",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c25655baf0ed9e1e8140248b063272424f8bdbc9",
+      "date": "2020-09-03",
+      "parent": "1f01bc709e28a6636b7482179b2311ff48718caf",
+      "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+      "key": "swift:GroupLinkViewController.shareLinkViaSignal()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "b3d9fb7854ce655a0fb8599d9ad59a274b9d0839",
+      "date": "2020-09-08",
+      "parent": "d9866a106f2b0f98e1ddf975724cc5d8847d6338",
+      "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+      "key": "swift:GroupLinkViewController.shareLinkViaSignal()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "fd8fe4ca36203ff51e81e724942bdc5e23f1f97e",
+      "date": "2021-01-12",
+      "parent": "03c21253e44e45780408e31e3cc12ee3ae9fb1a6",
+      "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+      "key": "swift:GroupLinkViewUtils.shareLinkViaSignal(groupModelV2:fromViewController:sendMessageDelegate:)",
+      "from": {
+        "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+        "key": "swift:GroupLinkViewController.shareLinkViaSignal()"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "4bec528d34f76e496326c4163c572f5730056468",
+      "date": "2021-01-12",
+      "parent": "ab11a98e553a8a573e187be85ba6c2a193a9d288",
+      "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+      "key": "swift:GroupLinkViewUtils.shareLinkViaSignal(groupModelV2:fromViewController:sendMessageController:)",
+      "from": {
+        "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+        "key": "swift:GroupLinkViewUtils.shareLinkViaSignal(groupModelV2:fromViewController:sendMessageDelegate:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "f3423d64f8aca8ded0068165c615cafd87f1cb6c",
+      "date": "2024-07-25",
+      "parent": "533d32caf8f3815b8ebd122df047fc5c45b0dcb9",
+      "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+      "key": "swift:GroupLinkViewUtils.shareLinkViaSignal(groupModelV2:fromViewController:sendMessageController:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "005a568df9ffaba361c403a7bef4e44d1dffb9dd",
+      "date": "2024-09-25",
+      "parent": "846ad820fbbd9002e45cdc5ff17b2f520dd1ab79",
+      "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+      "key": "swift:GroupLinkViewUtils.shareLinkViaSignal(groupModelV2:fromViewController:sendMessageController:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "cb3d5fd1be0eda69b6cc37af99ff7d1cc49e0672",
+      "date": "2024-12-13",
+      "parent": "50b0bbc6a43c576c9f0a6afc4d30e37642a1c74e",
+      "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+      "key": "swift:GroupLinkViewUtils.shareLinkViaSignal(groupModelV2:fromViewController:sendMessageController:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+      "key": "swift:GroupLinkViewUtils.shareLinkViaSignal(groupModelV2:fromViewController:sendMessageController:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    },
+    {
+      "commit": "957075d261622c278d50e50e962bcfa8e8a8ea71",
+      "date": "2026-07-16",
+      "parent": "e34579413445026a16b208eef356fa924af90d4b",
+      "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+      "key": "swift:GroupLinkViewUtils.shareLinkViaSignal(groupInviteLinkUrl:fromViewController:sendMessageController:)",
+      "from": {
+        "path": "Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift",
+        "key": "swift:GroupLinkViewUtils.shareLinkViaSignal(groupModelV2:fromViewController:sendMessageController:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

@@ -1,0 +1,197 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-09",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalShareExtension/SAEScreenLockViewController.swift",
+    "key": "swift:SAEScreenLockViewController.tryToPresentAuthUIToUnlockScreenLock()"
+  },
+  "lines": [
+    69,
+    107
+  ],
+  "candidates": {
+    "follow": 27,
+    "log_l": 11,
+    "merges": 40,
+    "union": 67,
+    "tool": 0
+  },
+  "introduced": "08d36aa8625c765e78d9983058b8ac3600d4ce22",
+  "objc_origin": true,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "08d36aa8625c765e78d9983058b8ac3600d4ce22",
+      "date": "2018-04-20",
+      "parent": "9bb2f38553df9e43ea9ee4da2b07f6f71c430f8d",
+      "path": "SignalShareExtension/SAEScreenLockViewController.m",
+      "key": "objc:SAEScreenLockViewController.-tryToPresentAuthUIToUnlockScreenLock",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "3a50377902ee332abbfc779a363b82bdd98f6812",
+      "date": "2018-08-27",
+      "parent": "d81dea1d84eff5d78683e04843b2b7b3a8d20f25",
+      "path": "SignalShareExtension/SAEScreenLockViewController.m",
+      "key": "objc:SAEScreenLockViewController.-tryToPresentAuthUIToUnlockScreenLock",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "cc5a480baa0b802edcf6db932b072adea4d4f0cd",
+      "date": "2018-08-27",
+      "parent": "03829779ccc9da41138ee45e313ece8a8a1be02b",
+      "path": "SignalShareExtension/SAEScreenLockViewController.m",
+      "key": "objc:SAEScreenLockViewController.-tryToPresentAuthUIToUnlockScreenLock",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c017e76aab8ee03fee5cfe71d4f3420b7c437fdc",
+      "date": "2020-09-17",
+      "parent": "ad6bda8a445e2f103574a4eaeb2317d118c144d1",
+      "path": "SignalShareExtension/SAEScreenLockViewController.m",
+      "key": "objc:SAEScreenLockViewController.-tryToPresentAuthUIToUnlockScreenLock",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "d51213a8f53079ad5d745e7fa19a6177d676f206",
+      "date": "2021-08-18",
+      "parent": "550f58375c43b4ffb308b3fb906b70eaa79ae636",
+      "path": "SignalShareExtension/SAEScreenLockViewController.m",
+      "key": "objc:SAEScreenLockViewController.-tryToPresentAuthUIToUnlockScreenLock",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "4b77df38fa6c919434924bc5ae88e98eb70aebd4",
+      "date": "2021-08-18",
+      "parent": "c4472f6589f17f87a419e084ae2ab68c579b7c03",
+      "path": "SignalShareExtension/SAEScreenLockViewController.m",
+      "key": "objc:SAEScreenLockViewController.-tryToPresentAuthUIToUnlockScreenLock",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "e9eefda2d94a61f72c716171702c26ce5ef40360",
+      "date": "2023-05-02",
+      "parent": "16370a8e2dc54d36630215efe2a83681717a4dd1",
+      "path": "SignalShareExtension/SAEScreenLockViewController.swift",
+      "key": "swift:SAEScreenLockViewController.tryToPresentAuthUIToUnlockScreenLock()",
+      "from": {
+        "path": "SignalShareExtension/SAEScreenLockViewController.m",
+        "key": "objc:SAEScreenLockViewController.-tryToPresentAuthUIToUnlockScreenLock"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "09dad6e4dbf3273d2e6afaddb38ea7b75fcb9ed7",
+      "date": "2025-04-04",
+      "parent": "54a6af2ee051a527bd4b491f92a74154df8da28e",
+      "path": "SignalShareExtension/SAEScreenLockViewController.swift",
+      "key": "swift:SAEScreenLockViewController.tryToPresentAuthUIToUnlockScreenLock()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "4cf438d740c890ddff69439e987a554c1bd22f6b",
+      "date": "2025-12-19",
+      "parent": "acde31f9085052b17696e494c6eec108f9bff6db",
+      "path": "SignalShareExtension/SAEScreenLockViewController.swift",
+      "key": "swift:SAEScreenLockViewController.tryToPresentAuthUIToUnlockScreenLock()",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    },
+    {
+      "commit": "719343c5330b6ce49ab318a3219703f3db65551f",
+      "date": "2026-05-07",
+      "parent": "02e22de2ba702e7f05f9d60ae408d1142043663d",
+      "path": "SignalShareExtension/SAEScreenLockViewController.swift",
+      "key": "swift:SAEScreenLockViewController.tryToPresentAuthUIToUnlockScreenLock()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c56b07e6e86c600631e65a2d7be2c88b43976e65",
+      "date": "2026-09-29",
+      "parent": "269ac1b17bbb3f5a4c93426084612c4fedab963f",
+      "path": "SignalShareExtension/SAEScreenLockViewController.swift",
+      "key": "swift:SAEScreenLockViewController.tryToPresentAuthUIToUnlockScreenLock()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

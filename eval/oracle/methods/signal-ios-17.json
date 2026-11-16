@@ -1,0 +1,108 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-17",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Groups/GroupsV2Impl.swift",
+    "key": "swift:GroupsV2Impl.groupRecordPendingStorageServiceRestore(masterKeyData:transaction:)"
+  },
+  "lines": [
+    1451,
+    1456
+  ],
+  "candidates": {
+    "follow": 381,
+    "log_l": 4,
+    "merges": 261,
+    "union": 642,
+    "tool": 0
+  },
+  "introduced": "ad34089ffefe2f75983b0df950fd24d4ed89ca51",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "ad34089ffefe2f75983b0df950fd24d4ed89ca51",
+      "date": "2022-09-12",
+      "parent": "59dde0bc058878de0980bc579260356f23d38646",
+      "path": "SignalMessaging/groups/GroupsV2Impl.swift",
+      "key": "swift:GroupsV2Impl.groupRecordPendingStorageServiceRestore(masterKeyData:transaction:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e74445bf30d48b2096d0fce0b87773ff4a640f1d",
+      "date": "2024-03-12",
+      "parent": "1ca7d23a1aadb99943ebd0112c43d80d73399018",
+      "path": "SignalServiceKit/src/groups/GroupsV2Impl.swift",
+      "key": "swift:GroupsV2Impl.groupRecordPendingStorageServiceRestore(masterKeyData:transaction:)",
+      "from": {
+        "path": "SignalMessaging/groups/GroupsV2Impl.swift",
+        "key": "swift:GroupsV2Impl.groupRecordPendingStorageServiceRestore(masterKeyData:transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Groups/GroupsV2Impl.swift",
+      "key": "swift:GroupsV2Impl.groupRecordPendingStorageServiceRestore(masterKeyData:transaction:)",
+      "from": {
+        "path": "SignalServiceKit/src/groups/GroupsV2Impl.swift",
+        "key": "swift:GroupsV2Impl.groupRecordPendingStorageServiceRestore(masterKeyData:transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb048e8b59618bd7aa54b84e6afa64675a0b9eb1",
+      "date": "2025-03-13",
+      "parent": "e5eabf11104e7a4bb0d7888bd3eb067038e569f5",
+      "path": "SignalServiceKit/Groups/GroupsV2Impl.swift",
+      "key": "swift:GroupsV2Impl.groupRecordPendingStorageServiceRestore(masterKeyData:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Groups/GroupsV2Impl.swift",
+      "key": "swift:GroupsV2Impl.groupRecordPendingStorageServiceRestore(masterKeyData:transaction:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    }
+  ],
+  "not_changing": []
+}

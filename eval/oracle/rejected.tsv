@@ -1,2 +1,3 @@
 # Methods rejected by the annotator after manual review (docs/oracle-guide.md,
 # «Отбор методов», item 5). Fields: path<TAB>key<TAB>reason.
+Signal/ConversationView/Components/CVComponentBottomButtons.swift	swift:CVComponentBottomButtons.CVComponentViewBottomButtons.setIsCellVisible(_:)	proposed ObjC origin (OWSSystemMessageCell) is another method with the same name; after the cut 2 changing commits

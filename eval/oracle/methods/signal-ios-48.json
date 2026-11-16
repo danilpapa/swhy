@@ -1,0 +1,107 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-48",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/src/ViewControllers/MediaGallery/MediaPageViewController.swift",
+    "key": "swift:MediaPageViewController.animationController(forPresented:presenting:source:)"
+  },
+  "lines": [
+    972,
+    983
+  ],
+  "candidates": {
+    "follow": 320,
+    "log_l": 11,
+    "merges": 370,
+    "union": 566,
+    "tool": 0
+  },
+  "introduced": "5c2c48a75c4923b5bc32c755a3b8b81d8bfbf11a",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "5c2c48a75c4923b5bc32c755a3b8b81d8bfbf11a",
+      "date": "2019-07-24",
+      "parent": "3e193f6b83fe505ed6401566c72574b2686352fa",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaGalleryViewController.swift",
+      "key": "swift:MediaGalleryNavigationController.animationController(forPresented:presenting:source:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "9024f2f244873e824f6e41e1fa03f280577e5fa0",
+      "date": "2019-10-17",
+      "parent": "3001cc099521f3c146c10a5c1e01b70c9a042147",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaPageViewController.swift",
+      "key": "swift:MediaPageViewController.animationController(forPresented:presenting:source:)",
+      "from": {
+        "path": "Signal/src/ViewControllers/MediaGallery/MediaGalleryViewController.swift",
+        "key": "swift:MediaGalleryNavigationController.animationController(forPresented:presenting:source:)"
+      },
+      "class": "Semantic",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "f383d4efbb722992a0ef84be57d21aea6b70e248",
+      "date": "2022-05-12",
+      "parent": "c5bdf6c094ff78637440e185ceff08c796aeb966",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaPageViewController.swift",
+      "key": "swift:MediaPageViewController.animationController(forPresented:presenting:source:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "96f51dd552bbb939c5174fd623b6e2dd267e85bb",
+      "date": "2023-02-28",
+      "parent": "ce0d3ba9404c1512db28deca95521deabcd12468",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaPageViewController.swift",
+      "key": "swift:MediaPageViewController.animationController(forPresented:presenting:source:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaPageViewController.swift",
+      "key": "swift:MediaPageViewController.animationController(forPresented:presenting:source:)",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "redundant public removed by swiftformat, line breaks, trailing comma"
+    }
+  ],
+  "not_changing": []
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-46",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/src/ViewControllers/ThreadSettings/DisappearingMessagesTimerSettingsViewController.swift",
+    "key": "swift:DisappearingMessagesTimerSettingsViewController.updateForSelection(_:)"
+  },
+  "lines": [
+    174,
+    179
+  ],
+  "candidates": {
+    "follow": 45,
+    "log_l": 6,
+    "merges": 17,
+    "union": 62,
+    "tool": 0
+  },
+  "introduced": "65dccf9f42517cbce1aec152610130013cfec833",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "65dccf9f42517cbce1aec152610130013cfec833",
+      "date": "2025-05-28",
+      "parent": "4bfe1c286c18bd5846a704d7fdf8b38c477e67cb",
+      "path": "Signal/src/ViewControllers/ThreadSettings/DisappearingMessagesTimerSettingsViewController.swift",
+      "key": "swift:DisappearingMessagesTimerSettingsViewController.updateForSelection(_:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/src/ViewControllers/ThreadSettings/DisappearingMessagesTimerSettingsViewController.swift",
+      "key": "swift:DisappearingMessagesTimerSettingsViewController.updateForSelection(_:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    },
+    {
+      "commit": "7d25c4ec12c906e1f38108888e09ef25a75c967c",
+      "date": "2026-01-28",
+      "parent": "10185bd43603d230ef13a4b74c59d1946d7933a2",
+      "path": "Signal/src/ViewControllers/ThreadSettings/DisappearingMessagesTimerSettingsViewController.swift",
+      "key": "swift:DisappearingMessagesTimerSettingsViewController.updateForSelection(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "9eb567136cbc1ce3b6ccba0c973fcc64bf8e4d09",
+      "date": "2026-01-28",
+      "parent": "b3d85cc4421e72c7d81357ce461e0bf4f6df0b96",
+      "path": "Signal/src/ViewControllers/ThreadSettings/DisappearingMessagesTimerSettingsViewController.swift",
+      "key": "swift:DisappearingMessagesTimerSettingsViewController.updateForSelection(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "695a8c916d3f322ad4cc6896e39aeb3fb4582b5f",
+      "date": "2026-10-20",
+      "parent": "7567012d6d8ce2e546f61dcb73834de3cfc91897",
+      "path": "Signal/src/ViewControllers/ThreadSettings/DisappearingMessagesTimerSettingsViewController.swift",
+      "key": "swift:DisappearingMessagesTimerSettingsViewController.updateForSelection(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

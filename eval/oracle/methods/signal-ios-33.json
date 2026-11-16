@@ -1,0 +1,104 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-33",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/src/ViewControllers/Payments/SendPaymentCompletionActionSheet.swift",
+    "key": "swift:SendPaymentCompletionActionSheet.viewDidLoad()"
+  },
+  "lines": [
+    143,
+    193
+  ],
+  "candidates": {
+    "follow": 61,
+    "log_l": 5,
+    "merges": 9,
+    "union": 70,
+    "tool": 0
+  },
+  "introduced": "afd2aeef5c688b12c5b048c72782933a4d5115ad",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "afd2aeef5c688b12c5b048c72782933a4d5115ad",
+      "date": "2021-04-06",
+      "parent": "ae77b8f07d40701e4df65a2e7680f26fc8c92438",
+      "path": "Signal/src/ViewControllers/Payments/SendPaymentCompletionActionSheet.swift",
+      "key": "swift:SendPaymentCompletionActionSheet.viewDidLoad()",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "ab5144fb39e74ff19c6edba6ee76fb5b521811a1",
+      "date": "2021-04-06",
+      "parent": "5a4ef85b15f7e0dd90ce3b0c210211214d6b4faa",
+      "path": "Signal/src/ViewControllers/Payments/SendPaymentCompletionActionSheet.swift",
+      "key": "swift:SendPaymentCompletionActionSheet.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "cf00420c357cc75d9c42f08f0b568c9c1f38e950",
+      "date": "2023-02-15",
+      "parent": "1d8bd3568d71ce34ba424f68763482ba0f44d962",
+      "path": "Signal/src/ViewControllers/Payments/SendPaymentCompletionActionSheet.swift",
+      "key": "swift:SendPaymentCompletionActionSheet.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/src/ViewControllers/Payments/SendPaymentCompletionActionSheet.swift",
+      "key": "swift:SendPaymentCompletionActionSheet.viewDidLoad()",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "modifier order"
+    },
+    {
+      "commit": "8bd7055130b0b366c5229663a6ecb1f25d36e116",
+      "date": "2026-05-07",
+      "parent": "0e4e693cd3f3ec7b6bc83f3fe8d0fcce0614d969",
+      "path": "Signal/src/ViewControllers/Payments/SendPaymentCompletionActionSheet.swift",
+      "key": "swift:SendPaymentCompletionActionSheet.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

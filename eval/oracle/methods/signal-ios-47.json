@@ -1,0 +1,201 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-47",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModelDatabaseInterface+Save.swift",
+    "key": "swift:SDSCodableModelDatabaseInterface.updateModelInDatabase(_:existingGrdbRowId:transaction:)"
+  },
+  "lines": [
+    170,
+    179
+  ],
+  "candidates": {
+    "follow": 29,
+    "log_l": 9,
+    "merges": 2,
+    "union": 31,
+    "tool": 0
+  },
+  "introduced": "d7f12d3f395714eb7a1a942b37c7ccbb1c91364f",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "d7f12d3f395714eb7a1a942b37c7ccbb1c91364f",
+      "date": "2022-03-16",
+      "parent": "9494e360133284fe5de8df3f0c5e2ab7bfca7822",
+      "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel.swift",
+      "key": "swift:SDSCodableModel.sdsUpdate(grdbId:transaction:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "460f1d38c573b136e6c2aeca752986d67506c83c",
+      "date": "2022-07-27",
+      "parent": "9d8e6b78ea48f0252ffea25bbe7013c4907efc91",
+      "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel.swift",
+      "key": "swift:SDSCodableModel.sdsUpdate(grdbId:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "4da042c1d52353f89a7e120b764f2ee18d23b79a",
+      "date": "2022-09-23",
+      "parent": "e67030700dc621115e42ce0e7ad3fb49e612dbc4",
+      "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel.swift",
+      "key": "swift:SDSCodableModel.sdsUpdate(grdbId:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "be4bef922bff5433c56798dccc85f6f691797936",
+      "date": "2023-03-31",
+      "parent": "2985e98b7a105d9245f18410f7a71706dc145c36",
+      "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel/SDSCodableModel.swift",
+      "key": "swift:SDSCodableModel.sdsUpdate(grdbId:transaction:)",
+      "from": {
+        "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel.swift",
+        "key": "swift:SDSCodableModel.sdsUpdate(grdbId:transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "406d44d396a9fff1ddf0da031b233e7d65a2cd82",
+      "date": "2023-04-03",
+      "parent": "53351b03fbdcd72c3e819dd6dfd6d38902a718d5",
+      "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel/SDSCodableModelDatabaseInterface+Save.swift",
+      "key": "swift:SDSCodableModelDatabaseInterface.updateModelInDatabase(_:existingGrdbRowId:transaction:)",
+      "from": {
+        "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel/SDSCodableModel.swift",
+        "key": "swift:SDSCodableModel.sdsUpdate(grdbId:transaction:)"
+      },
+      "class": "Semantic",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "moved into a separate type, renamed, self became a parameter"
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModelDatabaseInterface+Save.swift",
+      "key": "swift:SDSCodableModelDatabaseInterface.updateModelInDatabase(_:existingGrdbRowId:transaction:)",
+      "from": {
+        "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel/SDSCodableModelDatabaseInterface+Save.swift",
+        "key": "swift:SDSCodableModelDatabaseInterface.updateModelInDatabase(_:existingGrdbRowId:transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb048e8b59618bd7aa54b84e6afa64675a0b9eb1",
+      "date": "2025-03-13",
+      "parent": "e5eabf11104e7a4bb0d7888bd3eb067038e569f5",
+      "path": "SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModelDatabaseInterface+Save.swift",
+      "key": "swift:SDSCodableModelDatabaseInterface.updateModelInDatabase(_:existingGrdbRowId:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a237b9c1148860978d0314809702c0dbd7768628",
+      "date": "2025-12-18",
+      "parent": "10982f4c69b35dce18d2248aaa8deb69f4ff7ede",
+      "path": "SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModelDatabaseInterface+Save.swift",
+      "key": "swift:SDSCodableModelDatabaseInterface.updateModelInDatabase(_:existingGrdbRowId:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModelDatabaseInterface+Save.swift",
+      "key": "swift:SDSCodableModelDatabaseInterface.updateModelInDatabase(_:existingGrdbRowId:transaction:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    },
+    {
+      "commit": "214599386b11f58ce4c61a02fd423c72b521027f",
+      "date": "2026-03-05",
+      "parent": "94467ce7332bcb13cfee505ec6d266c9edfe9aac",
+      "path": "SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModelDatabaseInterface+Save.swift",
+      "key": "swift:SDSCodableModelDatabaseInterface.updateModelInDatabase(_:existingGrdbRowId:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "140bd6dc938c0160facfe45845192241f456c640",
+      "date": "2026-07-21",
+      "parent": "f53bdcf38f7a694a50fb8bf4c71f276e4089fab9",
+      "path": "SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModelDatabaseInterface+Save.swift",
+      "key": "swift:SDSCodableModelDatabaseInterface.updateModelInDatabase(_:existingGrdbRowId:transaction:)",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

@@ -1,0 +1,121 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-19",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalUI/Payments/PaymentsProcessor.swift",
+    "key": "swift:PaymentsProcessor.tryToScheduleProcessingOperation(paymentModel:label:retryDelayInteral:)"
+  },
+  "lines": [
+    302,
+    320
+  ],
+  "candidates": {
+    "follow": 63,
+    "log_l": 5,
+    "merges": 19,
+    "union": 82,
+    "tool": 0
+  },
+  "introduced": "8c4cfcc9f960467d8c880e6dba1fad81b804af55",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "8c4cfcc9f960467d8c880e6dba1fad81b804af55",
+      "date": "2021-04-06",
+      "parent": "235eb5d1191c218476fb365785f2be694b4ee4e3",
+      "path": "SignalMessaging/Payments/PaymentsProcessor.swift",
+      "key": "swift:PaymentsProcessor.tryToScheduleProcessingOperation(paymentModel:label:retryDelayInteral:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "76cc8df5eeba15366564e1eb4c2b50be5bdf2d18",
+      "date": "2021-04-06",
+      "parent": "8c4cfcc9f960467d8c880e6dba1fad81b804af55",
+      "path": "SignalMessaging/Payments/PaymentsProcessor.swift",
+      "key": "swift:PaymentsProcessor.tryToScheduleProcessingOperation(paymentModel:label:retryDelayInteral:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "60593ee26f90f552118092a95c345df7c05301aa",
+      "date": "2021-11-02",
+      "parent": "11f2a86f8a972338bbb1817b6ce0efce5b0426de",
+      "path": "SignalUI/Payments/PaymentsProcessor.swift",
+      "key": "swift:PaymentsProcessor.tryToScheduleProcessingOperation(paymentModel:label:retryDelayInteral:)",
+      "from": {
+        "path": "SignalMessaging/Payments/PaymentsProcessor.swift",
+        "key": "swift:PaymentsProcessor.tryToScheduleProcessingOperation(paymentModel:label:retryDelayInteral:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "42c704a4e31188951abc388f9c48f2887e95225f",
+      "date": "2024-03-19",
+      "parent": "48f631cbc6d230271bdd5b3d5bb075efa29d4292",
+      "path": "SignalUI/Payments/PaymentsProcessor.swift",
+      "key": "swift:PaymentsProcessor.tryToScheduleProcessingOperation(paymentModel:label:retryDelayInteral:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a16c13d1b9327dd1091651c7b8f979f726c24ac3",
+      "date": "2024-10-25",
+      "parent": "f149718964986554e7c13358501072bba1a0ddbf",
+      "path": "SignalUI/Payments/PaymentsProcessor.swift",
+      "key": "swift:PaymentsProcessor.tryToScheduleProcessingOperation(paymentModel:label:retryDelayInteral:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalUI/Payments/PaymentsProcessor.swift",
+      "key": "swift:PaymentsProcessor.tryToScheduleProcessingOperation(paymentModel:label:retryDelayInteral:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    }
+  ],
+  "not_changing": []
+}

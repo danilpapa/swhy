@@ -1,0 +1,138 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-24",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Groups/GroupsV2IncomingChanges.swift",
+    "key": "swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)"
+  },
+  "lines": [
+    741,
+    776
+  ],
+  "candidates": {
+    "follow": 94,
+    "log_l": 5,
+    "merges": 96,
+    "union": 190,
+    "tool": 0
+  },
+  "introduced": "bb03be620e749555bfc2c297b475a51941141646",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "bb03be620e749555bfc2c297b475a51941141646",
+      "date": "2022-09-20",
+      "parent": "3260739678f3578965358d05cf2831f06bb92b62",
+      "path": "SignalMessaging/groups/GroupsV2IncomingChanges.swift",
+      "key": "swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "9d16dd49e0808c8f49b2abad956c3369598e442c",
+      "date": "2023-05-23",
+      "parent": "734cb6cef0549a6fea40c383c93891d95e975bc1",
+      "path": "SignalMessaging/groups/GroupsV2IncomingChanges.swift",
+      "key": "swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "ec186539942ba94abde0968aa84635b8caf82aaa",
+      "date": "2023-08-14",
+      "parent": "9657ad250785e85b0a79672207cf867847b451a5",
+      "path": "SignalMessaging/groups/GroupsV2IncomingChanges.swift",
+      "key": "swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e74445bf30d48b2096d0fce0b87773ff4a640f1d",
+      "date": "2024-03-12",
+      "parent": "1ca7d23a1aadb99943ebd0112c43d80d73399018",
+      "path": "SignalServiceKit/src/groups/GroupsV2IncomingChanges.swift",
+      "key": "swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)",
+      "from": {
+        "path": "SignalMessaging/groups/GroupsV2IncomingChanges.swift",
+        "key": "swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Groups/GroupsV2IncomingChanges.swift",
+      "key": "swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)",
+      "from": {
+        "path": "SignalServiceKit/src/groups/GroupsV2IncomingChanges.swift",
+        "key": "swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb2d89e55a84cc83c19237588b7d25d72bf3ab22",
+      "date": "2025-06-17",
+      "parent": "f58cd2c22c7a3f105e5d2f7a724166f1f426aa91",
+      "path": "SignalServiceKit/Groups/GroupsV2IncomingChanges.swift",
+      "key": "swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Groups/GroupsV2IncomingChanges.swift",
+      "key": "swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    }
+  ],
+  "not_changing": []
+}

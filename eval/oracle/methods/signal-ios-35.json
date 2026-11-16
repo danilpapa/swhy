@@ -1,0 +1,212 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-35",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+    "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:transaction:)"
+  },
+  "lines": [
+    196,
+    205
+  ],
+  "candidates": {
+    "follow": 59,
+    "log_l": 12,
+    "merges": 49,
+    "union": 108,
+    "tool": 0
+  },
+  "introduced": "d8a6334f5ea5f268131c68d0a043e7f7ef9de38a",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "d8a6334f5ea5f268131c68d0a043e7f7ef9de38a",
+      "date": "2020-04-06",
+      "parent": "ac2ccf032cac00ebf4300d7dfb1f68d60cb90346",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "3255fc3dfea2ddc9bde74790bd53dad32b486c65",
+      "date": "2020-08-06",
+      "parent": "e79f8df04f5a31fe607111a04101e6702edb3217",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "aa88bb712cd95a17580ea3f9880a5d5f68edd939",
+      "date": "2020-09-01",
+      "parent": "a0cd13ea38f7453d3f707ab6b3f843ea55514f3d",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "22c90550b793376ce003f3bc0185a36bd68a0014",
+      "date": "2020-09-01",
+      "parent": "8168f150f0689c338cd0317e614b5f3af6cf34e8",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "0241fd25e8b5d06556a70c07a1dfd4a1e894a6a1",
+      "date": "2021-05-04",
+      "parent": "d24462df041f869b4a2e39cf5b45d22659d2c6ab",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:transaction:)",
+      "from": {
+        "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+        "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "98151dfd0df5a7410be26a24e49f0ed449b2103e",
+      "date": "2022-07-12",
+      "parent": "ef695798e30e09bbd6e2e3bbd6b34c98efb6d65f",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "de32c7799d8191c592de262b9cea3639acac9c17",
+      "date": "2024-10-11",
+      "parent": "289ad6e3a4ffe030fad8818e0622541f961d97ef",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb048e8b59618bd7aa54b84e6afa64675a0b9eb1",
+      "date": "2025-03-13",
+      "parent": "e5eabf11104e7a4bb0d7888bd3eb067038e569f5",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "38072f22018ff7af862443a4a2a0fb75a46516d2",
+      "date": "2025-05-22",
+      "parent": "d5d1e3812a5801f19f1c83d61ebb6814129ec28d",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "40b4c03fa9dde238926e850bac492af69a56f5ad",
+      "date": "2025-05-22",
+      "parent": "4773cd7c6b013d4c33a1846ef756029b8f976396",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:transaction:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    },
+    {
+      "commit": "353355dfb0c4877b499bb64e746cd3df7ef9a867",
+      "date": "2026-10-06",
+      "parent": "6481ce9c7d286e564bd07b35a51d50f28257b949",
+      "path": "Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift",
+      "key": "swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

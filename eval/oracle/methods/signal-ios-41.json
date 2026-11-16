@@ -1,0 +1,120 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-41",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Payments/PaymentFinder.swift",
+    "key": "swift:PaymentFinder.allUnreadPaymentModels(transaction:)"
+  },
+  "lines": [
+    38,
+    44
+  ],
+  "candidates": {
+    "follow": 10,
+    "log_l": 4,
+    "merges": 1,
+    "union": 11,
+    "tool": 0
+  },
+  "introduced": "02fbe33779a6927c702f8a5bfbcdf897d2bb48c2",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "02fbe33779a6927c702f8a5bfbcdf897d2bb48c2",
+      "date": "2021-04-06",
+      "parent": "81348a315dfa1d9c05797d6591e3c432909e4580",
+      "path": "SignalServiceKit/src/Payments/PaymentFinder.swift",
+      "key": "swift:PaymentFinder.allUnreadPaymentModels(transaction:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Payments/PaymentFinder.swift",
+      "key": "swift:PaymentFinder.allUnreadPaymentModels(transaction:)",
+      "from": {
+        "path": "SignalServiceKit/src/Payments/PaymentFinder.swift",
+        "key": "swift:PaymentFinder.allUnreadPaymentModels(transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "83b37e74a3e427385d43f07d9b6761173a47e39c",
+      "date": "2025-02-07",
+      "parent": "836eeaaabbe893657400691669a5647824019b86",
+      "path": "SignalServiceKit/Payments/PaymentFinder.swift",
+      "key": "swift:PaymentFinder.allUnreadPaymentModels(transaction:)",
+      "from": null,
+      "class": "SignatureChanged: attributes",
+      "move": null,
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb048e8b59618bd7aa54b84e6afa64675a0b9eb1",
+      "date": "2025-03-13",
+      "parent": "e5eabf11104e7a4bb0d7888bd3eb067038e569f5",
+      "path": "SignalServiceKit/Payments/PaymentFinder.swift",
+      "key": "swift:PaymentFinder.allUnreadPaymentModels(transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Payments/PaymentFinder.swift",
+      "key": "swift:PaymentFinder.allUnreadPaymentModels(transaction:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    },
+    {
+      "commit": "963fe5aeb038c55c57d06876379b09ea9148ce81",
+      "date": "2026-02-19",
+      "parent": "83db3f6cf124735073842b36f9ce67e3e9075244",
+      "path": "SignalServiceKit/Payments/PaymentFinder.swift",
+      "key": "swift:PaymentFinder.allUnreadPaymentModels(transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

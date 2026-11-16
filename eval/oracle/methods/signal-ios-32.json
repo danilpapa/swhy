@@ -1,0 +1,89 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-32",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/Calls/UserInterface/CallDrawerSheet.swift",
+    "key": "swift:CallDrawerSheet.editCallName()"
+  },
+  "lines": [
+    694,
+    706
+  ],
+  "candidates": {
+    "follow": 126,
+    "log_l": 4,
+    "merges": 34,
+    "union": 160,
+    "tool": 0
+  },
+  "introduced": "317226629cee447fd316eb53ba44a147957e8f1e",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "317226629cee447fd316eb53ba44a147957e8f1e",
+      "date": "2024-10-01",
+      "parent": "48478de2602d80cd60f34dbc1a114386f39361ea",
+      "path": "Signal/Calls/UserInterface/CallDrawerSheet.swift",
+      "key": "swift:CallDrawerSheet.editCallName()",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "3aceb65513b68a5919ccff4d8d8ef1d713f111d0",
+      "date": "2024-10-08",
+      "parent": "36504393b9345b11656749ad83373fba2c01b6fa",
+      "path": "Signal/Calls/UserInterface/CallDrawerSheet.swift",
+      "key": "swift:CallDrawerSheet.editCallName()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "94940ebf8187a1dbb62833e166f2a45b59d5382e",
+      "date": "2024-12-06",
+      "parent": "bdd7a734c3b0ef81c17384db1b1e76cbaafb72b6",
+      "path": "Signal/Calls/UserInterface/CallDrawerSheet.swift",
+      "key": "swift:CallDrawerSheet.editCallName()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/Calls/UserInterface/CallDrawerSheet.swift",
+      "key": "swift:CallDrawerSheet.editCallName()",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    }
+  ],
+  "not_changing": []
+}

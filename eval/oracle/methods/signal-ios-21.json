@@ -1,0 +1,233 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-21",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Payments/PaymentsHelperImpl.swift",
+    "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)"
+  },
+  "lines": [
+    518,
+    538
+  ],
+  "candidates": {
+    "follow": 125,
+    "log_l": 11,
+    "merges": 28,
+    "union": 152,
+    "tool": 0
+  },
+  "introduced": "235eb5d1191c218476fb365785f2be694b4ee4e3",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "235eb5d1191c218476fb365785f2be694b4ee4e3",
+      "date": "2021-04-06",
+      "parent": "cbfc7be3720af49ede0499127174ddf7593b62a2",
+      "path": "SignalMessaging/Payments/PaymentsImpl.swift",
+      "key": "swift:PaymentsImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e9d23af718cae84a3818f1bb41e08a29fb88adbf",
+      "date": "2021-04-06",
+      "parent": "d1f6b566582e00a8ee191c5ff4f55ab961703bf0",
+      "path": "SignalMessaging/Payments/PaymentsImpl.swift",
+      "key": "swift:PaymentsImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "3ddeb4fae0fedce84a6a86383f3e7cb02433464b",
+      "date": "2021-04-06",
+      "parent": "d77ae7d012565efd9de31245526428816c9aa662",
+      "path": "SignalMessaging/Payments/PaymentsImpl.swift",
+      "key": "swift:PaymentsImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a75de3019eab5f28afeb13d3e59c6db2807ce8cc",
+      "date": "2021-04-06",
+      "parent": "53896955a2e6d4767db4be9d192a127bc057f0b6",
+      "path": "SignalMessaging/Payments/PaymentsImpl.swift",
+      "key": "swift:PaymentsImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "60593ee26f90f552118092a95c345df7c05301aa",
+      "date": "2021-11-02",
+      "parent": "11f2a86f8a972338bbb1817b6ce0efce5b0426de",
+      "path": "SignalUI/Payments/PaymentsImpl.swift",
+      "key": "swift:PaymentsImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": {
+        "path": "SignalMessaging/Payments/PaymentsImpl.swift",
+        "key": "swift:PaymentsImpl.tryToInsertPaymentModel(_:transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "079bb08067fbc70008a182a64b41e56c7558d65a",
+      "date": "2021-11-02",
+      "parent": "60593ee26f90f552118092a95c345df7c05301aa",
+      "path": "SignalMessaging/Payments/PaymentsHelperImpl.swift",
+      "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": {
+        "path": "SignalUI/Payments/PaymentsImpl.swift",
+        "key": "swift:PaymentsImpl.tryToInsertPaymentModel(_:transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "4aec5adac1a972d56e4a4db5df3ea019b6dbd30d",
+      "date": "2021-11-02",
+      "parent": "539dff09e42ab0ca79eeaba366d30a6fb49f7a1b",
+      "path": "SignalMessaging/Payments/PaymentsHelperImpl.swift",
+      "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "48c3c08c105f01c3c549d1825e8076bac65b0929",
+      "date": "2022-08-18",
+      "parent": "773956917c8fd1a19add6572621fe1f238f84d72",
+      "path": "SignalMessaging/Payments/PaymentsHelperImpl.swift",
+      "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c57376a269081c5e0bf0a93843115b2138d43782",
+      "date": "2023-08-24",
+      "parent": "b260615a10d679aefb588e83070064f1629260f4",
+      "path": "SignalMessaging/Payments/PaymentsHelperImpl.swift",
+      "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "91c90500ab8c9d105765934ab5fef051be4677ea",
+      "date": "2024-03-12",
+      "parent": "f796931255b4944875406b97f6a3090a00f35615",
+      "path": "SignalServiceKit/src/Payments/PaymentsHelperImpl.swift",
+      "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": {
+        "path": "SignalMessaging/Payments/PaymentsHelperImpl.swift",
+        "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Payments/PaymentsHelperImpl.swift",
+      "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": {
+        "path": "SignalServiceKit/src/Payments/PaymentsHelperImpl.swift",
+        "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb048e8b59618bd7aa54b84e6afa64675a0b9eb1",
+      "date": "2025-03-13",
+      "parent": "e5eabf11104e7a4bb0d7888bd3eb067038e569f5",
+      "path": "SignalServiceKit/Payments/PaymentsHelperImpl.swift",
+      "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Payments/PaymentsHelperImpl.swift",
+      "key": "swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    }
+  ],
+  "not_changing": []
+}
