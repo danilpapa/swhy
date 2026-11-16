@@ -1,0 +1,181 @@
+M	signal-ios-01	train	SignalUI/AV/AudioPlayer.swift	swift:AudioPlayer.applicationDidEnterBackground()
+C	8910fc4d5b	M
+C	41b1469f7a	S
+C	b5ed609b42	M
+C	df63a9b827	S
+C	38ff82ab97	M
+C	a58f1f385c	M
+C	980d726a48	I
+M	signal-ios-02	test	SignalUI/ViewControllers/OWSNavigationController.swift	swift:OWSNavigationController.gestureRecognizerShouldBegin(_:)
+C	fdcb84d5e3	S
+C	aebf620ef9	S
+C	190c56b68b	S
+C	520faa95df	S
+C	d06babf59f	S
+C	c416609108	M
+C	c7662b5a86	S	external rename only
+C	72e4de0950	S
+C	7ad5f15448	I
+M	signal-ios-03	train	SignalUI/UIKitExtensions/UIViewController+SignalUI.swift	swift:UIViewController.findFrontmostViewController(ignoringAlerts:)
+C	d267ec8305	F
+C	8910fc4d5b	M
+C	0e9d511d1d	S
+C	c416609108	M
+C	65d54e7282	S
+C	6bfe0f0418	S
+C	7a990ed1ff	S
+C	906d0b01a4	M
+C	819c2b1ceb	M
+C	a16058e477	I
+M	signal-ios-04	test	Signal/ConversationView/ConversationInputToolbar.swift	swift:ConversationInputToolbar.viewDidAppear()
+C	cccae56dc3	S
+C	2e91c8d92c	M
+C	d8fc50cb42	S
+C	868e49f1ff	S
+C	720f27074e	I
+M	signal-ios-05	train	SignalUI/SafetyNumbers/FingerprintViewController.swift	swift:FingerprintViewController.compareSafetyNumbersActivity(_:failedWithError:)
+C	d267ec8305	F	trailing comma only
+C	aeb0962e55	S
+C	798aec0c33	S
+C	8910fc4d5b	M
+C	2f621c27b9	S
+C	fad6d63b81	S
+C	d9c0a92ed4	M
+C	b296cfb893	M
+C	d12a582ee3	M
+C	584118a9fc	I
+M	signal-ios-06	test	SignalUI/AV/AudioPlayer.swift	swift:AudioPlayer.teardownRemoteCommandCenter()
+C	4f43208fdc	S
+C	8910fc4d5b	M
+C	41b1469f7a	S
+C	b5ed609b42	M
+C	57a810658a	S
+C	df63a9b827	I
+M	signal-ios-08	test	SignalUI/ViewControllers/OWSViewController.swift	swift:OWSViewController.viewDidLoad()
+C	d267ec8305	F	modifier order and trailing comma
+C	cefb46b871	S
+C	78d035cceb	S
+C	4d1c77b2f4	S
+C	af48dd5186	S
+C	bb2b665f6f	S	external rename only
+C	c745f9a6ae	S
+C	5865a0a478	S
+C	c416609108	M
+C	9ef178a33b	S
+C	f795b12a86	I
+M	signal-ios-09	train	Signal/AppLaunch/WindowManager.swift	swift:WindowManager.ensureCallViewWindowHidden(_:)
+C	6be38ecd5d	S
+C	11de255279	M
+C	2f71d6a2c6	S
+C	7d0485661d	M
+C	93ba483ec5	M
+C	cc5a480baa	S
+C	3a50377902	S	external rename only
+C	29d08545e2	M
+C	d7ae6fbbf4	R
+C	7345ab2e4e	I
+M	signal-ios-10	test	SignalShareExtension/SAEScreenLockViewController.swift	swift:SAEScreenLockViewController.tryToPresentAuthUIToUnlockScreenLock()
+C	c56b07e6e8	S
+C	719343c533	S
+C	4cf438d740	F	trailing comma only
+C	09dad6e4db	S
+C	e9eefda2d9	S
+C	4b77df38fa	S	external rename only
+C	d51213a8f5	S
+C	c017e76aab	S	external rename only
+C	cc5a480baa	S
+C	3a50377902	S	external rename only
+C	08d36aa862	I
+M	signal-ios-11	train	Signal/ConversationView/ConversationInputToolbar.swift	swift:ConversationInputToolbar.acceptAutocorrectSuggestion()
+C	2e91c8d92c	M
+C	d8fc50cb42	S
+C	13a80ef8aa	S
+C	135d051761	I
+M	signal-ios-12	test	Signal/src/ViewControllers/MediaGallery/MediaItemViewController.swift	swift:MediaItemViewController.viewDidLayoutSubviews()
+C	d267ec8305	F
+C	982e3e5455	S
+C	37eca71e77	S
+C	ccb5eb9a6b	S
+C	7b61d88a15	S
+C	987bf81eec	S
+C	03c18a3107	M
+C	3582ab42db	I
+M	signal-ios-13	train	SignalUI/Payments/PaymentsImpl.swift	swift:PaymentsImpl.updateCurrentPaymentBalanceIfNecessary()
+C	0a5677997e	X
+C	60593ee26f	M
+C	1b655d63f5	S
+C	235eb5d119	I
+M	signal-ios-14	test	SignalServiceKit/Util/UIView+OWS.swift	swift:CGPoint.clamp(_:)
+C	d267ec8305	F	line breaks and trailing comma
+C	e10faa8593	M
+C	3ba6585b73	M
+C	251409a47d	F	implicit return
+C	da79a53d96	X
+C	5973c326de	I
+M	signal-ios-15	train	SignalUI/Stickers/StickerHorizontalListView.swift	swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)
+C	effab076b4	S
+C	8910fc4d5b	M
+C	c416609108	M
+C	e097239dcd	S	external rename only
+C	48df37519f	I
+M	signal-ios-16	test	SignalServiceKit/Subscriptions/Donations/DonationSubscriptionManager.swift	swift:DonationSubscriptionManager.getBoostBadge()
+C	714a789cc5	X
+C	a3e8141ba9	S
+C	c9f4b83ffb	X
+C	46b5b4a9e4	M
+C	fd8e2950ea	M
+C	7f41ecaa8b	S	external rename only
+C	8047472f68	M
+C	cc0cd24f88	S
+C	05ed931b10	S
+C	baddc85564	S
+C	c89b0016f6	I
+M	signal-ios-17	train	SignalServiceKit/Groups/GroupsV2Impl.swift	swift:GroupsV2Impl.groupRecordPendingStorageServiceRestore(masterKeyData:transaction:)
+C	d267ec8305	F	trailing comma only
+C	bb048e8b59	S
+C	e10faa8593	M
+C	e74445bf30	M
+C	ad34089ffe	I
+M	signal-ios-18	test	SignalServiceKit/Messages/MessageRequestPendingReceipts.swift	swift:PendingReceiptFinder.delete(pendingReadReceipts:transaction:)
+C	a23a721e58	S
+C	a689aa21d6	M
+C	bb048e8b59	S
+C	e85c7c4f40	M
+C	a365b45522	R
+C	2bed5d0cc3	I
+M	signal-ios-19	train	SignalUI/Payments/PaymentsProcessor.swift	swift:PaymentsProcessor.tryToScheduleProcessingOperation(paymentModel:label:retryDelayInteral:)
+C	d267ec8305	F	line breaks and trailing comma
+C	a16c13d1b9	S
+C	42c704a4e3	S
+C	60593ee26f	M
+C	76cc8df5ee	S
+C	8c4cfcc9f9	I
+M	signal-ios-20	test	SignalUI/Payments/PaymentsReconciliation.swift	swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)
+C	d267ec8305	F	line breaks and trailing comma
+C	bb048e8b59	S
+C	d2e6ebceea	S
+C	4de9951ea6	S
+C	0c3b89c2ed	S
+C	60593ee26f	M
+C	235eb5d119	I
+M	signal-ios-21	train	SignalServiceKit/Payments/PaymentsHelperImpl.swift	swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)
+C	d267ec8305	F	line breaks and trailing comma
+C	bb048e8b59	S
+C	e10faa8593	M
+C	91c90500ab	M
+C	c57376a269	S
+C	48c3c08c10	F
+C	4aec5adac1	X
+C	079bb08067	M
+C	60593ee26f	M
+C	a75de3019e	S
+C	3ddeb4fae0	S
+C	e9d23af718	S
+C	235eb5d119	I
+M	signal-ios-22	test	SignalServiceKit/Payments/MobileCoinHelperMinimal.swift	swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)
+C	eae1ab1e12	S	external rename only
+C	f245dcc2d7	S
+C	82bb803d58	S
+C	e10faa8593	M
+C	35d45f4e74	M
+C	9211ac8fa3	I
