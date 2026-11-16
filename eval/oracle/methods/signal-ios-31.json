@@ -1,0 +1,110 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-31",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/DeviceTransfer/MultiPeerConnectivity/MPCDeviceTransferBrowser.swift",
+    "key": "swift:MPCDeviceTransferBrowser.connectionError(_:)"
+  },
+  "lines": [
+    180,
+    190
+  ],
+  "candidates": {
+    "follow": 19,
+    "log_l": 5,
+    "merges": 0,
+    "union": 19,
+    "tool": 0
+  },
+  "introduced": "867095baa2624fac47c22e1f549253291af583ef",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "867095baa2624fac47c22e1f549253291af583ef",
+      "date": "2026-08-06",
+      "parent": "f00e7380e951b0fbebd6f75ed9db3e128b106a55",
+      "path": "Signal/DeviceTransfer/MPCDeviceTransfer.swift",
+      "key": "swift:MPCDeviceTransfer.Browser.connectionError(_:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "5dd6adf8f27a9435837e480a6308c07f7c370908",
+      "date": "2026-08-06",
+      "parent": "867095baa2624fac47c22e1f549253291af583ef",
+      "path": "Signal/DeviceTransfer/MultiPeerConnectivity/MPCDeviceTransferBrowser.swift",
+      "key": "swift:MPCDeviceTransfer.Browser.connectionError(_:)",
+      "from": {
+        "path": "Signal/DeviceTransfer/MPCDeviceTransfer.swift",
+        "key": "swift:MPCDeviceTransfer.Browser.connectionError(_:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a8918eb28c8e5fe9eb2dfac6b14d4fdb4864bd35",
+      "date": "2026-08-06",
+      "parent": "0198f59a53bee6cc95ffa019955dd83d1f77a1bb",
+      "path": "Signal/DeviceTransfer/MultiPeerConnectivity/MPCDeviceTransferBrowser.swift",
+      "key": "swift:MPCDeviceTransferBrowser.connectionError(_:)",
+      "from": {
+        "path": "Signal/DeviceTransfer/MultiPeerConnectivity/MPCDeviceTransferBrowser.swift",
+        "key": "swift:MPCDeviceTransfer.Browser.connectionError(_:)"
+      },
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "dedent; the enclosing type was flattened"
+    },
+    {
+      "commit": "b3cf19d658e4d8d084804cee9585d09e90a7b7c4",
+      "date": "2026-08-06",
+      "parent": "7d169327a095d918f254de279271981f0404aa5c",
+      "path": "Signal/DeviceTransfer/MultiPeerConnectivity/MPCDeviceTransferBrowser.swift",
+      "key": "swift:MPCDeviceTransferBrowser.connectionError(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e78ac6e314dfe1a27ad7524f67af74ba26e3c8b5",
+      "date": "2026-09-16",
+      "parent": "8cd0b473ef9bfafafa757dbfa08f9bccb3a8fa73",
+      "path": "Signal/DeviceTransfer/MultiPeerConnectivity/MPCDeviceTransferBrowser.swift",
+      "key": "swift:MPCDeviceTransferBrowser.connectionError(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

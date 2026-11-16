@@ -1,0 +1,139 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-12",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/ConversationView/ConversationInputToolbar.swift",
+    "key": "swift:ConversationInputToolbar.beginEditingMessage()"
+  },
+  "lines": [
+    3268,
+    3270
+  ],
+  "candidates": {
+    "follow": 412,
+    "log_l": 8,
+    "merges": 349,
+    "union": 761,
+    "tool": 0
+  },
+  "introduced": "3b3445c0fd638b4f248f55444ef657b0fa8f2159",
+  "objc_origin": true,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "3b3445c0fd638b4f248f55444ef657b0fa8f2159",
+      "date": "2019-05-03",
+      "parent": "870de2e048c73d26ee06b36569d48bbfd980329b",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+      "key": "objc:ConversationInputToolbar.-beginEditingMessage",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "5aeb9e205a572cee1f3548e326f96ad2daf98470",
+      "date": "2019-05-13",
+      "parent": "d7690c9c5d73295c13554b674289884e1b4ed2b4",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+      "key": "objc:ConversationInputToolbar.-beginEditingMessage",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "868e49f1ff96d512353b2a430db858c5cb156916",
+      "date": "2019-08-06",
+      "parent": "2865863495ada22da545f7c2035f4895b5639cf0",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+      "key": "objc:ConversationInputToolbar.-beginEditingMessage",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "b560fc0afd15c338b1a5c639b59fb278480fca88",
+      "date": "2019-08-09",
+      "parent": "ead88a56cd379377057a99d11f3a3dc4bf44fc5e",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+      "key": "objc:ConversationInputToolbar.-beginEditingMessage",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d8fc50cb424b96486e53453222f012f463faaeea",
+      "date": "2022-11-07",
+      "parent": "06f5a09a2261382ed3febcfb2c6aee0ae9c022f7",
+      "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.swift",
+      "key": "swift:ConversationInputToolbar.beginEditingMessage()",
+      "from": {
+        "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.m",
+        "key": "objc:ConversationInputToolbar.-beginEditingMessage"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "2e91c8d92c0c5f8a18f7a1d3a8a5ec6769b833ff",
+      "date": "2024-03-25",
+      "parent": "2cca071925d466950d6c51888a2b6a18bc98a054",
+      "path": "Signal/ConversationView/ConversationInputToolbar.swift",
+      "key": "swift:ConversationInputToolbar.beginEditingMessage()",
+      "from": {
+        "path": "Signal/src/ViewControllers/ConversationView/ConversationInputToolbar.swift",
+        "key": "swift:ConversationInputToolbar.beginEditingMessage()"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "164f6e8033462da9aba6a902f94b344666b64582",
+      "date": "2025-09-30",
+      "parent": "b41b8715a42e516e8e651589319c55d49ce07095",
+      "path": "Signal/ConversationView/ConversationInputToolbar.swift",
+      "key": "swift:ConversationInputToolbar.beginEditingMessage()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

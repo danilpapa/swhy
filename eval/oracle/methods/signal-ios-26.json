@@ -1,0 +1,147 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-26",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Mocks/Usernames/MockUsernamesService.swift",
+    "key": "swift:MockUsernamesService.setUsernameLink(usernameCiphertext:keepLinkHandle:)"
+  },
+  "lines": [
+    15,
+    17
+  ],
+  "candidates": {
+    "follow": 13,
+    "log_l": 6,
+    "merges": 0,
+    "union": 13,
+    "tool": 0
+  },
+  "introduced": "1398e335a0d6a4bbd89cd9f641b3556892593575",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "1398e335a0d6a4bbd89cd9f641b3556892593575",
+      "date": "2023-07-31",
+      "parent": "6d12a75951bc600f63220b678b5c2723c4a8bf21",
+      "path": "SignalServiceKit/tests/Usernames/LocalUsernameManagerTests.swift",
+      "key": "swift:MockUsernameApiClient.setUsernameLink(encryptedUsername:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a3f12e3f5512112491cf2f49bd8b852b5a17c852",
+      "date": "2024-01-17",
+      "parent": "d883aab349e436101e68489242a4bbd6d8e0feba",
+      "path": "SignalServiceKit/Mocks/Usernames/MockUsernameApiClient.swift",
+      "key": "swift:MockUsernameApiClient.setUsernameLink(encryptedUsername:)",
+      "from": {
+        "path": "SignalServiceKit/tests/Usernames/LocalUsernameManagerTests.swift",
+        "key": "swift:MockUsernameApiClient.setUsernameLink(encryptedUsername:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "6b5ce3690f0f3a3d20e07fb10afbca1cbc5d76ab",
+      "date": "2024-01-18",
+      "parent": "004d37533853a53fcb3339449f827c2f9da45fc9",
+      "path": "SignalServiceKit/Mocks/Usernames/MockUsernameApiClient.swift",
+      "key": "swift:MockUsernameApiClient.setUsernameLink(encryptedUsername:keepLinkHandle:)",
+      "from": {
+        "path": "SignalServiceKit/Mocks/Usernames/MockUsernameApiClient.swift",
+        "key": "swift:MockUsernameApiClient.setUsernameLink(encryptedUsername:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "3a6d34d73df820202e834dee887fc350da27364a",
+      "date": "2025-05-01",
+      "parent": "5e7a4f0e107e213a9dbec0ad51d0a747c603d4b7",
+      "path": "SignalServiceKit/Mocks/Usernames/MockUsernameApiClient.swift",
+      "key": "swift:MockUsernameApiClient.setUsernameLink(encryptedUsername:keepLinkHandle:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "6285fbe222cc67440927c0b04531e5f488c07967",
+      "date": "2026-10-05",
+      "parent": "7ec4b5bb4332cb23a3bc1aea0c6a6fc2788c4a63",
+      "path": "SignalServiceKit/Mocks/Usernames/MockUsernameApiClient.swift",
+      "key": "swift:MockUsernameApiClient.setUsernameLink(usernameCiphertext:keepLinkHandle:)",
+      "from": {
+        "path": "SignalServiceKit/Mocks/Usernames/MockUsernameApiClient.swift",
+        "key": "swift:MockUsernameApiClient.setUsernameLink(encryptedUsername:keepLinkHandle:)"
+      },
+      "class": "RenameOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "6481ce9c7d286e564bd07b35a51d50f28257b949",
+      "date": "2026-10-06",
+      "parent": "ecb7031bbb36ed0edf2c818ed045ee5075298511",
+      "path": "SignalServiceKit/Mocks/Usernames/MockUsernameApiClient.swift",
+      "key": "swift:MockUsernamesService.setUsernameLink(usernameCiphertext:keepLinkHandle:)",
+      "from": {
+        "path": "SignalServiceKit/Mocks/Usernames/MockUsernameApiClient.swift",
+        "key": "swift:MockUsernameApiClient.setUsernameLink(usernameCiphertext:keepLinkHandle:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "8d3a76e4a01681e1e543b115e1baf2534db1364c",
+      "date": "2026-11-10",
+      "parent": "7d7af612310eccab9b704d56eaa8a1a5988dd713",
+      "path": "SignalServiceKit/Mocks/Usernames/MockUsernamesService.swift",
+      "key": "swift:MockUsernamesService.setUsernameLink(usernameCiphertext:keepLinkHandle:)",
+      "from": {
+        "path": "SignalServiceKit/Mocks/Usernames/MockUsernameApiClient.swift",
+        "key": "swift:MockUsernamesService.setUsernameLink(usernameCiphertext:keepLinkHandle:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

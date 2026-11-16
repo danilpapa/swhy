@@ -1,0 +1,145 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-01",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalUI/AV/AudioPlayer.swift",
+    "key": "swift:AudioPlayer.applicationDidEnterBackground()"
+  },
+  "lines": [
+    319,
+    322
+  ],
+  "candidates": {
+    "follow": 82,
+    "log_l": 3,
+    "merges": 124,
+    "union": 206,
+    "tool": 0
+  },
+  "introduced": "980d726a4890501a328b56683c7236edea8f0987",
+  "objc_origin": true,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "980d726a4890501a328b56683c7236edea8f0987",
+      "date": "2017-04-20",
+      "parent": "61d72f8e95be1127a74e004c6e469e06558c7873",
+      "path": "Signal/src/ViewControllers/OWSAudioAttachmentPlayer.m",
+      "key": "objc:OWSAudioAttachmentPlayer.-applicationDidEnterBackground:",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a58f1f385c29126fdb3b749c3d67477afdbd8495",
+      "date": "2017-12-07",
+      "parent": "f781199e27dfa5b3f1a7e29626ba63441d6be6ac",
+      "path": "SignalMessaging/attachments/OWSAudioAttachmentPlayer.m",
+      "key": "objc:OWSAudioAttachmentPlayer.-applicationDidEnterBackground:",
+      "from": {
+        "path": "Signal/src/ViewControllers/OWSAudioAttachmentPlayer.m",
+        "key": "objc:OWSAudioAttachmentPlayer.-applicationDidEnterBackground:"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "38ff82ab9739c0ce9f1776be04e826b12187592e",
+      "date": "2018-02-26",
+      "parent": "a16c2adda78a900cfdbb12d37bae891b8743b832",
+      "path": "SignalMessaging/utils/OWSAudioPlayer.m",
+      "key": "objc:OWSAudioPlayer.-applicationDidEnterBackground:",
+      "from": {
+        "path": "SignalMessaging/attachments/OWSAudioAttachmentPlayer.m",
+        "key": "objc:OWSAudioAttachmentPlayer.-applicationDidEnterBackground:"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "df63a9b82717e4be4bad06b6af56ca0ecfb76532",
+      "date": "2019-08-21",
+      "parent": "cde9e91cf6c21e5f84d36f18eca024ba6be73693",
+      "path": "SignalMessaging/utils/OWSAudioPlayer.m",
+      "key": "objc:OWSAudioPlayer.-applicationDidEnterBackground:",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "b5ed609b4258f413c44222271281d45df0014f5a",
+      "date": "2021-10-19",
+      "parent": "498ffd22f2e3f1dfe34300f99b871ee54253f52b",
+      "path": "SignalUI/Utils/OWSAudioPlayer.m",
+      "key": "objc:OWSAudioPlayer.-applicationDidEnterBackground:",
+      "from": {
+        "path": "SignalMessaging/utils/OWSAudioPlayer.m",
+        "key": "objc:OWSAudioPlayer.-applicationDidEnterBackground:"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "41b1469f7a46cdce1be5398616e23b5139fac595",
+      "date": "2022-12-06",
+      "parent": "5a45bf31a976c0f0115f9aeef1478d9d7ce4094d",
+      "path": "SignalUI/Utils/AudioPlayer.swift",
+      "key": "swift:AudioPlayer.applicationDidEnterBackground()",
+      "from": {
+        "path": "SignalUI/Utils/OWSAudioPlayer.m",
+        "key": "objc:OWSAudioPlayer.-applicationDidEnterBackground:"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "8910fc4d5b6dd4c7a9aed4b2db0f225ac6e80f5c",
+      "date": "2024-03-25",
+      "parent": "2e91c8d92c0c5f8a18f7a1d3a8a5ec6769b833ff",
+      "path": "SignalUI/AV/AudioPlayer.swift",
+      "key": "swift:AudioPlayer.applicationDidEnterBackground()",
+      "from": {
+        "path": "SignalUI/Utils/AudioPlayer.swift",
+        "key": "swift:AudioPlayer.applicationDidEnterBackground()"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

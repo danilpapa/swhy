@@ -1,0 +1,181 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-43",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Messages/Interactions/TSInteraction+SDS.swift",
+    "key": "swift:TSInteraction.anyFetchAll(transaction:)"
+  },
+  "lines": [
+    5207,
+    5213
+  ],
+  "candidates": {
+    "follow": 207,
+    "log_l": 6,
+    "merges": 223,
+    "union": 425,
+    "tool": 0
+  },
+  "introduced": "3c6dde5ee05dda01c1dbe146e3ed9a1fa237a8d9",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "3c6dde5ee05dda01c1dbe146e3ed9a1fa237a8d9",
+      "date": "2019-04-16",
+      "parent": "51d20c197040295764afaeb5ba3cc023dd39cabe",
+      "path": "SignalServiceKit/tests/Storage/SDSDatabaseStorageTest.swift",
+      "key": "swift:TSInteraction.anyFetchAll(transaction:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "proposed origin TSAttachment.anyFetchAll is a method of another type"
+    },
+    {
+      "commit": "b6b2c8af3b0ea632a5daa9753226ad4be787bd43",
+      "date": "2019-04-30",
+      "parent": "2a2f18a57194294b89db74c66ecb667301718e9d",
+      "path": "SignalServiceKit/src/Messages/Interactions/TSInteraction+SDS.swift",
+      "key": "swift:TSInteraction.anyFetchAll(transaction:)",
+      "from": {
+        "path": "SignalServiceKit/tests/Storage/SDSDatabaseStorageTest.swift",
+        "key": "swift:TSInteraction.anyFetchAll(transaction:)"
+      },
+      "class": "Semantic",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "moved from an extension in a test file"
+    },
+    {
+      "commit": "49038152292723cca1db79a4c646d84ba107fa06",
+      "date": "2019-05-02",
+      "parent": "7c70d89706ad3037c2fed0198032aa06ac9eb495",
+      "path": "SignalServiceKit/src/Messages/Interactions/TSInteraction+SDS.swift",
+      "key": "swift:TSInteraction.anyFetchAll(transaction:)",
+      "from": null,
+      "class": "SignatureChanged: attributes",
+      "move": null,
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "b0375a5de4bf1c1745a1278185d06681921f97bb",
+      "date": "2019-06-19",
+      "parent": "ccf217bade2aa198f44759e3fbcbb5d6372eadec",
+      "path": "SignalServiceKit/src/Messages/Interactions/TSInteraction+SDS.swift",
+      "key": "swift:TSInteraction.anyFetchAll(transaction:)",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a6f5f4b35b6f829000f2e6af701d372e722c0511",
+      "date": "2019-06-21",
+      "parent": "62e757f50102623b5caf3bf9746323407873587d",
+      "path": "SignalServiceKit/src/Messages/Interactions/TSInteraction+SDS.swift",
+      "key": "swift:TSInteraction.anyFetchAll(transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "7dd1d61552f2fcd5351ae48d708796f163b124ab",
+      "date": "2019-09-16",
+      "parent": "9dea6069e43cdba12383b9f4610dc579076c5bdc",
+      "path": "SignalServiceKit/src/Messages/Interactions/TSInteraction+SDS.swift",
+      "key": "swift:TSInteraction.anyFetchAll(transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bf8b632e246af524b2ad6ef56e2bcc9e95c9af3e",
+      "date": "2019-09-16",
+      "parent": "0f220fd77d206d1be2a1d0e7a042b6fd6796e788",
+      "path": "SignalServiceKit/src/Messages/Interactions/TSInteraction+SDS.swift",
+      "key": "swift:TSInteraction.anyFetchAll(transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Messages/Interactions/TSInteraction+SDS.swift",
+      "key": "swift:TSInteraction.anyFetchAll(transaction:)",
+      "from": {
+        "path": "SignalServiceKit/src/Messages/Interactions/TSInteraction+SDS.swift",
+        "key": "swift:TSInteraction.anyFetchAll(transaction:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb048e8b59618bd7aa54b84e6afa64675a0b9eb1",
+      "date": "2025-03-13",
+      "parent": "e5eabf11104e7a4bb0d7888bd3eb067038e569f5",
+      "path": "SignalServiceKit/Messages/Interactions/TSInteraction+SDS.swift",
+      "key": "swift:TSInteraction.anyFetchAll(transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "6b9d30fd872d8d3be6c22f2455445b60ddc44936",
+      "date": "2026-03-16",
+      "parent": "966bf179d574848b67f0bfa8a8da3c3832346afe",
+      "path": "SignalServiceKit/Messages/Interactions/TSInteraction+SDS.swift",
+      "key": "swift:TSInteraction.anyFetchAll(transaction:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

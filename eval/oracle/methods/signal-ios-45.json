@@ -1,0 +1,167 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-45",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+    "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:attachmentKey:plaintextLength:mimeType:)"
+  },
+  "lines": [
+    121,
+    154
+  ],
+  "candidates": {
+    "follow": 99,
+    "log_l": 9,
+    "merges": 0,
+    "union": 99,
+    "tool": 0
+  },
+  "introduced": "866c20055a5632639eea95d069755098a481e400",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "866c20055a5632639eea95d069755098a481e400",
+      "date": "2024-09-17",
+      "parent": "dca0a2ca640093d9ced2536a042e2b45f38f3b47",
+      "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+      "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:encryptionKey:plaintextLength:mimeType:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "94e291ed16144b4f2830c46759db836694b6dfa5",
+      "date": "2025-06-16",
+      "parent": "1255e661198713aa0c53577d175912159d96c0a7",
+      "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+      "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:encryptionKey:plaintextLength:mimeType:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "cd31be8f23632c79a2e0ac603d788e721305e594",
+      "date": "2025-06-16",
+      "parent": "07cd0842edfbb14f9ee27956adc9bb9df760be99",
+      "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+      "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:encryptionKey:plaintextLength:mimeType:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "dd98cd9cdf1f1513d13514beed6687fec8159558",
+      "date": "2025-07-23",
+      "parent": "0dbe6833b1fd8955a083fc8eeebadad4d39e36e2",
+      "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+      "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:encryptionKey:plaintextLength:mimeType:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "dfd1762d78788076709b39f8da8ec2fde8331532",
+      "date": "2025-07-25",
+      "parent": "a42e05fe93041bc543921e140b1aa055c553a54c",
+      "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+      "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:encryptionKey:plaintextLength:mimeType:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "1f7c55776dbc67241b34502024ffcf14d296ae15",
+      "date": "2025-10-17",
+      "parent": "b2b4cc52e289a2cab39a6a767a2df76e3665713d",
+      "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+      "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:attachmentKey:plaintextLength:mimeType:)",
+      "from": {
+        "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+        "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:encryptionKey:plaintextLength:mimeType:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+      "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:attachmentKey:plaintextLength:mimeType:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    },
+    {
+      "commit": "7f016699ce7c0c947ae3cc1d89b12cd7bd7fd347",
+      "date": "2026-08-19",
+      "parent": "babcdd4bb251fb2fadb3da01a9058df62544b75b",
+      "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+      "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:attachmentKey:plaintextLength:mimeType:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e05b4e6416f8b4fcfdc2b9fd80caf43af8f407e9",
+      "date": "2026-09-24",
+      "parent": "6905ea8e4118421f486e772871f2b6d68716ca04",
+      "path": "SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift",
+      "key": "swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:attachmentKey:plaintextLength:mimeType:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

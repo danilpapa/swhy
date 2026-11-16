@@ -1,0 +1,91 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-38",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/src/ViewControllers/MediaGallery/MediaGalleryAccessoriesHelper.swift",
+    "key": "swift:MediaGalleryAccessoriesHelper.didPressShare(_:)"
+  },
+  "lines": [
+    494,
+    497
+  ],
+  "candidates": {
+    "follow": 134,
+    "log_l": 3,
+    "merges": 137,
+    "union": 271,
+    "tool": 0
+  },
+  "introduced": "5da1187707b140f50c94ffa2bfb682e0678a0fac",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "5da1187707b140f50c94ffa2bfb682e0678a0fac",
+      "date": "2021-11-08",
+      "parent": "b0c88be89a70e35652ae79d06ae81aa2c09275f1",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaTileViewController.swift",
+      "key": "swift:MediaTileViewController.didPressShare(_:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "7cda68a53fd9c7e15da7c7858b7566d53dfdbf31",
+      "date": "2023-03-24",
+      "parent": "71d87518bf7bc0ce27319cfda2ee385adfe1b40e",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaGalleryAccessoriesHelper.swift",
+      "key": "swift:MediaGalleryAccessoriesHelper.didPressShare(_:)",
+      "from": {
+        "path": "Signal/src/ViewControllers/MediaGallery/MediaTileViewController.swift",
+        "key": "swift:MediaTileViewController.didPressShare(_:)"
+      },
+      "class": "Semantic",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "handler moved into the helper, body now delegates"
+    },
+    {
+      "commit": "cffc4aed509a68b5b8f285ae90dbb26d780bdf4a",
+      "date": "2023-06-27",
+      "parent": "9ed78b41dc2c4915b99c6eeaeea695802e0a5c7c",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaGalleryAccessoriesHelper.swift",
+      "key": "swift:MediaGalleryAccessoriesHelper.didPressShare(_:)",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "guard let replaced by optional chaining"
+    },
+    {
+      "commit": "0485b291ad168dc9ee0263b2028725c2d1d84b36",
+      "date": "2025-12-09",
+      "parent": "e4ceece74b452d8f2423d3c109b3fd3174870e7d",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaGalleryAccessoriesHelper.swift",
+      "key": "swift:MediaGalleryAccessoriesHelper.didPressShare(_:)",
+      "from": null,
+      "class": "SignatureChanged: attributes",
+      "move": null,
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

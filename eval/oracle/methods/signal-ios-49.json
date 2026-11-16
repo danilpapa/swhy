@@ -1,0 +1,92 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-49",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Upload/AttachmentUploadManager.swift",
+    "key": "swift:AttachmentUploadManagerImpl.fetchAttachment(attachmentId:logger:tx:)"
+  },
+  "lines": [
+    1012,
+    1022
+  ],
+  "candidates": {
+    "follow": 109,
+    "log_l": 4,
+    "merges": 0,
+    "union": 109,
+    "tool": 0
+  },
+  "introduced": "85f08fdabebf93938309f43a8f186c9dfbc1bcc1",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "85f08fdabebf93938309f43a8f186c9dfbc1bcc1",
+      "date": "2024-03-29",
+      "parent": "b1c3c14e6803b02e52bc00a143e81dd245d03ee1",
+      "path": "SignalServiceKit/Upload/AttachmentUploadManager.swift",
+      "key": "swift:AttachmentUploadManagerImpl.fetchAttachmentStream(attachmentId:logger:tx:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "101f2982d033d5ff457d8a1935a00abe8e984480",
+      "date": "2024-04-02",
+      "parent": "408be986d68da58c1a006de1e07bd7b6bb520551",
+      "path": "SignalServiceKit/Upload/AttachmentUploadManager.swift",
+      "key": "swift:AttachmentUploadManagerImpl.fetchAttachment(attachmentId:logger:tx:)",
+      "from": {
+        "path": "SignalServiceKit/Upload/AttachmentUploadManager.swift",
+        "key": "swift:AttachmentUploadManagerImpl.fetchAttachmentStream(attachmentId:logger:tx:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Upload/AttachmentUploadManager.swift",
+      "key": "swift:AttachmentUploadManagerImpl.fetchAttachment(attachmentId:logger:tx:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    },
+    {
+      "commit": "112dd440adb9ed1b55a59985df8242ee513b9288",
+      "date": "2026-01-23",
+      "parent": "63be008e00bd159584d912909550fcb271dafe26",
+      "path": "SignalServiceKit/Upload/AttachmentUploadManager.swift",
+      "key": "swift:AttachmentUploadManagerImpl.fetchAttachment(attachmentId:logger:tx:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

@@ -1,0 +1,55 @@
+{
+  "head_sha": "2339180da2af8e9db37d046062eb7bc17683946d",
+  "worktree_dirty": false,
+  "command": "eval/oracle/check.sh",
+  "params": {
+    "methods_dir": "eval/oracle/methods",
+    "second_dir": "eval/oracle/second",
+    "min_changing_commits": 3
+  },
+  "metrics": {
+    "methods": 50,
+    "repos": {
+      "Signal-iOS": 50
+    },
+    "train": 25,
+    "test": 25,
+    "annotators": [
+      "agent:claude-fable-5-2"
+    ],
+    "min_changing_commits": 3,
+    "methods_below_min": [],
+    "with_module_move": 19,
+    "with_objc_origin": 12,
+    "with_both": 7,
+    "changing_commits": 374,
+    "commits_by_class": {
+      "FormatOnly": 36,
+      "Introduced": 50,
+      "MoveOnly": 63,
+      "Refactoring": 12,
+      "RenameOnly": 5,
+      "Semantic": 204,
+      "SignatureChanged: attributes": 4
+    },
+    "commits_by_move": {
+      "cross_language": 12,
+      "file": 46,
+      "module": 26
+    },
+    "reviewed_not_changing": 0,
+    "candidates_union": 9152,
+    "second_annotator": {
+      "methods_required": 15,
+      "methods": 0,
+      "method_ids": [],
+      "annotators": [],
+      "changed": null,
+      "class": null
+    },
+    "violations": [
+      "second annotator: 15 methods required, found 0",
+      "Cohen's kappa is not computed"
+    ]
+  }
+}

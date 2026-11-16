@@ -1,0 +1,190 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-05",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalUI/SafetyNumbers/FingerprintViewController.swift",
+    "key": "swift:FingerprintViewController.compareSafetyNumbersActivity(_:failedWithError:)"
+  },
+  "lines": [
+    824,
+    831
+  ],
+  "candidates": {
+    "follow": 173,
+    "log_l": 6,
+    "merges": 199,
+    "union": 372,
+    "tool": 0
+  },
+  "introduced": "584118a9fc43851fbba14346dfe0b12678633ff8",
+  "objc_origin": true,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "584118a9fc43851fbba14346dfe0b12678633ff8",
+      "date": "2016-11-21",
+      "parent": "de7752ab20bc2c5c760de1b0b374286ec36203e3",
+      "path": "Signal/src/view controllers/FingerprintViewController.m",
+      "key": "objc:FingerprintViewController.-compareSafetyNumbersActivity:failedWithError:",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d12a582ee3ecce8fc21942a72282735873e1d487",
+      "date": "2017-03-31",
+      "parent": "3d6c153ca39ba9fc083c3316509dc3089cd12636",
+      "path": "Signal/src/ViewControllers/FingerprintViewController.m",
+      "key": "objc:FingerprintViewController.-compareSafetyNumbersActivity:failedWithError:",
+      "from": {
+        "path": "Signal/src/view controllers/FingerprintViewController.m",
+        "key": "objc:FingerprintViewController.-compareSafetyNumbersActivity:failedWithError:"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "b296cfb89339a162181609bd348e8e3fc38007ed",
+      "date": "2018-03-12",
+      "parent": "46a89e89f0f8d2708e4c5a52b4a104390649cd19",
+      "path": "Signal/src/ViewControllers/ThreadSettings/FingerprintViewController.m",
+      "key": "objc:FingerprintViewController.-compareSafetyNumbersActivity:failedWithError:",
+      "from": {
+        "path": "Signal/src/ViewControllers/FingerprintViewController.m",
+        "key": "objc:FingerprintViewController.-compareSafetyNumbersActivity:failedWithError:"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d9c0a92ed472c54f05d4a9e67260f3d4aa653e8c",
+      "date": "2022-07-15",
+      "parent": "de0985a8bde5dead089892baa414e3f50ea9e1be",
+      "path": "SignalUI/ViewControllers/Safety Numbers/FingerprintViewController.m",
+      "key": "objc:FingerprintViewController.-compareSafetyNumbersActivity:failedWithError:",
+      "from": {
+        "path": "Signal/src/ViewControllers/ThreadSettings/FingerprintViewController.m",
+        "key": "objc:FingerprintViewController.-compareSafetyNumbersActivity:failedWithError:"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "fad6d63b8177fd5ee01d9f6cc97b63df7ae92743",
+      "date": "2023-06-01",
+      "parent": "2845d60e13537d9b40a9211e79db5af92fdac89b",
+      "path": "SignalUI/ViewControllers/Safety Numbers/FingerprintViewController.swift",
+      "key": "swift:FingerprintViewController.compareSafetyNumbersActivity(_:failedWithError:)",
+      "from": {
+        "path": "SignalUI/ViewControllers/Safety Numbers/FingerprintViewController.m",
+        "key": "objc:FingerprintViewController.-compareSafetyNumbersActivity:failedWithError:"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "2f621c27b965e296a70b798044f8455db0741968",
+      "date": "2023-06-23",
+      "parent": "ffb155f3b3aa1b67f1045a15d2dd21b2766324e3",
+      "path": "SignalUI/ViewControllers/Safety Numbers/FingerprintViewController.swift",
+      "key": "swift:FingerprintViewController.compareSafetyNumbersActivity(_:failedWithError:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "8910fc4d5b6dd4c7a9aed4b2db0f225ac6e80f5c",
+      "date": "2024-03-25",
+      "parent": "2e91c8d92c0c5f8a18f7a1d3a8a5ec6769b833ff",
+      "path": "SignalUI/SafetyNumbers/FingerprintViewController.swift",
+      "key": "swift:FingerprintViewController.compareSafetyNumbersActivity(_:failedWithError:)",
+      "from": {
+        "path": "SignalUI/ViewControllers/Safety Numbers/FingerprintViewController.swift",
+        "key": "swift:FingerprintViewController.compareSafetyNumbersActivity(_:failedWithError:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "798aec0c330f0a0a69b96c56e8b39011c2b524ca",
+      "date": "2025-02-05",
+      "parent": "94e3e8825a68bf86ac37a32175fec84d25320f39",
+      "path": "SignalUI/SafetyNumbers/FingerprintViewController.swift",
+      "key": "swift:FingerprintViewController.compareSafetyNumbersActivity(_:failedWithError:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "aeb0962e55a5c2e61cdcfc42ac9d2e20bece3776",
+      "date": "2025-03-06",
+      "parent": "3d1439237fc3a6de893c9f2efdb58d5270e57f27",
+      "path": "SignalUI/SafetyNumbers/FingerprintViewController.swift",
+      "key": "swift:FingerprintViewController.compareSafetyNumbersActivity(_:failedWithError:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalUI/SafetyNumbers/FingerprintViewController.swift",
+      "key": "swift:FingerprintViewController.compareSafetyNumbersActivity(_:failedWithError:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    }
+  ],
+  "not_changing": []
+}

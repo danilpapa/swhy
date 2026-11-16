@@ -1,0 +1,111 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-15",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalUI/Stickers/StickerHorizontalListView.swift",
+    "key": "swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)"
+  },
+  "lines": [
+    392,
+    395
+  ],
+  "candidates": {
+    "follow": 52,
+    "log_l": 4,
+    "merges": 69,
+    "union": 100,
+    "tool": 0
+  },
+  "introduced": "48df37519f84d0b3bbbae9a4eec345760ebd042f",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "48df37519f84d0b3bbbae9a4eec345760ebd042f",
+      "date": "2019-04-26",
+      "parent": "4708963ebd8d92bf3fda9195838abf37e11304bc",
+      "path": "SignalMessaging/ViewControllers/Stickers/LinearHorizontalLayout.swift",
+      "key": "swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e097239dcd992b20fa9e918d336873db364e838e",
+      "date": "2020-03-17",
+      "parent": "e5b4661b00346d0bef850b9788dcac150f925e0f",
+      "path": "SignalMessaging/ViewControllers/Stickers/LinearHorizontalLayout.swift",
+      "key": "swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "c416609108047fa393775cdd1f3085487d4ad0d0",
+      "date": "2021-10-19",
+      "parent": "b9b66646ff6be2f66789aea8ce19d4ecc5a37450",
+      "path": "SignalUI/ViewControllers/Stickers/LinearHorizontalLayout.swift",
+      "key": "swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)",
+      "from": {
+        "path": "SignalMessaging/ViewControllers/Stickers/LinearHorizontalLayout.swift",
+        "key": "swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "8910fc4d5b6dd4c7a9aed4b2db0f225ac6e80f5c",
+      "date": "2024-03-25",
+      "parent": "2e91c8d92c0c5f8a18f7a1d3a8a5ec6769b833ff",
+      "path": "SignalUI/Stickers/LinearHorizontalLayout.swift",
+      "key": "swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)",
+      "from": {
+        "path": "SignalUI/ViewControllers/Stickers/LinearHorizontalLayout.swift",
+        "key": "swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "effab076b4011cfa7aa04f84772042cd4e262483",
+      "date": "2025-11-25",
+      "parent": "cff419bf4c1daa240d8e23bd3ccbb37da2f3e38e",
+      "path": "SignalUI/Stickers/StickerHorizontalListView.swift",
+      "key": "swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)",
+      "from": {
+        "path": "SignalUI/Stickers/LinearHorizontalLayout.swift",
+        "key": "swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)"
+      },
+      "class": "Semantic",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

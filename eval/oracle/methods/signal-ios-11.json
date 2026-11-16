@@ -1,0 +1,154 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-11",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/src/ViewControllers/MediaGallery/MediaItemViewController.swift",
+    "key": "swift:MediaItemViewController.viewDidLayoutSubviews()"
+  },
+  "lines": [
+    325,
+    329
+  ],
+  "candidates": {
+    "follow": 165,
+    "log_l": 22,
+    "merges": 201,
+    "union": 366,
+    "tool": 0
+  },
+  "introduced": "3582ab42db90c33f4d571373d32f11bd59175c98",
+  "objc_origin": true,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "3582ab42db90c33f4d571373d32f11bd59175c98",
+      "date": "2018-01-11",
+      "parent": "7c2bfdfb1f98eab4ab21b183cf73d31ff92e9504",
+      "path": "Signal/src/ViewControllers/MediaDetailViewController.m",
+      "key": "objc:MediaDetailViewController.-viewDidLayoutSubviews",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "03c18a3107ff46c02768ddcd2dd7e0b64a03d3e6",
+      "date": "2019-05-10",
+      "parent": "bbd197acadbaa9496be76523cefa860ea16e16ed",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaDetailViewController.m",
+      "key": "objc:MediaDetailViewController.-viewDidLayoutSubviews",
+      "from": {
+        "path": "Signal/src/ViewControllers/MediaDetailViewController.m",
+        "key": "objc:MediaDetailViewController.-viewDidLayoutSubviews"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "987bf81eec7b622c60fc18cf3b79c89ed4e6d30e",
+      "date": "2021-08-10",
+      "parent": "3768fa17206eb02acecc3a4039e5cac5f75ded06",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaDetailViewController.m",
+      "key": "objc:MediaDetailViewController.-viewDidLayoutSubviews",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "7b61d88a156bbba695e00a528a2bb74a3701b73b",
+      "date": "2021-08-16",
+      "parent": "ba20b729e1d7ef8ba9c19fefdb68b4979c3fb90e",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaDetailViewController.m",
+      "key": "objc:MediaDetailViewController.-viewDidLayoutSubviews",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "ccb5eb9a6b2a3a12f54d1a326746827b3f393a13",
+      "date": "2023-02-28",
+      "parent": "96f51dd552bbb939c5174fd623b6e2dd267e85bb",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaItemViewController.swift",
+      "key": "swift:MediaItemViewController.viewDidLayoutSubviews()",
+      "from": {
+        "path": "Signal/src/ViewControllers/MediaGallery/MediaDetailViewController.m",
+        "key": "objc:MediaDetailViewController.-viewDidLayoutSubviews"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "37eca71e776fb4a23c047475fa27c3e750d02869",
+      "date": "2023-08-08",
+      "parent": "2ecf4676d379684db7468314dcaf6d819e9b1c43",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaItemViewController.swift",
+      "key": "swift:MediaItemViewController.viewDidLayoutSubviews()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "982e3e5455f7681acb2edb8244cc35f4e0af64d5",
+      "date": "2025-03-17",
+      "parent": "c3e7d197125bf25c627c2aad430222dc48acec60",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaItemViewController.swift",
+      "key": "swift:MediaItemViewController.viewDidLayoutSubviews()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/src/ViewControllers/MediaGallery/MediaItemViewController.swift",
+      "key": "swift:MediaItemViewController.viewDidLayoutSubviews()",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

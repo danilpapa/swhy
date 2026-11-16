@@ -1,0 +1,123 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-14",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Util/UIView+OWS.swift",
+    "key": "swift:CGPoint.clamp(_:)"
+  },
+  "lines": [
+    164,
+    169
+  ],
+  "candidates": {
+    "follow": 113,
+    "log_l": 4,
+    "merges": 164,
+    "union": 277,
+    "tool": 0
+  },
+  "introduced": "5973c326de4900c907accbf85e8b999cc0ca2f6d",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "5973c326de4900c907accbf85e8b999cc0ca2f6d",
+      "date": "2019-03-26",
+      "parent": "675c60bf4e92cd1012d1c178fc145cf4598c1a31",
+      "path": "SignalMessaging/categories/UIView+OWS.swift",
+      "key": "swift:CGPoint.clamp(_:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "da79a53d96008fcc3050dad033a0fc277769fa99",
+      "date": "2019-04-15",
+      "parent": "fa45339f83fbcc6c916fc9202cb70bea3af78305",
+      "path": "SignalMessaging/categories/UIView+OWS.swift",
+      "key": "swift:CGPoint.clamp(_:)",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "251409a47d477fc01d2c61c6a4257c7ccd33e133",
+      "date": "2021-04-15",
+      "parent": "9f74866dc831047443050ec84b8eb56c7ff7c339",
+      "path": "SignalMessaging/categories/UIView+OWS.swift",
+      "key": "swift:CGPoint.clamp(_:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "implicit return"
+    },
+    {
+      "commit": "3ba6585b7398333d1438125e82a0c6ef05961101",
+      "date": "2024-03-06",
+      "parent": "18f35aa888b88c40b17c5dfa1f5f9cc3a96a869b",
+      "path": "SignalServiceKit/src/Util/UIView+OWS.swift",
+      "key": "swift:CGPoint.clamp(_:)",
+      "from": {
+        "path": "SignalMessaging/categories/UIView+OWS.swift",
+        "key": "swift:CGPoint.clamp(_:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Util/UIView+OWS.swift",
+      "key": "swift:CGPoint.clamp(_:)",
+      "from": {
+        "path": "SignalServiceKit/src/Util/UIView+OWS.swift",
+        "key": "swift:CGPoint.clamp(_:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Util/UIView+OWS.swift",
+      "key": "swift:CGPoint.clamp(_:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    }
+  ],
+  "not_changing": []
+}

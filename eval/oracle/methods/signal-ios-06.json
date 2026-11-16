@@ -1,0 +1,126 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-06",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalUI/AV/AudioPlayer.swift",
+    "key": "swift:AudioPlayer.teardownRemoteCommandCenter()"
+  },
+  "lines": [
+    380,
+    390
+  ],
+  "candidates": {
+    "follow": 82,
+    "log_l": 4,
+    "merges": 124,
+    "union": 206,
+    "tool": 0
+  },
+  "introduced": "df63a9b82717e4be4bad06b6af56ca0ecfb76532",
+  "objc_origin": true,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "df63a9b82717e4be4bad06b6af56ca0ecfb76532",
+      "date": "2019-08-21",
+      "parent": "cde9e91cf6c21e5f84d36f18eca024ba6be73693",
+      "path": "SignalMessaging/utils/OWSAudioPlayer.m",
+      "key": "objc:OWSAudioPlayer.-teardownRemoteCommandCenter",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "57a810658abc43485cca6941a188a2f93e039758",
+      "date": "2020-05-27",
+      "parent": "dc184f5a93db2e695349eee217e22d8a4f644a68",
+      "path": "SignalMessaging/utils/OWSAudioPlayer.m",
+      "key": "objc:OWSAudioPlayer.-teardownRemoteCommandCenter",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "b5ed609b4258f413c44222271281d45df0014f5a",
+      "date": "2021-10-19",
+      "parent": "498ffd22f2e3f1dfe34300f99b871ee54253f52b",
+      "path": "SignalUI/Utils/OWSAudioPlayer.m",
+      "key": "objc:OWSAudioPlayer.-teardownRemoteCommandCenter",
+      "from": {
+        "path": "SignalMessaging/utils/OWSAudioPlayer.m",
+        "key": "objc:OWSAudioPlayer.-teardownRemoteCommandCenter"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "41b1469f7a46cdce1be5398616e23b5139fac595",
+      "date": "2022-12-06",
+      "parent": "5a45bf31a976c0f0115f9aeef1478d9d7ce4094d",
+      "path": "SignalUI/Utils/AudioPlayer.swift",
+      "key": "swift:AudioPlayer.teardownRemoteCommandCenter()",
+      "from": {
+        "path": "SignalUI/Utils/OWSAudioPlayer.m",
+        "key": "objc:OWSAudioPlayer.-teardownRemoteCommandCenter"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "8910fc4d5b6dd4c7a9aed4b2db0f225ac6e80f5c",
+      "date": "2024-03-25",
+      "parent": "2e91c8d92c0c5f8a18f7a1d3a8a5ec6769b833ff",
+      "path": "SignalUI/AV/AudioPlayer.swift",
+      "key": "swift:AudioPlayer.teardownRemoteCommandCenter()",
+      "from": {
+        "path": "SignalUI/Utils/AudioPlayer.swift",
+        "key": "swift:AudioPlayer.teardownRemoteCommandCenter()"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "4f43208fdcd5110d5065b1d85b6bb8d945909051",
+      "date": "2024-10-12",
+      "parent": "a4d65d6119bc149938ae16aa4a3233afa4660595",
+      "path": "SignalUI/AV/AudioPlayer.swift",
+      "key": "swift:AudioPlayer.teardownRemoteCommandCenter()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

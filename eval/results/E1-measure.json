@@ -1,0 +1,158 @@
+{
+  "head_sha": "360792858d1b25786a0c632307bc55238e6ecd5c",
+  "worktree_dirty": false,
+  "command": "eval/measure/run.sh",
+  "params": {
+    "repo": {
+      "name": "Signal-iOS",
+      "url": "https://github.com/signalapp/Signal-iOS",
+      "sha": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45"
+    },
+    "git_version": "2.46.1",
+    "seed": 20261115,
+    "huge_commit_files": 1000,
+    "blame_lines": 500,
+    "mass_commit_files": 200,
+    "break_methods": 200,
+    "swift_xfuncname": "^[ \t]*(.*[^A-Za-z0-9_])?func[ \t]+.*$",
+    "bugfix_keywords": [
+      "fix",
+      "bug",
+      "crash",
+      "regression",
+      "hotfix",
+      "EXC_BAD_ACCESS",
+      "leak",
+      "retain cycle",
+      "force unwrap",
+      "main thread",
+      "deadlock",
+      "race",
+      "nil",
+      "краш",
+      "баг",
+      "исправ",
+      "падени"
+    ]
+  },
+  "metrics": {
+    "repo_stats": {
+      "commits": 41004,
+      "merge_commits": 6017,
+      "first_commit_date": "2014-05-06",
+      "last_commit_date": "2026-11-11",
+      "first_year": "2014",
+      "last_year": "2026",
+      "commits_by_year": {
+        "2014": 221,
+        "2015": 310,
+        "2016": 443,
+        "2017": 4295,
+        "2018": 5037,
+        "2019": 5514,
+        "2020": 4882,
+        "2021": 6039,
+        "2022": 3235,
+        "2023": 2193,
+        "2024": 3308,
+        "2025": 2694,
+        "2026": 2833
+      },
+      "files": 4583,
+      "swift_files": 2720,
+      "objc_files": {
+        "total": 75,
+        "h": 41,
+        "m": 34,
+        "mm": 0
+      },
+      "huge_commits": 4,
+      "huge_commit_list": [
+        {
+          "sha": "d267ec8305d7c5799228df145d2d830659344afb",
+          "date": "2025-12-30",
+          "files": 2056,
+          "subject": "Run `swiftformat .`"
+        },
+        {
+          "sha": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+          "date": "2024-03-27",
+          "files": 1882,
+          "subject": "Remove src/ prefix from SignalServiceKit files"
+        },
+        {
+          "sha": "52f0015dfe74e670d827d49e443261d14e0b6186",
+          "date": "2023-06-22",
+          "files": 1847,
+          "subject": "New set of icons."
+        },
+        {
+          "sha": "370ff654e714eca24e78117f47534a75eba2dac0",
+          "date": "2022-10-13",
+          "files": 1843,
+          "subject": "Change license to AGPL"
+        }
+      ]
+    },
+    "blame_noise": {
+      "swift_files": 2720,
+      "swift_lines": 814922,
+      "sampled_lines": 500,
+      "sampled_blank_lines": 79,
+      "blame_w": {
+        "technical": 37,
+        "technical_share": 0.074,
+        "whitespace_only": 0,
+        "mass_commit": 37,
+        "distinct_commits": 428
+      },
+      "blame_w_m_c_c": {
+        "technical": 37,
+        "technical_share": 0.074,
+        "whitespace_only": 0,
+        "mass_commit": 37,
+        "distinct_commits": 426
+      },
+      "modes_differ": 85,
+      "modes_differ_share": 0.17
+    },
+    "history_breaks": {
+      "swift_methods": 24447,
+      "sampled_methods": 200,
+      "log_failed": 0,
+      "ends_at_file_add": 128,
+      "ends_at_file_add_share": 0.64,
+      "breaks": 12,
+      "break_share": 0.06,
+      "breaks_from_objc": 7,
+      "breaks_from_swift_only": 5,
+      "median_commits": 4
+    },
+    "bugfix_share": {
+      "commits": 34987,
+      "bugfix_commits": 4647,
+      "bugfix_share": 0.1328,
+      "bugfix_by_subject": 4259,
+      "bugfix_by_subject_share": 0.1217,
+      "by_keyword": {
+        "EXC_BAD_ACCESS": 0,
+        "bug": 284,
+        "crash": 387,
+        "deadlock": 54,
+        "fix": 4244,
+        "force unwrap": 4,
+        "hotfix": 7,
+        "leak": 29,
+        "main thread": 104,
+        "nil": 97,
+        "race": 64,
+        "regression": 27,
+        "retain cycle": 16,
+        "баг": 0,
+        "исправ": 0,
+        "краш": 0,
+        "падени": 0
+      }
+    }
+  }
+}

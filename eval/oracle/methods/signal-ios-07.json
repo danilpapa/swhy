@@ -1,0 +1,199 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-07",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalUI/ViewControllers/OWSViewController.swift",
+    "key": "swift:OWSViewController.viewDidLoad()"
+  },
+  "lines": [
+    112,
+    140
+  ],
+  "candidates": {
+    "follow": 76,
+    "log_l": 10,
+    "merges": 142,
+    "union": 218,
+    "tool": 0
+  },
+  "introduced": "f795b12a86e92403ebbad418d561f04b80aa9d4e",
+  "objc_origin": true,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "f795b12a86e92403ebbad418d561f04b80aa9d4e",
+      "date": "2018-07-26",
+      "parent": "594eeea19f011c6658e70d7c14c439776594ed6a",
+      "path": "SignalMessaging/ViewControllers/OWSViewController.m",
+      "key": "objc:OWSViewController.-viewDidLoad",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "9ef178a33b9f1ccc45aee7b679d77fbf3aad99b1",
+      "date": "2021-04-06",
+      "parent": "7380fd725fb8cfacab3fbe52ce6d626c644e955c",
+      "path": "SignalMessaging/ViewControllers/OWSViewController.m",
+      "key": "objc:OWSViewController.-viewDidLoad",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c416609108047fa393775cdd1f3085487d4ad0d0",
+      "date": "2021-10-19",
+      "parent": "b9b66646ff6be2f66789aea8ce19d4ecc5a37450",
+      "path": "SignalUI/ViewControllers/OWSViewController.m",
+      "key": "objc:OWSViewController.-viewDidLoad",
+      "from": {
+        "path": "SignalMessaging/ViewControllers/OWSViewController.m",
+        "key": "objc:OWSViewController.-viewDidLoad"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "5865a0a47846f69532564886ee0c7b66d6ad1611",
+      "date": "2022-10-28",
+      "parent": "9a1e269e9125374e83d2c0ea8318426bd0667091",
+      "path": "SignalUI/ViewControllers/OWSViewController.swift",
+      "key": "swift:OWSViewController.viewDidLoad()",
+      "from": {
+        "path": "SignalUI/ViewControllers/OWSViewController.m",
+        "key": "objc:OWSViewController.-viewDidLoad"
+      },
+      "class": "Semantic",
+      "move": "cross_language",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c745f9a6aee4aa19da0dc961fb0414065a039e09",
+      "date": "2022-11-03",
+      "parent": "27c985dcfd7d26dfd8d7278cc51ef7dea559166f",
+      "path": "SignalUI/ViewControllers/OWSViewController.swift",
+      "key": "swift:OWSViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb2b665f6fc725c571011c5a099eec6aae0b223d",
+      "date": "2023-05-02",
+      "parent": "e9eefda2d94a61f72c716171702c26ce5ef40360",
+      "path": "SignalUI/ViewControllers/OWSViewController.swift",
+      "key": "swift:OWSViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "af48dd5186a0d7177d0611ada262214a2f7f5e54",
+      "date": "2025-10-02",
+      "parent": "d2cebbfbe2e495950b10300eb4e7fe6c69b8b97a",
+      "path": "SignalUI/ViewControllers/OWSViewController.swift",
+      "key": "swift:OWSViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "4d1c77b2f4fb8e4d8e2cbe36b063f5674259e78b",
+      "date": "2025-10-09",
+      "parent": "fa7003fd79315732567c87c00a78a770f5dcf677",
+      "path": "SignalUI/ViewControllers/OWSViewController.swift",
+      "key": "swift:OWSViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "78d035ccebec4ded2241000f2ad0bfddd2a8ce28",
+      "date": "2025-10-09",
+      "parent": "4d1c77b2f4fb8e4d8e2cbe36b063f5674259e78b",
+      "path": "SignalUI/ViewControllers/OWSViewController.swift",
+      "key": "swift:OWSViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "cefb46b87112eb079893579d77255c21df883858",
+      "date": "2025-10-15",
+      "parent": "212d19e97d7213ffef1fa52f2b3c46379d744388",
+      "path": "SignalUI/ViewControllers/OWSViewController.swift",
+      "key": "swift:OWSViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalUI/ViewControllers/OWSViewController.swift",
+      "key": "swift:OWSViewController.viewDidLoad()",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "modifier order and trailing comma"
+    }
+  ],
+  "not_changing": []
+}

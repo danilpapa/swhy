@@ -1,0 +1,92 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-28",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Backups/Attachments/BackupAttachmentDownloadQueueStatusManager.swift",
+    "key": "swift:BackupAttachmentDownloadQueueStatusManagerImpl.downloadDidExperienceNetworkOr5xxError(mode:token:)"
+  },
+  "lines": [
+    647,
+    681
+  ],
+  "candidates": {
+    "follow": 35,
+    "log_l": 4,
+    "merges": 0,
+    "union": 35,
+    "tool": 0
+  },
+  "introduced": "42bc89e92ddb6b6c3e1869a4fd6e3a2279863942",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "42bc89e92ddb6b6c3e1869a4fd6e3a2279863942",
+      "date": "2025-08-25",
+      "parent": "e54b17e759901b9c0ad56cfcfdf20c51210b6929",
+      "path": "SignalServiceKit/Backups/Attachments/BackupAttachmentDownloadQueueStatusManager.swift",
+      "key": "swift:BackupAttachmentDownloadQueueStatusManagerImpl.downloadDidExperienceNetworkOr5xxError(token:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "54c1ee60a8d0abba461231655c32ed0810500bbf",
+      "date": "2025-08-25",
+      "parent": "3cb8c85185ecaa1051258ec8b254e1750e9b8641",
+      "path": "SignalServiceKit/Backups/Attachments/BackupAttachmentDownloadQueueStatusManager.swift",
+      "key": "swift:BackupAttachmentDownloadQueueStatusManagerImpl.downloadDidExperienceNetworkOr5xxError(mode:token:)",
+      "from": {
+        "path": "SignalServiceKit/Backups/Attachments/BackupAttachmentDownloadQueueStatusManager.swift",
+        "key": "swift:BackupAttachmentDownloadQueueStatusManagerImpl.downloadDidExperienceNetworkOr5xxError(token:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Backups/Attachments/BackupAttachmentDownloadQueueStatusManager.swift",
+      "key": "swift:BackupAttachmentDownloadQueueStatusManagerImpl.downloadDidExperienceNetworkOr5xxError(mode:token:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    },
+    {
+      "commit": "7deb825af8fd3ce552cf256377633c155d29b4de",
+      "date": "2026-08-25",
+      "parent": "8c3b47ebf1de3b3ae1693122a9eca594b0f14bc1",
+      "path": "SignalServiceKit/Backups/Attachments/BackupAttachmentDownloadQueueStatusManager.swift",
+      "key": "swift:BackupAttachmentDownloadQueueStatusManagerImpl.downloadDidExperienceNetworkOr5xxError(mode:token:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

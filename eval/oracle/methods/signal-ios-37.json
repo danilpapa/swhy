@@ -1,0 +1,166 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-37",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/Calls/UserInterface/GroupCallNotificationView.swift",
+    "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()"
+  },
+  "lines": [
+    64,
+    132
+  ],
+  "candidates": {
+    "follow": 47,
+    "log_l": 8,
+    "merges": 20,
+    "union": 67,
+    "tool": 0
+  },
+  "introduced": "46351cf16f92fcdace42efed44dd36ebbcfde0be",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "46351cf16f92fcdace42efed44dd36ebbcfde0be",
+      "date": "2020-11-05",
+      "parent": "8716db984c93391cb69352f5834ee2fb630809d8",
+      "path": "Signal/src/Calls/UserInterface/Group/GroupCallNotificationView.swift",
+      "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c07e1ea1f9d9e079c2b1f376425f17fe05d1c1f6",
+      "date": "2020-11-19",
+      "parent": "07f5d95958174a848f985197b5b07cf55b6c8d2c",
+      "path": "Signal/src/Calls/UserInterface/Group/GroupCallNotificationView.swift",
+      "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "003cc19e62dc0b885292f24b6e6cc9edda11401d",
+      "date": "2023-02-07",
+      "parent": "67e6baf12da445543bbbbf8ecd0882a234ee7a5b",
+      "path": "Signal/src/Calls/UserInterface/Group/GroupCallNotificationView.swift",
+      "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "explicit DispatchQueue.main instead of .main"
+    },
+    {
+      "commit": "2cca071925d466950d6c51888a2b6a18bc98a054",
+      "date": "2024-03-25",
+      "parent": "65325cc1ce0dd50bd407d73c7c5b7f5ceb6d4df1",
+      "path": "Signal/Calls/UserInterface/GroupCallNotificationView.swift",
+      "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()",
+      "from": {
+        "path": "Signal/src/Calls/UserInterface/Group/GroupCallNotificationView.swift",
+        "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "76047d69b70917f0944f62e4b83fedeacd5ebfe3",
+      "date": "2024-11-05",
+      "parent": "c768c7fc91230c317551a40ea9c1b3c9730ffa60",
+      "path": "Signal/Calls/UserInterface/GroupCallNotificationView.swift",
+      "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "7c50ba8f8f4e625cc47bcb3fc01d4dcc220fc189",
+      "date": "2024-11-05",
+      "parent": "76047d69b70917f0944f62e4b83fedeacd5ebfe3",
+      "path": "Signal/Calls/UserInterface/GroupCallNotificationView.swift",
+      "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e445834e39bd513ebab7222ab610a7abc03a14ec",
+      "date": "2025-02-07",
+      "parent": "83b37e74a3e427385d43f07d9b6761173a47e39c",
+      "path": "Signal/Calls/UserInterface/GroupCallNotificationView.swift",
+      "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "3094d34333ec827512d952bf5bcd1e4e151581f9",
+      "date": "2025-02-25",
+      "parent": "1df7d5a8cc65c2703a8fc99b2e6665c952d77764",
+      "path": "Signal/Calls/UserInterface/GroupCallNotificationView.swift",
+      "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/Calls/UserInterface/GroupCallNotificationView.swift",
+      "key": "swift:GroupCallNotificationView.presentNextNotificationIfNecessary()",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    }
+  ],
+  "not_changing": []
+}

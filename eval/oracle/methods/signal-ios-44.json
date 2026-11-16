@@ -1,0 +1,181 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-44",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/Emoji/EmojiReactionPickerConfigViewController.swift",
+    "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()"
+  },
+  "lines": [
+    38,
+    63
+  ],
+  "candidates": {
+    "follow": 26,
+    "log_l": 9,
+    "merges": 8,
+    "union": 34,
+    "tool": 0
+  },
+  "introduced": "41700623df2efe734504c834ae11965d59e67cf6",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "41700623df2efe734504c834ae11965d59e67cf6",
+      "date": "2022-01-03",
+      "parent": "f37234b03a9a8a1dc390876e4300293a85b59732",
+      "path": "Signal/src/ViewControllers/ConversationView/Emoji Picker/EmojiReactionPickerConfigViewController.swift",
+      "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "b567e9add94e5aacb04d31f5922b6f782ee53ff5",
+      "date": "2022-01-25",
+      "parent": "97762496e0b285e3d38479e7411a82682489e9aa",
+      "path": "Signal/src/ViewControllers/ConversationView/Emoji Picker/EmojiReactionPickerConfigViewController.swift",
+      "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "14237a873f7d5cf9abd24d23c9c771652f9aae8d",
+      "date": "2023-04-25",
+      "parent": "c9c32ffa6af5bef0ae5a256260e570d72ed2897e",
+      "path": "Signal/src/ViewControllers/ConversationView/Emoji Picker/EmojiReactionPickerConfigViewController.swift",
+      "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "f7f9d1ef82cc296bf34173bc74cd180bd69816f4",
+      "date": "2024-03-25",
+      "parent": "23b961560ca640c57bcd66b3818e6000e3e559dc",
+      "path": "Signal/src/ViewControllers/ConversationView/Emoji Picker/EmojiReactionPickerConfigViewController.swift",
+      "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "2e91c8d92c0c5f8a18f7a1d3a8a5ec6769b833ff",
+      "date": "2024-03-25",
+      "parent": "2cca071925d466950d6c51888a2b6a18bc98a054",
+      "path": "Signal/Emoji/EmojiReactionPickerConfigViewController.swift",
+      "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()",
+      "from": {
+        "path": "Signal/src/ViewControllers/ConversationView/Emoji Picker/EmojiReactionPickerConfigViewController.swift",
+        "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "4ef5211825ccb3d3a98d072d997a067c00d7b981",
+      "date": "2024-05-21",
+      "parent": "ebb626ea10fe997b944a75b34b41190567e64360",
+      "path": "Signal/Emoji/EmojiReactionPickerConfigViewController.swift",
+      "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "3bfcae77f1135c09f84532ba7adc848fa98edd35",
+      "date": "2025-12-17",
+      "parent": "fd63829e1d0da106f6eade5972efd9fc19877207",
+      "path": "Signal/Emoji/EmojiReactionPickerConfigViewController.swift",
+      "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "70afcddc55528ddb5fcbceb6ccc5c462293c657c",
+      "date": "2025-12-19",
+      "parent": "8fc3300260d93352a4937bbec95f3e664db1b0fe",
+      "path": "Signal/Emoji/EmojiReactionPickerConfigViewController.swift",
+      "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/Emoji/EmojiReactionPickerConfigViewController.swift",
+      "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "modifier order and trailing comma"
+    },
+    {
+      "commit": "9b5c37d652d15b73f9bc0e0396988347a092ffa5",
+      "date": "2026-08-20",
+      "parent": "687919f4d3733a82049c127fa12f2c6de27cb7c7",
+      "path": "Signal/Emoji/EmojiReactionPickerConfigViewController.swift",
+      "key": "swift:EmojiReactionPickerConfigViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

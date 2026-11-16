@@ -1,0 +1,91 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-13",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalUI/Payments/PaymentsImpl.swift",
+    "key": "swift:PaymentsImpl.updateCurrentPaymentBalanceIfNecessary()"
+  },
+  "lines": [
+    283,
+    295
+  ],
+  "candidates": {
+    "follow": 129,
+    "log_l": 3,
+    "merges": 28,
+    "union": 157,
+    "tool": 0
+  },
+  "introduced": "235eb5d1191c218476fb365785f2be694b4ee4e3",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "235eb5d1191c218476fb365785f2be694b4ee4e3",
+      "date": "2021-04-06",
+      "parent": "cbfc7be3720af49ede0499127174ddf7593b62a2",
+      "path": "SignalMessaging/Payments/PaymentsImpl.swift",
+      "key": "swift:PaymentsImpl.updateCurrentPaymentBalanceIfNecessary()",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "1b655d63f54f5af05a8a63ec40d6fcfc700e2c95",
+      "date": "2021-10-21",
+      "parent": "6d79e5956176136308dfa2a1126d987c37c9c6f0",
+      "path": "SignalMessaging/Payments/PaymentsImpl.swift",
+      "key": "swift:PaymentsImpl.updateCurrentPaymentBalanceIfNecessary()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "60593ee26f90f552118092a95c345df7c05301aa",
+      "date": "2021-11-02",
+      "parent": "11f2a86f8a972338bbb1817b6ce0efce5b0426de",
+      "path": "SignalUI/Payments/PaymentsImpl.swift",
+      "key": "swift:PaymentsImpl.updateCurrentPaymentBalanceIfNecessary()",
+      "from": {
+        "path": "SignalMessaging/Payments/PaymentsImpl.swift",
+        "key": "swift:PaymentsImpl.updateCurrentPaymentBalanceIfNecessary()"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "0a5677997ea77532d6721604c7740e604d7baa98",
+      "date": "2025-02-05",
+      "parent": "798aec0c330f0a0a69b96c56e8b39011c2b524ca",
+      "path": "SignalUI/Payments/PaymentsImpl.swift",
+      "key": "swift:PaymentsImpl.updateCurrentPaymentBalanceIfNecessary()",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

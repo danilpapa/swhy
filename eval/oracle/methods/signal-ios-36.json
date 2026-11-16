@@ -1,0 +1,157 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-36",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Messages/Interactions/TSInfoMessage+GroupUpdates.swift",
+    "key": "swift:TSInfoMessage.makeForGroupUpdate(timestamp:spamReportingMetadata:groupThread:updateItems:)"
+  },
+  "lines": [
+    26,
+    58
+  ],
+  "candidates": {
+    "follow": 72,
+    "log_l": 7,
+    "merges": 62,
+    "union": 134,
+    "tool": 0
+  },
+  "introduced": "ce4959062c9fd0b496e3c24cbcc835e62d1a80de",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "ce4959062c9fd0b496e3c24cbcc835e62d1a80de",
+      "date": "2024-01-22",
+      "parent": "37dec771056699d384551fd9cdace6c6c1404d17",
+      "path": "SignalServiceKit/src/Messages/Interactions/TSInfoMessage+Swift.swift",
+      "key": "swift:TSInfoMessage.newGroupUpdateInfoMessage(timestamp:groupThread:updateItems:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e862daf61d637b1071c4e1d61850ab3ed5ca5561",
+      "date": "2024-02-28",
+      "parent": "63cd6d37a7072f64da629a287b29acd854087037",
+      "path": "SignalServiceKit/src/Messages/Interactions/TSInfoMessage+Swift.swift",
+      "key": "swift:TSInfoMessage.newGroupUpdateInfoMessage(timestamp:spamReportingMetadata:groupThread:updateItems:)",
+      "from": {
+        "path": "SignalServiceKit/src/Messages/Interactions/TSInfoMessage+Swift.swift",
+        "key": "swift:TSInfoMessage.newGroupUpdateInfoMessage(timestamp:groupThread:updateItems:)"
+      },
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Messages/Interactions/TSInfoMessage+Swift.swift",
+      "key": "swift:TSInfoMessage.newGroupUpdateInfoMessage(timestamp:spamReportingMetadata:groupThread:updateItems:)",
+      "from": {
+        "path": "SignalServiceKit/src/Messages/Interactions/TSInfoMessage+Swift.swift",
+        "key": "swift:TSInfoMessage.newGroupUpdateInfoMessage(timestamp:spamReportingMetadata:groupThread:updateItems:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "34a8cf2bdaefa455fecd1ac514bd6dc903514687",
+      "date": "2024-07-09",
+      "parent": "893e690d319df3aeb80f5f6abd6dce92ec15c650",
+      "path": "SignalServiceKit/Messages/Interactions/TSInfoMessage+Swift.swift",
+      "key": "swift:TSInfoMessage.newGroupUpdateInfoMessage(timestamp:spamReportingMetadata:groupThread:updateItems:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "853bf45b8a51579faa84227043db52924ae3edbc",
+      "date": "2024-08-14",
+      "parent": "68bb8e292ab85888d0f3235d91fed8f9e4cf6731",
+      "path": "SignalServiceKit/Messages/Interactions/TSInfoMessage+GroupUpdates.swift",
+      "key": "swift:TSInfoMessage.makeForGroupUpdate(timestamp:spamReportingMetadata:groupThread:updateItems:)",
+      "from": {
+        "path": "SignalServiceKit/Messages/Interactions/TSInfoMessage+Swift.swift",
+        "key": "swift:TSInfoMessage.newGroupUpdateInfoMessage(timestamp:spamReportingMetadata:groupThread:updateItems:)"
+      },
+      "class": "RenameOnly",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "aac8b1f636a3f94d16415b2d44e805b18a6a1e14",
+      "date": "2025-10-14",
+      "parent": "85e3cfa35f36bfb8330ae8cabc3284af74b98225",
+      "path": "SignalServiceKit/Messages/Interactions/TSInfoMessage+GroupUpdates.swift",
+      "key": "swift:TSInfoMessage.makeForGroupUpdate(timestamp:spamReportingMetadata:groupThread:updateItems:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalServiceKit/Messages/Interactions/TSInfoMessage+GroupUpdates.swift",
+      "key": "swift:TSInfoMessage.makeForGroupUpdate(timestamp:spamReportingMetadata:groupThread:updateItems:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "trailing comma only"
+    },
+    {
+      "commit": "c8f200865ee070b1af14aad48af84b9a6e3e022e",
+      "date": "2026-09-30",
+      "parent": "b4ceb72b037868540ce40a595ba9e75379e3b571",
+      "path": "SignalServiceKit/Messages/Interactions/TSInfoMessage+GroupUpdates.swift",
+      "key": "swift:TSInfoMessage.makeForGroupUpdate(timestamp:spamReportingMetadata:groupThread:updateItems:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

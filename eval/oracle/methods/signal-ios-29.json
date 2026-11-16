@@ -1,0 +1,141 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-29",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModel.swift",
+    "key": "swift:SDSCodableModel.didInsert(with:for:)"
+  },
+  "lines": [
+    111,
+    113
+  ],
+  "candidates": {
+    "follow": 47,
+    "log_l": 5,
+    "merges": 2,
+    "union": 49,
+    "tool": 0
+  },
+  "introduced": "376471587fe8d31257caf7f0dbdbe650732917a2",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "376471587fe8d31257caf7f0dbdbe650732917a2",
+      "date": "2022-03-16",
+      "parent": "626f1e2d23c51b2c06c24ad83c62a7669c1a5a8e",
+      "path": "SignalServiceKit/src/Messages/Stories/StoryMessageRecord.swift",
+      "key": "swift:StoryMessageRecord.didInsert(with:for:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d85d173946cd2533a78de2b191323090f30609a9",
+      "date": "2022-03-16",
+      "parent": "1002e7838de373a40cd19d354fe90a2ea710564a",
+      "path": "SignalServiceKit/src/Messages/Stories/StoryMessageRecord.swift",
+      "key": "swift:StoryMessageRecord.didInsert(with:for:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d7f12d3f395714eb7a1a942b37c7ccbb1c91364f",
+      "date": "2022-03-16",
+      "parent": "9494e360133284fe5de8df3f0c5e2ab7bfca7822",
+      "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel.swift",
+      "key": "swift:SDSCodableModel.didInsert(with:for:)",
+      "from": {
+        "path": "SignalServiceKit/src/Messages/Stories/StoryMessageRecord.swift",
+        "key": "swift:StoryMessageRecord.didInsert(with:for:)"
+      },
+      "class": "Semantic",
+      "move": "file",
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "pulled up from StoryMessageRecord into the protocol extension"
+    },
+    {
+      "commit": "be4bef922bff5433c56798dccc85f6f691797936",
+      "date": "2023-03-31",
+      "parent": "2985e98b7a105d9245f18410f7a71706dc145c36",
+      "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel/SDSCodableModel.swift",
+      "key": "swift:SDSCodableModel.didInsert(with:for:)",
+      "from": {
+        "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel.swift",
+        "key": "swift:SDSCodableModel.didInsert(with:for:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "406d44d396a9fff1ddf0da031b233e7d65a2cd82",
+      "date": "2023-04-03",
+      "parent": "53351b03fbdcd72c3e819dd6dfd6d38902a718d5",
+      "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel/SDSCodableModel.swift",
+      "key": "swift:SDSCodableModel.didInsert(with:for:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "explicit self removed"
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModel.swift",
+      "key": "swift:SDSCodableModel.didInsert(with:for:)",
+      "from": {
+        "path": "SignalServiceKit/src/Storage/Database/SDSCodableModel/SDSCodableModel.swift",
+        "key": "swift:SDSCodableModel.didInsert(with:for:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "214599386b11f58ce4c61a02fd423c72b521027f",
+      "date": "2026-03-05",
+      "parent": "94467ce7332bcb13cfee505ec6d266c9edfe9aac",
+      "path": "SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModel.swift",
+      "key": "swift:SDSCodableModel.didInsert(with:for:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

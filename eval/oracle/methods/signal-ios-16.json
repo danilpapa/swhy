@@ -1,0 +1,200 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-16",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Subscriptions/Donations/DonationSubscriptionManager.swift",
+    "key": "swift:DonationSubscriptionManager.getBoostBadge()"
+  },
+  "lines": [
+    710,
+    716
+  ],
+  "candidates": {
+    "follow": 179,
+    "log_l": 8,
+    "merges": 62,
+    "union": 241,
+    "tool": 0
+  },
+  "introduced": "c89b0016f69b04ff5a06df3ac3428994abcd9db2",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "c89b0016f69b04ff5a06df3ac3428994abcd9db2",
+      "date": "2021-11-16",
+      "parent": "a1e091c6493f5f3ad3528f1cdc19502f04e9365f",
+      "path": "SignalMessaging/Subscriptions/SubscriptionManager.swift",
+      "key": "swift:SubscriptionManager.getBoostBadge()",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "baddc8556426a755d940dd3f0917137604f081cb",
+      "date": "2022-05-19",
+      "parent": "d2fcc546bc684610f130f2c807c2899750be1014",
+      "path": "SignalMessaging/Subscriptions/SubscriptionManager.swift",
+      "key": "swift:SubscriptionManager.getBoostBadge()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "05ed931b10fe5ea97de833da7874864b4daf187d",
+      "date": "2022-06-09",
+      "parent": "5b9f737b4678e4e66faac28f3a95cb4e719703b2",
+      "path": "SignalMessaging/Subscriptions/SubscriptionManager.swift",
+      "key": "swift:SubscriptionManager.getBoostBadge()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "cc0cd24f8819baf521f0be57c3b3a5bac728f52e",
+      "date": "2022-07-26",
+      "parent": "bde3f174f31fb807fb84d56a989e7d6d044241f0",
+      "path": "SignalMessaging/Subscriptions/SubscriptionManager.swift",
+      "key": "swift:SubscriptionManager.getBoostBadge()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "8047472f68ee419c78cf967b0599740c8e0eee5a",
+      "date": "2023-03-14",
+      "parent": "a83448c26a8ceab5f729ab6421e921a71f167b39",
+      "path": "SignalMessaging/Subscriptions/SubscriptionManagerImpl.swift",
+      "key": "swift:SubscriptionManagerImpl.getBoostBadge()",
+      "from": {
+        "path": "SignalMessaging/Subscriptions/SubscriptionManager.swift",
+        "key": "swift:SubscriptionManager.getBoostBadge()"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "7f41ecaa8b63180ebcc835585d3969f4321bfd46",
+      "date": "2023-11-06",
+      "parent": "cd64be35cec77e58dbf07fed75319b3c59f45c13",
+      "path": "SignalMessaging/Subscriptions/SubscriptionManagerImpl.swift",
+      "key": "swift:SubscriptionManagerImpl.getBoostBadge()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "fd8e2950ea0318674d91595475cdb1dcf1325d57",
+      "date": "2024-03-12",
+      "parent": "91c90500ab8c9d105765934ab5fef051be4677ea",
+      "path": "SignalServiceKit/Subscriptions/SubscriptionManagerImpl.swift",
+      "key": "swift:SubscriptionManagerImpl.getBoostBadge()",
+      "from": {
+        "path": "SignalMessaging/Subscriptions/SubscriptionManagerImpl.swift",
+        "key": "swift:SubscriptionManagerImpl.getBoostBadge()"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "46b5b4a9e40ef80c6c22234ce67530ea8a312db6",
+      "date": "2024-10-25",
+      "parent": "ed6a75e10fe8fa98e9f09939eb9ac4a4d5049203",
+      "path": "SignalServiceKit/Subscriptions/Donations/DonationSubscriptionManager.swift",
+      "key": "swift:DonationSubscriptionManager.getBoostBadge()",
+      "from": {
+        "path": "SignalServiceKit/Subscriptions/SubscriptionManagerImpl.swift",
+        "key": "swift:SubscriptionManagerImpl.getBoostBadge()"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "c9f4b83ffb1231b6b6353245f3eff4ea6b8d14eb",
+      "date": "2025-02-10",
+      "parent": "61836a5f4f7eeb8d96eb55e8235f8244a03bc584",
+      "path": "SignalServiceKit/Subscriptions/Donations/DonationSubscriptionManager.swift",
+      "key": "swift:DonationSubscriptionManager.getBoostBadge()",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "a3e8141ba97d7ee72e98191a0dd9161f506c289f",
+      "date": "2025-03-25",
+      "parent": "f554de15e8661ea2c0d19d6c0518cb51635f8b4e",
+      "path": "SignalServiceKit/Subscriptions/Donations/DonationSubscriptionManager.swift",
+      "key": "swift:DonationSubscriptionManager.getBoostBadge()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "714a789cc5ed037d158eac8b4a4f857bb26b336b",
+      "date": "2026-05-13",
+      "parent": "8a0e1a9a2c4aba7ce0330104753ef92573f60095",
+      "path": "SignalServiceKit/Subscriptions/Donations/DonationSubscriptionManager.swift",
+      "key": "swift:DonationSubscriptionManager.getBoostBadge()",
+      "from": null,
+      "class": "Refactoring",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

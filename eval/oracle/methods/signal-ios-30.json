@@ -1,0 +1,105 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-30",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Network/API/Requests/AuthedAccount.swift",
+    "key": "swift:AuthedAccount.isAddressForLocalUser(_:)"
+  },
+  "lines": [
+    45,
+    52
+  ],
+  "candidates": {
+    "follow": 23,
+    "log_l": 3,
+    "merges": 0,
+    "union": 23,
+    "tool": 0
+  },
+  "introduced": "a146e18aaff423d8e1168c847296ec56cc72b8af",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "a146e18aaff423d8e1168c847296ec56cc72b8af",
+      "date": "2023-03-09",
+      "parent": "cd67e81baa40db0048f9b0270d440fffbc656e9b",
+      "path": "SignalServiceKit/src/Network/API/Requests/AuthedAccount.swift",
+      "key": "swift:AuthedAccount.isAddressForLocalUser(_:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "dd6074391eeec81611117733985a15fb501f4123",
+      "date": "2024-02-14",
+      "parent": "2a6b977bc7ee6c767fa92f918635a23fa9150c1c",
+      "path": "SignalServiceKit/src/Network/API/Requests/AuthedAccount.swift",
+      "key": "swift:AuthedAccount.isAddressForLocalUser(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Network/API/Requests/AuthedAccount.swift",
+      "key": "swift:AuthedAccount.isAddressForLocalUser(_:)",
+      "from": {
+        "path": "SignalServiceKit/src/Network/API/Requests/AuthedAccount.swift",
+        "key": "swift:AuthedAccount.isAddressForLocalUser(_:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "83b37e74a3e427385d43f07d9b6761173a47e39c",
+      "date": "2025-02-07",
+      "parent": "836eeaaabbe893657400691669a5647824019b86",
+      "path": "SignalServiceKit/Network/API/Requests/AuthedAccount.swift",
+      "key": "swift:AuthedAccount.isAddressForLocalUser(_:)",
+      "from": null,
+      "class": "SignatureChanged: attributes",
+      "move": null,
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "88f7b13035e790d398219560553ff8ed3fe169a1",
+      "date": "2026-09-16",
+      "parent": "e78ac6e314dfe1a27ad7524f67af74ba26e3c8b5",
+      "path": "SignalServiceKit/Network/API/Requests/AuthedAccount.swift",
+      "key": "swift:AuthedAccount.isAddressForLocalUser(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    }
+  ],
+  "not_changing": []
+}

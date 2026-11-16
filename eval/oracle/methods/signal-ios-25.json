@@ -1,0 +1,194 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-25",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "train",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+    "key": "swift:AddToBlockListViewController.viewDidLoad()"
+  },
+  "lines": [
+    17,
+    34
+  ],
+  "candidates": {
+    "follow": 51,
+    "log_l": 11,
+    "merges": 41,
+    "union": 92,
+    "tool": 0
+  },
+  "introduced": "285357ff84c44130f89e3083c4796cbf5f4aabc4",
+  "objc_origin": false,
+  "module_move": false,
+  "history": [
+    {
+      "commit": "285357ff84c44130f89e3083c4796cbf5f4aabc4",
+      "date": "2019-08-22",
+      "parent": "aa58084ca2b6b483a3bf51bc5fca19b6211f3b6c",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "1c9382c3d299e552fb4c7ac6f7207b31e52bea48",
+      "date": "2020-04-23",
+      "parent": "3d790dc6332e3684215877cd0693545fcc4278f5",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "02494b048aef2711ab81478183c20b0fdd88a646",
+      "date": "2022-09-20",
+      "parent": "2ca3483da1d17d6fd5205ed60cf91dd1cc433e04",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "1ea74d9266c77aa661395693d33d402fa6677219",
+      "date": "2022-10-19",
+      "parent": "a5a69062a524ecd94c73f660faba8d8661ef40a1",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "520faa95dfd17d5203bd446d92e1720d607c0e49",
+      "date": "2022-11-03",
+      "parent": "d06babf59f8ddc22c2df4680b762b2067fe9bbf5",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "49d7896f8e2c82e6adf52520d549225589718e83",
+      "date": "2022-11-04",
+      "parent": "d3c78a385176635b20209d7b05c20093663e4bce",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "33e686319c7039291935fa41af32265f1bd6b545",
+      "date": "2022-12-13",
+      "parent": "b7cd791cafba7ab5a2eadf523997732fb707ffff",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "14237a873f7d5cf9abd24d23c9c771652f9aae8d",
+      "date": "2023-04-25",
+      "parent": "c9c32ffa6af5bef0ae5a256260e570d72ed2897e",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "c58de3bb5e58e6e6d3949716f6efa180bbdde3db",
+      "date": "2023-06-05",
+      "parent": "ca3b018734aee6fac47053f01c90f161c317ed5a",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    },
+    {
+      "commit": "c6d7b79ec69610649c7d726a7bc29b42c9ef1c37",
+      "date": "2025-11-12",
+      "parent": "ff3eaff12d55f8c29e73bd8d9039be7dc214d94e",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift",
+      "key": "swift:AddToBlockListViewController.viewDidLoad()",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    }
+  ],
+  "not_changing": []
+}

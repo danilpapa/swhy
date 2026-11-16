@@ -1,0 +1,136 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-20",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalUI/Payments/PaymentsReconciliation.swift",
+    "key": "swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)"
+  },
+  "lines": [
+    151,
+    181
+  ],
+  "candidates": {
+    "follow": 61,
+    "log_l": 6,
+    "merges": 11,
+    "union": 72,
+    "tool": 0
+  },
+  "introduced": "235eb5d1191c218476fb365785f2be694b4ee4e3",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "235eb5d1191c218476fb365785f2be694b4ee4e3",
+      "date": "2021-04-06",
+      "parent": "cbfc7be3720af49ede0499127174ddf7593b62a2",
+      "path": "SignalMessaging/Payments/PaymentsReconciliation.swift",
+      "key": "swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "60593ee26f90f552118092a95c345df7c05301aa",
+      "date": "2021-11-02",
+      "parent": "11f2a86f8a972338bbb1817b6ce0efce5b0426de",
+      "path": "SignalUI/Payments/PaymentsReconciliation.swift",
+      "key": "swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)",
+      "from": {
+        "path": "SignalMessaging/Payments/PaymentsReconciliation.swift",
+        "key": "swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "0c3b89c2edaf0c18ce735cdf77272d499a1d6855",
+      "date": "2024-11-18",
+      "parent": "2000b82c0b1395e60c8dd16af93d0fdce5204684",
+      "path": "SignalUI/Payments/PaymentsReconciliation.swift",
+      "key": "swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "4de9951ea691b704bb535b386f10c779458fd006",
+      "date": "2024-11-18",
+      "parent": "7fe3d40a1a6c31a9ae706c1d3352cf72406dc602",
+      "path": "SignalUI/Payments/PaymentsReconciliation.swift",
+      "key": "swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d2e6ebceeab0974e0ab76b7fdbe8586031f8bea0",
+      "date": "2025-01-28",
+      "parent": "315da5e4ff9e329e40cbd323d03172d8cc46e22f",
+      "path": "SignalUI/Payments/PaymentsReconciliation.swift",
+      "key": "swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "bb048e8b59618bd7aa54b84e6afa64675a0b9eb1",
+      "date": "2025-03-13",
+      "parent": "e5eabf11104e7a4bb0d7888bd3eb067038e569f5",
+      "path": "SignalUI/Payments/PaymentsReconciliation.swift",
+      "key": "swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "d267ec8305d7c5799228df145d2d830659344afb",
+      "date": "2025-12-30",
+      "parent": "d5dca601a60dfb2f54068bd6f8ede08fc66931dc",
+      "path": "SignalUI/Payments/PaymentsReconciliation.swift",
+      "key": "swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)",
+      "from": null,
+      "class": "FormatOnly",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "line breaks and trailing comma"
+    }
+  ],
+  "not_changing": []
+}

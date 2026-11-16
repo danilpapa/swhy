@@ -1,0 +1,432 @@
+# Method-history oracle, Signal-iOS: labels of the first annotator.
+# Format and class rules: docs/oracle-guide.md. Fields are tab-separated.
+#   M <id> <train|test> <path> <key>   starts a method
+#   C <commit> <class> [note]           class of one reviewed commit (newest first)
+#   X <commit>                          the trace is cut: the method is introduced here
+# Classes: I Introduced, F FormatOnly, D DocOnly, R RenameOnly,
+# A SignatureChanged: attributes, X Refactoring, S Semantic, M MoveOnly, N NotChanging.
+M	signal-ios-01	train	SignalUI/AV/AudioPlayer.swift	swift:AudioPlayer.applicationDidEnterBackground()
+C	8910fc4d5b	M
+C	41b1469f7a	S
+C	b5ed609b42	M
+C	df63a9b827	S
+C	38ff82ab97	M
+C	a58f1f385c	M
+C	980d726a48	I
+M	signal-ios-02	test	SignalUI/ViewControllers/OWSNavigationController.swift	swift:OWSNavigationController.gestureRecognizerShouldBegin(_:)
+C	fdcb84d5e3	S
+C	aebf620ef9	S
+C	190c56b68b	S
+C	520faa95df	S
+C	d06babf59f	S
+C	c416609108	M
+C	c7662b5a86	S	external rename only
+C	72e4de0950	S
+C	7ad5f15448	I
+M	signal-ios-03	train	SignalUI/UIKitExtensions/UIViewController+SignalUI.swift	swift:UIViewController.findFrontmostViewController(ignoringAlerts:)
+C	d267ec8305	F
+C	8910fc4d5b	M
+C	0e9d511d1d	S
+C	c416609108	M
+C	65d54e7282	S
+C	6bfe0f0418	S
+C	7a990ed1ff	S
+C	906d0b01a4	M
+C	819c2b1ceb	M
+C	a16058e477	I
+M	signal-ios-04	test	Signal/ConversationView/ConversationInputToolbar.swift	swift:ConversationInputToolbar.viewDidAppear()
+C	cccae56dc3	S
+C	2e91c8d92c	M
+C	d8fc50cb42	S
+C	868e49f1ff	S
+C	720f27074e	I
+M	signal-ios-05	train	SignalUI/SafetyNumbers/FingerprintViewController.swift	swift:FingerprintViewController.compareSafetyNumbersActivity(_:failedWithError:)
+C	d267ec8305	F	trailing comma only
+C	aeb0962e55	S
+C	798aec0c33	S
+C	8910fc4d5b	M
+C	2f621c27b9	S
+C	fad6d63b81	S
+C	d9c0a92ed4	M
+C	b296cfb893	M
+C	d12a582ee3	M
+C	584118a9fc	I
+M	signal-ios-06	test	SignalUI/AV/AudioPlayer.swift	swift:AudioPlayer.teardownRemoteCommandCenter()
+C	4f43208fdc	S
+C	8910fc4d5b	M
+C	41b1469f7a	S
+C	b5ed609b42	M
+C	57a810658a	S
+C	df63a9b827	I
+M	signal-ios-07	train	SignalUI/ViewControllers/OWSViewController.swift	swift:OWSViewController.viewDidLoad()
+C	d267ec8305	F	modifier order and trailing comma
+C	cefb46b871	S
+C	78d035cceb	S
+C	4d1c77b2f4	S
+C	af48dd5186	S
+C	bb2b665f6f	S	external rename only
+C	c745f9a6ae	S
+C	5865a0a478	S
+C	c416609108	M
+C	9ef178a33b	S
+C	f795b12a86	I
+M	signal-ios-08	test	Signal/AppLaunch/WindowManager.swift	swift:WindowManager.ensureCallViewWindowHidden(_:)
+C	6be38ecd5d	S
+C	11de255279	M
+C	2f71d6a2c6	S
+C	7d0485661d	M
+C	93ba483ec5	M
+C	cc5a480baa	S
+C	3a50377902	S	external rename only
+C	29d08545e2	M
+C	d7ae6fbbf4	R
+C	7345ab2e4e	I
+M	signal-ios-09	train	SignalShareExtension/SAEScreenLockViewController.swift	swift:SAEScreenLockViewController.tryToPresentAuthUIToUnlockScreenLock()
+C	c56b07e6e8	S
+C	719343c533	S
+C	4cf438d740	F	trailing comma only
+C	09dad6e4db	S
+C	e9eefda2d9	S
+C	4b77df38fa	S	external rename only
+C	d51213a8f5	S
+C	c017e76aab	S	external rename only
+C	cc5a480baa	S
+C	3a50377902	S	external rename only
+C	08d36aa862	I
+M	signal-ios-10	test	Signal/ConversationView/ConversationInputToolbar.swift	swift:ConversationInputToolbar.acceptAutocorrectSuggestion()
+C	2e91c8d92c	M
+C	d8fc50cb42	S
+C	13a80ef8aa	S
+C	135d051761	I
+M	signal-ios-11	train	Signal/src/ViewControllers/MediaGallery/MediaItemViewController.swift	swift:MediaItemViewController.viewDidLayoutSubviews()
+C	d267ec8305	F
+C	982e3e5455	S
+C	37eca71e77	S
+C	ccb5eb9a6b	S
+C	7b61d88a15	S
+C	987bf81eec	S
+C	03c18a3107	M
+C	3582ab42db	I
+M	signal-ios-12	test	Signal/ConversationView/ConversationInputToolbar.swift	swift:ConversationInputToolbar.beginEditingMessage()
+C	164f6e8033	S
+C	2e91c8d92c	M
+C	d8fc50cb42	S
+C	b560fc0afd	S
+C	868e49f1ff	S
+C	5aeb9e205a	S
+C	3b3445c0fd	I
+M	signal-ios-13	train	SignalUI/Payments/PaymentsImpl.swift	swift:PaymentsImpl.updateCurrentPaymentBalanceIfNecessary()
+C	0a5677997e	X
+C	60593ee26f	M
+C	1b655d63f5	S
+C	235eb5d119	I
+M	signal-ios-14	test	SignalServiceKit/Util/UIView+OWS.swift	swift:CGPoint.clamp(_:)
+C	d267ec8305	F	line breaks and trailing comma
+C	e10faa8593	M
+C	3ba6585b73	M
+C	251409a47d	F	implicit return
+C	da79a53d96	X
+C	5973c326de	I
+M	signal-ios-15	train	SignalUI/Stickers/StickerHorizontalListView.swift	swift:LinearHorizontalLayout.shouldInvalidateLayout(forBoundsChange:)
+C	effab076b4	S
+C	8910fc4d5b	M
+C	c416609108	M
+C	e097239dcd	S	external rename only
+C	48df37519f	I
+M	signal-ios-16	test	SignalServiceKit/Subscriptions/Donations/DonationSubscriptionManager.swift	swift:DonationSubscriptionManager.getBoostBadge()
+C	714a789cc5	X
+C	a3e8141ba9	S
+C	c9f4b83ffb	X
+C	46b5b4a9e4	M
+C	fd8e2950ea	M
+C	7f41ecaa8b	S	external rename only
+C	8047472f68	M
+C	cc0cd24f88	S
+C	05ed931b10	S
+C	baddc85564	S
+C	c89b0016f6	I
+M	signal-ios-17	train	SignalServiceKit/Groups/GroupsV2Impl.swift	swift:GroupsV2Impl.groupRecordPendingStorageServiceRestore(masterKeyData:transaction:)
+C	d267ec8305	F	trailing comma only
+C	bb048e8b59	S
+C	e10faa8593	M
+C	e74445bf30	M
+C	ad34089ffe	I
+M	signal-ios-18	test	SignalServiceKit/Messages/MessageRequestPendingReceipts.swift	swift:PendingReceiptFinder.delete(pendingReadReceipts:transaction:)
+C	a23a721e58	S
+C	a689aa21d6	M
+C	bb048e8b59	S
+C	e85c7c4f40	M
+C	a365b45522	R
+C	2bed5d0cc3	I
+M	signal-ios-19	train	SignalUI/Payments/PaymentsProcessor.swift	swift:PaymentsProcessor.tryToScheduleProcessingOperation(paymentModel:label:retryDelayInteral:)
+C	d267ec8305	F	line breaks and trailing comma
+C	a16c13d1b9	S
+C	42c704a4e3	S
+C	60593ee26f	M
+C	76cc8df5ee	S
+C	8c4cfcc9f9	I
+M	signal-ios-20	test	SignalUI/Payments/PaymentsReconciliation.swift	swift:PaymentsReconciliation.reconciliationDidSucceed(transaction:transactionHistory:)
+C	d267ec8305	F	line breaks and trailing comma
+C	bb048e8b59	S
+C	d2e6ebceea	S
+C	4de9951ea6	S
+C	0c3b89c2ed	S
+C	60593ee26f	M
+C	235eb5d119	I
+M	signal-ios-21	train	SignalServiceKit/Payments/PaymentsHelperImpl.swift	swift:PaymentsHelperImpl.tryToInsertPaymentModel(_:transaction:)
+C	d267ec8305	F	line breaks and trailing comma
+C	bb048e8b59	S
+C	e10faa8593	M
+C	91c90500ab	M
+C	c57376a269	S
+C	48c3c08c10	F
+C	4aec5adac1	X
+C	079bb08067	M
+C	60593ee26f	M
+C	a75de3019e	S
+C	3ddeb4fae0	S
+C	e9d23af718	S
+C	235eb5d119	I
+M	signal-ios-22	test	SignalServiceKit/Payments/MobileCoinHelperMinimal.swift	swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)
+C	eae1ab1e12	S	external rename only
+C	f245dcc2d7	S
+C	82bb803d58	S
+C	e10faa8593	M
+C	35d45f4e74	M
+C	9211ac8fa3	I
+M	signal-ios-23	train	SignalServiceKit/Groups/GroupV2Params.swift	swift:GroupV2Params.encryptDisappearingMessagesTimer(_:)
+C	7f0e73ab16	F	line breaks and trailing comma
+C	d267ec8305	F
+C	e10faa8593	M
+C	c649e8be19	M
+C	d60ca9f7f4	S
+C	87c6355222	S
+C	d3639be383	R
+C	752bcdd6f9	I
+M	signal-ios-24	test	SignalServiceKit/Groups/GroupsV2IncomingChanges.swift	swift:HasAciAndProfileKey.getAciProperties(groupV2Params:)
+C	d267ec8305	F	trailing comma only
+C	bb2d89e55a	S
+C	e10faa8593	M
+C	e74445bf30	M
+C	ec18653994	S
+C	9d16dd49e0	S
+C	bb03be620e	I
+M	signal-ios-25	train	Signal/src/ViewControllers/RecipientPicker/AddToBlockListViewController.swift	swift:AddToBlockListViewController.viewDidLoad()
+C	d267ec8305	F	line breaks and trailing comma
+C	c6d7b79ec6	S
+C	c58de3bb5e	S	external rename only
+C	14237a873f	S	external rename only
+C	33e686319c	S
+C	49d7896f8e	S
+C	520faa95df	S
+C	1ea74d9266	S
+C	02494b048a	S
+C	1c9382c3d2	S
+C	285357ff84	I
+M	signal-ios-26	test	SignalServiceKit/Mocks/Usernames/MockUsernamesService.swift	swift:MockUsernamesService.setUsernameLink(usernameCiphertext:keepLinkHandle:)
+C	8d3a76e4a0	M
+C	6481ce9c7d	S
+C	6285fbe222	R
+C	3a6d34d73d	S
+C	6b5ce3690f	S
+C	a3f12e3f55	M
+C	1398e335a0	I
+M	signal-ios-27	train	Signal/src/ViewControllers/HomeView/Stories/HiddenStoryHeaderCell.swift	swift:HiddenStoryHeaderCell.configure(isCollapsed:animated:)
+C	d267ec8305	X	swiftformat: T.init( to T(, && to comma in guard, spacing
+C	77fd1345f8	S
+C	52f0015dfe	S
+C	b5eab48d90	S
+C	c544e46ee1	S
+C	9fe09ce980	M
+C	9a585ac4c3	I
+M	signal-ios-28	test	SignalServiceKit/Backups/Attachments/BackupAttachmentDownloadQueueStatusManager.swift	swift:BackupAttachmentDownloadQueueStatusManagerImpl.downloadDidExperienceNetworkOr5xxError(mode:token:)
+C	7deb825af8	S
+C	d267ec8305	F	trailing comma only
+C	54c1ee60a8	S
+C	42bc89e92d	I
+M	signal-ios-29	train	SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModel.swift	swift:SDSCodableModel.didInsert(with:for:)
+C	214599386b	S
+C	e10faa8593	M
+C	406d44d396	F	explicit self removed
+C	be4bef922b	M
+C	d7f12d3f39	S	pulled up from StoryMessageRecord into the protocol extension
+C	d85d173946	S
+C	376471587f	I
+M	signal-ios-30	test	SignalServiceKit/Network/API/Requests/AuthedAccount.swift	swift:AuthedAccount.isAddressForLocalUser(_:)
+C	88f7b13035	S
+C	83b37e74a3	A
+C	e10faa8593	M
+C	dd6074391e	S
+C	a146e18aaf	I
+M	signal-ios-31	train	Signal/DeviceTransfer/MultiPeerConnectivity/MPCDeviceTransferBrowser.swift	swift:MPCDeviceTransferBrowser.connectionError(_:)
+C	e78ac6e314	S
+C	b3cf19d658	S
+C	a8918eb28c	F	dedent; the enclosing type was flattened
+C	5dd6adf8f2	M
+C	867095baa2	I
+M	signal-ios-32	test	Signal/Calls/UserInterface/CallDrawerSheet.swift	swift:CallDrawerSheet.editCallName()
+C	d267ec8305	F	trailing comma only
+C	94940ebf81	S
+C	3aceb65513	S
+C	317226629c	I
+M	signal-ios-33	train	Signal/src/ViewControllers/Payments/SendPaymentCompletionActionSheet.swift	swift:SendPaymentCompletionActionSheet.viewDidLoad()
+C	8bd7055130	S
+C	d267ec8305	F	modifier order
+C	cf00420c35	S
+C	ab5144fb39	S
+C	afd2aeef5c	I
+M	signal-ios-34	test	Signal/src/ViewControllers/ThreadSettings/GroupLinkViewController.swift	swift:GroupLinkViewUtils.shareLinkViaSignal(groupInviteLinkUrl:fromViewController:sendMessageController:)
+C	957075d261	S
+C	d267ec8305	F	line breaks and trailing comma
+C	cb3d5fd1be	S
+C	005a568df9	S
+C	f3423d64f8	S
+C	4bec528d34	S
+C	fd8fe4ca36	S
+C	b3d9fb7854	S
+C	c25655baf0	S
+C	c623b435d8	I
+M	signal-ios-35	train	Signal/src/ViewControllers/ThreadSettings/AddGroupMembersViewController.swift	swift:AddGroupMembersViewController.groupMemberViewIsPreExistingMember(_:transaction:)
+C	353355dfb0	S
+C	d267ec8305	F	line breaks and trailing comma
+C	40b4c03fa9	S
+C	38072f2201	S
+C	bb048e8b59	S
+C	de32c7799d	S
+C	98151dfd0d	S
+C	0241fd25e8	S
+C	22c90550b7	S	external rename only
+C	aa88bb712c	S
+C	3255fc3dfe	S
+C	d8a6334f5e	I
+M	signal-ios-36	test	SignalServiceKit/Messages/Interactions/TSInfoMessage+GroupUpdates.swift	swift:TSInfoMessage.makeForGroupUpdate(timestamp:spamReportingMetadata:groupThread:updateItems:)
+C	c8f200865e	S
+C	d267ec8305	F	trailing comma only
+C	aac8b1f636	S
+C	853bf45b8a	R
+C	34a8cf2bda	S	external rename only
+C	e10faa8593	M
+C	e862daf61d	S
+C	ce4959062c	I
+M	signal-ios-37	train	Signal/Calls/UserInterface/GroupCallNotificationView.swift	swift:GroupCallNotificationView.presentNextNotificationIfNecessary()
+C	d267ec8305	F	line breaks and trailing comma
+C	3094d34333	S
+C	e445834e39	S
+C	7c50ba8f8f	S
+C	76047d69b7	S
+C	2cca071925	M
+C	003cc19e62	X	explicit DispatchQueue.main instead of .main
+C	c07e1ea1f9	S
+C	46351cf16f	I
+M	signal-ios-38	test	Signal/src/ViewControllers/MediaGallery/MediaGalleryAccessoriesHelper.swift	swift:MediaGalleryAccessoriesHelper.didPressShare(_:)
+C	0485b291ad	A
+C	cffc4aed50	X	guard let replaced by optional chaining
+C	7cda68a53f	S	handler moved into the helper, body now delegates
+C	5da1187707	I
+M	signal-ios-39	train	Signal/Calls/CallKitIdStore.swift	swift:CallKitIdStore.setGroupId(_:forCallKitId:)
+C	2b7713b0a4	S
+C	54ef8a50f3	S
+C	bb2d89e55a	S
+C	bb048e8b59	S
+C	60dc4a8dc0	S
+C	dadca9e032	S
+C	de32c7799d	S
+C	8a9d5f6491	I
+M	signal-ios-40	test	SignalServiceKit/Messages/Attachments/V2/AttachmentManager/AttachmentManagerImpl.swift	swift:AttachmentManagerImpl._updateAttachmentWithOversizeTextFromBackup(attachment:pendingAttachment:tx:)
+C	05e57bfa7d	S
+C	6e7d048e9f	S
+C	6905ea8e41	S
+C	221043a998	S
+C	185035784c	S
+C	b4c777db16	S
+C	c23eaa6bfc	S
+C	ec972806cb	S	external rename only
+C	e5529f2d89	S
+C	0762b71098	S	external rename only
+C	d267ec8305	F	trailing comma only
+C	d5dca601a6	S
+C	9f29ee8022	I
+M	signal-ios-41	train	SignalServiceKit/Payments/PaymentFinder.swift	swift:PaymentFinder.allUnreadPaymentModels(transaction:)
+C	963fe5aeb0	S
+C	d267ec8305	F	line breaks and trailing comma
+C	bb048e8b59	S
+C	83b37e74a3	A
+C	e10faa8593	M
+C	02fbe33779	I
+M	signal-ios-42	test	SignalServiceKit/Network/API/Requests/OWSRequestFactory+Backups.swift	swift:OWSRequestFactory.backupRefreshInfoRequest(auth:logger:)
+C	f4f4696650	S
+C	d267ec8305	F	trailing comma only
+C	7d6edb6412	S	external rename only
+C	a819bb4dac	S
+C	95c18efb2d	S
+C	5bc53062c6	I
+M	signal-ios-43	train	SignalServiceKit/Messages/Interactions/TSInteraction+SDS.swift	swift:TSInteraction.anyFetchAll(transaction:)
+C	6b9d30fd87	S
+C	bb048e8b59	S
+C	e10faa8593	M
+C	bf8b632e24	S
+C	7dd1d61552	S
+C	a6f5f4b35b	S
+C	b0375a5de4	X
+C	4903815229	A
+C	b6b2c8af3b	S	moved from an extension in a test file
+C	3c6dde5ee0	I	proposed origin TSAttachment.anyFetchAll is a method of another type
+X	3c6dde5ee0
+M	signal-ios-44	test	Signal/Emoji/EmojiReactionPickerConfigViewController.swift	swift:EmojiReactionPickerConfigViewController.viewDidLoad()
+C	9b5c37d652	S
+C	d267ec8305	F	modifier order and trailing comma
+C	70afcddc55	S
+C	3bfcae77f1	S
+C	4ef5211825	S
+C	2e91c8d92c	M
+C	f7f9d1ef82	S
+C	14237a873f	S	external rename only
+C	b567e9add9	F
+C	41700623df	I
+M	signal-ios-45	train	SignalServiceKit/Messages/Attachments/V2/ContentValidation/AttachmentContentValidatorImpl.swift	swift:AttachmentContentValidatorImpl.reValidateContents(ofEncryptedFileAt:attachmentKey:plaintextLength:mimeType:)
+C	e05b4e6416	S
+C	7f016699ce	S
+C	d267ec8305	F	trailing comma only
+C	1f7c55776d	S
+C	dfd1762d78	S
+C	dd98cd9cdf	S
+C	cd31be8f23	S
+C	94e291ed16	S
+C	866c20055a	I
+M	signal-ios-46	test	Signal/src/ViewControllers/ThreadSettings/DisappearingMessagesTimerSettingsViewController.swift	swift:DisappearingMessagesTimerSettingsViewController.updateForSelection(_:)
+C	695a8c916d	S
+C	9eb567136c	S
+C	7d25c4ec12	S	external rename only
+C	d267ec8305	F	trailing comma only
+C	65dccf9f42	I
+M	signal-ios-47	train	SignalServiceKit/Storage/Database/SDSCodableModel/SDSCodableModelDatabaseInterface+Save.swift	swift:SDSCodableModelDatabaseInterface.updateModelInDatabase(_:existingGrdbRowId:transaction:)
+C	140bd6dc93	X
+C	214599386b	S
+C	d267ec8305	F	trailing comma only
+C	a237b9c114	S
+C	bb048e8b59	S
+C	e10faa8593	M
+C	406d44d396	S	moved into a separate type, renamed, self became a parameter
+C	be4bef922b	M
+C	4da042c1d5	S
+C	460f1d38c5	S
+C	d7f12d3f39	I
+M	signal-ios-48	test	Signal/src/ViewControllers/MediaGallery/MediaPageViewController.swift	swift:MediaPageViewController.animationController(forPresented:presenting:source:)
+C	d267ec8305	X	redundant public removed by swiftformat, line breaks, trailing comma
+C	96f51dd552	F
+C	f383d4efbb	S
+C	9024f2f244	S
+C	5c2c48a75c	I
+M	signal-ios-49	train	SignalServiceKit/Upload/AttachmentUploadManager.swift	swift:AttachmentUploadManagerImpl.fetchAttachment(attachmentId:logger:tx:)
+C	112dd440ad	S
+C	d267ec8305	F	trailing comma only
+C	101f2982d0	S
+C	85f08fdabe	I
+M	signal-ios-50	test	Signal/ConversationView/Components/CVComponentContactShare.swift	swift:CVComponentContactShare.measure(maxWidth:measurementBuilder:)
+C	4eec4232b2	X
+C	d267ec8305	F	line breaks and trailing comma
+C	2e91c8d92c	M
+C	e4fec6082b	S
+C	40fa336cd2	S
+C	06518f578a	S
+C	111338b59d	I

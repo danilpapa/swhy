@@ -1,0 +1,123 @@
+{
+  "schema": "swhy-oracle-method/1",
+  "id": "signal-ios-22",
+  "repo": "Signal-iOS",
+  "rev": "a690a26d2cfe1bc15f99d73d2ef2054d41ba5e45",
+  "split": "test",
+  "annotator": "agent:claude-fable-5-2",
+  "method": {
+    "path": "SignalServiceKit/Payments/MobileCoinHelperMinimal.swift",
+    "key": "swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)"
+  },
+  "lines": [
+    24,
+    32
+  ],
+  "candidates": {
+    "follow": 8,
+    "log_l": 4,
+    "merges": 1,
+    "union": 9,
+    "tool": 0
+  },
+  "introduced": "9211ac8fa3563d828929faa1d27be163a2d9087c",
+  "objc_origin": false,
+  "module_move": true,
+  "history": [
+    {
+      "commit": "9211ac8fa3563d828929faa1d27be163a2d9087c",
+      "date": "2021-11-02",
+      "parent": "eab1f82123f63bb033ce88f33cf362dbdb36198e",
+      "path": "SignalMessaging/utils/MobileCoinHelperMinimal.swift",
+      "key": "swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)",
+      "from": null,
+      "class": "Introduced",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "35d45f4e74a3875a4aedc2cbaddc3a848aa1cefb",
+      "date": "2024-03-07",
+      "parent": "b45a5765c61c34f97ae99ac1b9f1815b01aaaa33",
+      "path": "SignalServiceKit/src/Payments/MobileCoinHelperMinimal.swift",
+      "key": "swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)",
+      "from": {
+        "path": "SignalMessaging/utils/MobileCoinHelperMinimal.swift",
+        "key": "swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)"
+      },
+      "class": "MoveOnly",
+      "move": "module",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "e10faa8593108e7af87d4e8cb32e28016533fa35",
+      "date": "2024-03-27",
+      "parent": "c21511e52fde89b0a1607ffad040ab84a7e3fa7e",
+      "path": "SignalServiceKit/Payments/MobileCoinHelperMinimal.swift",
+      "key": "swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)",
+      "from": {
+        "path": "SignalServiceKit/src/Payments/MobileCoinHelperMinimal.swift",
+        "key": "swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)"
+      },
+      "class": "MoveOnly",
+      "move": "file",
+      "sources": [
+        "follow"
+      ],
+      "note": null
+    },
+    {
+      "commit": "82bb803d5858399082d9d5b5fc65b83c2727db6d",
+      "date": "2024-04-25",
+      "parent": "a1eb3d145a74b42c735479e6730e6f382e2298d2",
+      "path": "SignalServiceKit/Payments/MobileCoinHelperMinimal.swift",
+      "key": "swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "f245dcc2d7a254e8506a3889983d9cae48db87f9",
+      "date": "2024-05-22",
+      "parent": "bcc31cbc4fae4639c54132eac1610bbf90cc8c4b",
+      "path": "SignalServiceKit/Payments/MobileCoinHelperMinimal.swift",
+      "key": "swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": null
+    },
+    {
+      "commit": "eae1ab1e121761fb5058ff394ea2c089db0470a9",
+      "date": "2024-09-17",
+      "parent": "afa922e09d3350a23fadadc973592ecc8cc46dfe",
+      "path": "SignalServiceKit/Payments/MobileCoinHelperMinimal.swift",
+      "key": "swift:MobileCoinHelperMinimal.isValidMobileCoinPublicAddress(_:)",
+      "from": null,
+      "class": "Semantic",
+      "move": null,
+      "sources": [
+        "follow",
+        "log-L"
+      ],
+      "note": "external rename only"
+    }
+  ],
+  "not_changing": []
+}
